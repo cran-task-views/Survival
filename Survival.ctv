@@ -1,51 +1,57 @@
+<!-- glmpath, km.ci -->
+<!-- crq() in quantreg -->
+<!-- coin, party (ctree, mob, cforest) -->
+<!-- timereg -> CRAN? otherwise only in links -->
+<!-- Robert J. Gray, Steve Portnoy -->
+<!-- UTF-8 encoding? -->
+
 <CRANTaskView>
 
 <name>Survival</name>
 <topic>Survival Analysis</topic>
-<maintainer email="arthur.allignol@fdm.uni-freiburg.de">
-Arthur Allignol and Aurélien Latouche</maintainer>
-<version>0.0-3</version>
+<maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurélien Latouche</maintainer>
+<version>2008-06-02</version>
 
 <info>
-<p> Survival analysis, also called event history analysis in social science,
+<p>Survival analysis, also called event history analysis in social science,
 or reliability analysis in engineering, deals with time until occurrence
-of an event of interest. However this failure time may not be observed
+of an event of interest. However, this failure time may not be observed
 within the relevant time period, producing so-called censored observations. 
 </p>
-<p> This task view aims at presenting the useful R-packages for the analysis
+<p>This task view aims at presenting the useful R packages for the analysis
 of time to event data.</p>
-<p> This is a preliminary task view, and we have likely missed some important 
+<p>This is a preliminary task view, and we have likely missed some important 
 information. Please email the task view maintener with any feedback.</p>
 
 
 <h1>Standard Survival Analysis</h1>
 <ul>
-  <li> <EM><b>Basic Methods:</b></EM> The recommended package <pkg>survival</pkg> provides 
+  <li><em><b>Basic Methods:</b></em> The recommended package <pkg>survival</pkg> provides 
 the necessary tools for estimating the distribution (survival probability) of time
 to the event and cumulative hazards for various censoring 
 and truncation schemes. <pkg>muhaz</pkg> allows estimation 
 of the hazard function. Packages <pkg>eha</pkg> and <pkg>Design</pkg>
-provides additional tools for dealing with time to event data,
+provide additional tools for dealing with time to event data,
 like facilities to obtain risk sets or number of events.
 <pkg>surv2sample</pkg> yields tests for comparing two survival
-distributions. <pkg>TSHRC</pkg> provides a two stage procedure
+distributions. <pkg>TSHRC</pkg> provides a two-stage procedure
 for comparing hazard rates. That is useful when hazard functions 
 cross. Package <pkg>emplik</pkg> can performs empirical likelihood
 for means, quantiles and hazards from possibly censored and/or truncated
-data. 
-Package <pkg>dblcens</pkg> computes the NPMLE estimator of CDF for 
+data. Package <pkg>dblcens</pkg> computes the NPMLE estimator of CDF for 
 doubly censored data, along with the CDF of the two censoring distributions.
   </li>
-  <li> <EM><b>Cox Model:</b></EM> <pkg>survival</pkg> permits to fit the well-known
+
+  <li><em><b>Cox Model:</b></em> <pkg>survival</pkg> permits to fit the well-known
 Cox proportional hazards model for right-, left-, interval-censored
 and counting process data. It can also be used with time-dependent
-covariates. Goodness of fit tests are also implemented.
-The <TT>cph</TT> function of the <pkg>Design</pkg> package
+covariates. Goodness-of-fit tests are also implemented.
+The <code>cph</code> function of the <pkg>Design</pkg> package
 fits the Cox model for interval time-dependent covariates and  time-dependent
-strata. <pkg>CPE</pkg> can use either a <TT>coxph</TT> or <TT>cph</TT>
+strata. <pkg>CPE</pkg> can use either a <code>coxph</code> or <code>cph</code>
 object to evaluate the discriminatory power and the predictive accuracy of the model.
-The <TT>coxphf</TT> function from <pkg>coxphf</pkg> package performs a Cox regression 
-with Firth's penalised likelihood. This 
+The <code>coxphf</code> function from <pkg>coxphf</pkg> package performs a Cox regression 
+with Firth's penalized likelihood. This 
 method has been shown to provide a solution in case of monotone likelihood.
 <pkg>coxrobust</pkg> fits efficiently and robustly Cox models, but in its
 basic form, that is without time-dependent covariates.
@@ -56,13 +62,14 @@ and to fit a Cox proportional hazards model for nested cohorts.
 <pkg>survival</pkg> and <pkg>proptest</pkg> provides methods 
 to test for the proportional hazards assumption.
   </li>
-  <li> <EM><b>Other Regression Models:</b></EM> 
+
+  <li><em><b>Other Regression Models:</b></em> 
 The <pkg>survival</pkg> package proposes as a complement of 
-the Cox model the <TT>survreg</TT> function, which fits linear
+the Cox model the <code>survreg</code> function, which fits linear
 models for the mean of survival or its logarithm with various
-parametric error distribution. Package <pkg>eha</pkg> implements
+parametric error distributions. Package <pkg>eha</pkg> implements
 maximum likelihood estimation of proportional hazards models.
-It reduces to a Cox model when there is no ties in the data.
+It reduces to a Cox model when there are no ties in the data.
 This package also proposes the Weibull regression model. As for
 the <pkg>Design</pkg> package, it contains an implementation of the
 Buckley-James regression model. The <pkg>emplik</pkg> package also has
@@ -74,10 +81,10 @@ empirical likelihood estimation. A conditional quantile regression
 model for censored data can be fitted thanks to the <pkg>crq</pkg> package.
 <pkg>lss</pkg> implements a recent inference procedure based
 on the least-squares principle for the accelerated failure time model.
-The Generalized Additive Models for Location, Scale and Shape can also
-be fitted for censored data, and is implemented in the <pkg>gamlss.cens</pkg>
+The generalized additive models for location, scale and shape (GAMLSS) can also
+be fitted for censored data, and are implemented in the <pkg>gamlss.cens</pkg>
 package. The <pkg>mixPHM</pkg> fits multiple mixtures of various parametric
-hazard models using an EM-algorithm. <pkg>smoothSurv</pkg> allows the fit
+hazard models using an EM algorithm. <pkg>smoothSurv</pkg> allows the fit
 of a regression model with possible left-, right- and interval-censoring
 and the error distribution expressed as a mixture of G-splines.
 The <pkg>pseudo</pkg> package computes pseudo observations for
@@ -99,35 +106,37 @@ the Clayton-Oakes-Glidden model and the semiparametric proportional odds model.
 
 <h1>Multistate Models</h1>
 <ul>
-  <li> <EM><b>General Multistate Models:</b></EM>
-The <TT>coxph</TT> function from package <pkg>survival</pkg> can be
+  <li><em><b>General Multistate Models:</b></em>
+The <code>coxph</code> function from package <pkg>survival</pkg> can be
 fitted for any transition of a multistate model. It can also
 be used for comparing two transition hazards, using correspondance
 between multistate models and time-dependent covariates. Besides,
 all the regression methods presented above can be used for multistate models
 as long as they allow for left-truncation. <br />
 The <pkg>mvna</pkg> package provides convenient functions for estimating
-and plotting the cumulative transition hazards in any multistate models,
+and plotting the cumulative transition hazards in any multistate model,
 possibly subject to right-censoring and left-truncation.
 <pkg>changeLOS</pkg> permits to estimate and plot the transition probabilties
-for any multistate models. It also estimates the change of length of hospital
+for any multistate model. It also estimates the change of length of hospital
 stay. 
 The <pkg>msm</pkg> package contains functions for fitting general continuous-time
 Markov and hidden Markov multistate models to longitudinal data. Transition rates 
-and output process can be modelled in terms of covariates.
+and output processes can be modelled in terms of covariates.
   </li>
-  <li> <EM><b>Recurrent Events:</b></EM>
-<TT>coxph</TT> from the <pkg>survival</pkg> can be used to 
-analyse recurrent event data.
-The <TT>cph</TT> function of the <pkg>Design</pkg> package fits the Anderson-Gill
-model for recurrent events, model which can also be fitted thanks to the
+
+  <li><em><b>Recurrent Events:</b></em>
+<code>coxph</code> from the <pkg>survival</pkg> can be used to 
+analyze recurrent event data.
+The <code>cph</code> function of the <pkg>Design</pkg> package fits the Anderson-Gill
+model for recurrent events, model which can also be fitted with the
 <pkg>frailtypack</pkg> package. The <pkg>survrec</pkg> package proposes
 implementations of several models for recurrent events data, such as
 the Pena-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
 under a Gamma Frailty model. The Pena-Hollander model can be fitted using
 the <pkg>gcmrec</pkg> package. 
   </li>
-  <li> <EM><b>Competing Risks:</b></EM>
+
+  <li><em><b>Competing Risks:</b></em>
 <pkg>surv2sample</pkg> provides estimation of the cumulative incidence
 functions for several causes of failure. The package also performs comparison
 in two samples. The package <pkg>cmprsk</pkg> also estimates the cumulative 
@@ -144,31 +153,32 @@ used in relative survival, such as the additive model for
 relative survival with a binomial or a Poisson error, or the 
 Andersen at al. multiplicative regression model, which is an 
 extension of the Cox model for relative survival. It can also
-fit a Cox proportional hazards model in transformed times. The 
-package also includes displaying and miscellaneous facilities.
+fit the Cox proportional hazards model in transformed times. The 
+package also includes display facilities and miscellaneous others.
   </p>
 
 <h1>Multivariate Survival</h1>
 <p> We mean by multivariate survival the analysis of unit,
-<I>e.g.,</I> the survival of twins or a family. To analyse 
+e.g., the survival of twins or a family. To analyse 
 such data, we can estimate the joint distribution of the 
 survival times or use frailty models.</p>
 <ul>
-  <li> <EM><b>Joint Modelling</b></EM>
+  <li><em><b>Joint Modelling</b></em>
 Package <pkg>Icens</pkg> provides various implemention
 of methods to find the NPMLE for censored and truncated
-multivariate survival data. To be noted that some of these
+multivariate survival data. Note that some of these
 techniques can be used for standard survival.
 The package <pkg>MLEcens</pkg> permits to compute the nonparametric
 maximum likelihood estimator for bivariate distributions when the 
 failure times cannot be directly observed.
   </li>
-  <li> <EM><b>Frailties:</b></EM>
+
+  <li><em><b>Frailties:</b></em>
 The <pkg>CompetingRiskFrailty</pkg> package fits a Cox model 
 for each cause-specific hazards of competing risks data
 with random effects and possible smooth varying coefficients.
 <pkg>frailypack</pkg> fits a shared gamma frailty model using
-a penalised likelihood on the hazard function for left-truncated
+a penalized likelihood on the hazard function for left-truncated
 and censored data, with a maximum of two strata.
 Joint models for survival data can be fitted using the <pkg>JM</pkg>
 package. It can fit a Weibull accelerated failure time model,
@@ -185,8 +195,8 @@ Parameter estimation is made using MCMC methods.
 The package <pkg>DPpackage</pkg> includes a generic function
 to fit a mixture of Dirichlet process in an accelerated failure
 time model for interval censored data.
-A proportional hazards model by a Bayesian approach is implemented
-in package <pkg>survBayes</pkg>. Right and interval censored data
+A proportional hazards model using a Bayesian approach is implemented
+in package <pkg>survBayes</pkg>. Right- and interval-censored data
 and a lognormal or gamma frailty term can be fitted.
 </p>
 
@@ -203,83 +213,80 @@ can be found in <pkg>randomSurvivalForest</pkg>.
 <h1>Other</h1>
 <p> <pkg>KMsurv</pkg> includes the data sets and functions which
 illustrates Klein and Moeschberger (1997), 
-<Q>Survival Analysis, Techniques for Censored and Truncated Data</Q>, Springer.
-The package <pkg>boot</pkg> contains the function <TT>bootcens</TT>, which
+<q>Survival Analysis, Techniques for Censored and Truncated Data</q>, Springer-Verlag.
+The package <pkg>boot</pkg> contains the function <code>bootcens</code>, which
 performs various resampling plans for censored data.
 <pkg>survivalROC</pkg> computes time-dependent ROC curve from censored
 data using Kaplan-Meier or nearest neighbor estimation method.
 The <pkg>TwoWaySurv</pkg> package fits an additive hazard model
-for data where, besides the follow-time, a non periodic calendar 
+for data where, besides the follow-time, a non-periodic calendar 
 time is also taken into account.
 </p>
 
 </info>
 
 <packagelist>
-<pkg>bayesSurv</pkg>
-<pkg>boot</pkg>
-<pkg>CPE</pkg>
-<pkg>CompetingRiskFrailty</pkg>
-<pkg>CoxBoost</pkg>
-<pkg>changeLOS</pkg>
-<pkg priority="core">cmprsk</pkg>
-<pkg>coxphf</pkg>
-<pkg>coxrobust</pkg>
-<pkg>crq</pkg>
-<pkg priority="core">Design</pkg>
-<pkg>DPpackage</pkg>
-<pkg>dblcens</pkg>
-<pkg priority="core">eha</pkg>
-<pkg>emplik</pkg>
-<pkg>frailtypack</pkg>
-<pkg>gamlss.cens</pkg>
-<pkg>gcmrec</pkg>
-<pkg>glmpath</pkg>
-<pkg>Icens</pkg>
-<pkg>intcox</pkg>
-<pkg>JM</pkg>
-<pkg>KMsurv</pkg>
-<pkg>kinship</pkg>
-<pkg>km.ci</pkg>
-<pkg>lss</pkg>
-<pkg>MLEcens</pkg>
-<pkg>mboost</pkg>
-<pkg>mixPHM</pkg>
-<pkg>msm</pkg>
-<pkg priority="core">muhaz</pkg>
-<pkg>mvna</pkg>
-<pkg>NestedCohort</pkg>
-<pkg>proptest</pkg>
-<pkg>pseudo</pkg>
-<pkg>randomSurvivalForest</pkg>
-<pkg>rankreg</pkg>
-<pkg>relsurv</pkg>
-<pkg>smoothSurv</pkg>
-<pkg>surv2sample</pkg>
-<pkg>survBayes</pkg>
-<pkg priority="core">survival</pkg>
-<pkg>survivalROC</pkg>
-<pkg>survrec</pkg>
-<pkg>TSHRC</pkg>
-<pkg>TwoWaySurvival</pkg>
-<pkg>tpr</pkg>
-<pkg>zicounts</pkg>
+  <pkg>bayesSurv</pkg>
+  <pkg>boot</pkg>
+  <pkg>CPE</pkg>
+  <pkg>CompetingRiskFrailty</pkg>
+  <pkg>CoxBoost</pkg>
+  <pkg>changeLOS</pkg>
+  <pkg priority="core">cmprsk</pkg>
+  <pkg>coxphf</pkg>
+  <pkg>coxrobust</pkg>
+  <pkg>crq</pkg>
+  <pkg priority="core">Design</pkg>
+  <pkg>DPpackage</pkg>
+  <pkg>dblcens</pkg>
+  <pkg priority="core">eha</pkg>
+  <pkg>emplik</pkg>
+  <pkg>frailtypack</pkg>
+  <pkg>gamlss.cens</pkg>
+  <pkg>gcmrec</pkg>
+  <pkg>Icens</pkg>
+  <pkg>intcox</pkg>
+  <pkg>JM</pkg>
+  <pkg>KMsurv</pkg>
+  <pkg>kinship</pkg>
+  <pkg>lss</pkg>
+  <pkg>MLEcens</pkg>
+  <pkg>mboost</pkg>
+  <pkg>mixPHM</pkg>
+  <pkg>msm</pkg>
+  <pkg priority="core">muhaz</pkg>
+  <pkg>mvna</pkg>
+  <pkg>NestedCohort</pkg>
+  <pkg>proptest</pkg>
+  <pkg>pseudo</pkg>
+  <pkg>randomSurvivalForest</pkg>
+  <pkg>rankreg</pkg>
+  <pkg>relsurv</pkg>
+  <pkg>smoothSurv</pkg>
+  <pkg>surv2sample</pkg>
+  <pkg>survBayes</pkg>
+  <pkg priority="core">survival</pkg>
+  <pkg>survivalROC</pkg>
+  <pkg>survrec</pkg>
+  <pkg>TSHRC</pkg>
+  <pkg>TwoWaySurvival</pkg>
+  <pkg>tpr</pkg>
 </packagelist> 	 
 
 <links>
-<view>SocialSciences</view>
-<view>Bayesian</view>
-<a href="http://staff.pubhealth.ku.dk/~ts/timereg.html">Timereg package</a>
-<a href="http://biowww.dfci.harvard.edu/~gray">Robert J. Gray</a>
-<a href="http://www.stat.uiuc.edu/~sportnoy/steve.html">Steve Portnoy webpage</a>
-<a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">The Design package</a>
-<a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
-<a href="http://www.gamlss.com/">GAMLSS</a>
-<a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing 
-risks and multistate models</a>
-<a href="http://www.msbi.nl/dnn/Research/SurvivalAnalysis/Multistate/tabid/144/Default.aspx">Associated
-functions from the tutorial</a>
-<a href="http://staff.pubhealth.ku.dk/~ts/survival/2008/">Course on survival analysis</a>
+  <view>SocialSciences</view>
+  <view>Bayesian</view>
+  <a href="http://staff.pubhealth.ku.dk/~ts/timereg.html">timereg package</a>
+  <a href="http://biowww.dfci.harvard.edu/~gray">Robert J. Gray</a>
+  <a href="http://www.stat.uiuc.edu/~sportnoy/steve.html">Steve Portnoy webpage</a>
+  <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">The Design package</a>
+  <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
+  <a href="http://www.gamlss.com/">GAMLSS</a>
+  <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing 
+    risks and multistate models</a>
+  <a href="http://www.msbi.nl/dnn/Research/SurvivalAnalysis/Multistate/tabid/144/Default.aspx">Associated
+    functions from the tutorial</a>
+  <a href="http://staff.pubhealth.ku.dk/~ts/survival/2008/">Course on survival analysis</a>
 </links>
 
 </CRANTaskView>
