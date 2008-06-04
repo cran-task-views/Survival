@@ -1,16 +1,9 @@
-<!-- glmpath, km.ci -->
-<!-- crq() in quantreg -->
-<!-- coin, party (ctree, mob, cforest) -->
-<!-- timereg -> CRAN? otherwise only in links -->
-<!-- Robert J. Gray, Steve Portnoy -->
-<!-- UTF-8 encoding? -->
-
 <CRANTaskView>
 
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurélien Latouche</maintainer>
-<version>2008-06-02</version>
+<version>2008-06-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -40,6 +33,9 @@ cross. Package <pkg>emplik</pkg> can performs empirical likelihood
 for means, quantiles and hazards from possibly censored and/or truncated
 data. Package <pkg>dblcens</pkg> computes the NPMLE estimator of CDF for 
 doubly censored data, along with the CDF of the two censoring distributions.
+Package <pkg>coin</pkg> provides conditional inference (aka permutation tests)
+     for a general indepence hypothesis for arbitrary scales including
+     censored variables. Notably the <code>surv_test</code> function for testing the equality of survival distributions in two or more independent groups.
   </li>
 
   <li><em><b>Cox Model:</b></em> <pkg>survival</pkg> permits to fit the well-known
@@ -61,7 +57,10 @@ display the Kaplan-Meier estimates of the survival probability
 and to fit a Cox proportional hazards model for nested cohorts.
 <pkg>survival</pkg> and <pkg>proptest</pkg> provides methods 
 to test for the proportional hazards assumption.
-  </li>
+The path following algorithms for GLMs and Cox proportional hazards models havebeen implemented in the <pkg>glmpath</pkg> package. 
+This strategy provided  much smoother feature selection mechanism than the forward stepwise process. 
+</li>
+
 
   <li><em><b>Other Regression Models:</b></em> 
 The <pkg>survival</pkg> package proposes as a complement of 
@@ -78,7 +77,9 @@ intercept term. <pkg>rankreg</pkg> computes rank regression
 estimator for the accelerated failure time model and tests the coefficients against
 a given value. <pkg>emplik</pkg> performs the same test through
 empirical likelihood estimation. A conditional quantile regression
-model for censored data can be fitted thanks to the <pkg>crq</pkg> package.
+model for censored data can be fitted using <tt>crq</tt> from the <pkg>quantreg</pkg>
+package. (An older implementation of one of the fitting algorithms is
+available also available in package <pkg>crq</pkg>.)
 <pkg>lss</pkg> implements a recent inference procedure based
 on the least-squares principle for the accelerated failure time model.
 The generalized additive models for location, scale and shape (GAMLSS) can also
@@ -93,7 +94,7 @@ the Kaplan-Meier estimator.
 The <pkg>tpr</pkg> package fits regression models for temporal
 process responses with time-varying coefficients
 <br />
-The <pkg>timereg</pkg> package, not available on CRAN, contains
+The <b>timereg</b> package, not available on CRAN (see links below), contains
 implementations of various models to deal with time-varying effects, like
 the Aalen additive risk model, the semi-parametric additive risk model 
 by McKeague and Sasieni, the Cox-Aalen model by Scheike and Zhang, 
@@ -101,7 +102,7 @@ the proportional excess hazards model by Martinussen and Scheike,
 the Cox model with partly time-varying effects by Martinussen, 
 Scheike and Skovgaard, the two-stage estimation method for 
 the Clayton-Oakes-Glidden model and the semiparametric proportional odds model.
-  </li>
+Can also do flexible regression modelling  for competing risks data based on the IPCW direct binomial regression approach (Scheike, Zhang, Gerds, 2008).   </li>
 </ul>
 
 <h1>Multistate Models</h1>
@@ -181,8 +182,7 @@ with random effects and possible smooth varying coefficients.
 a penalized likelihood on the hazard function for left-truncated
 and censored data, with a maximum of two strata.
 Joint models for survival data can be fitted using the <pkg>JM</pkg>
-package. It can fit a Weibull accelerated failure time model,
-an additive log cumulative hazard model or a time-dependent 
+package. It can fit a Weibull accelerated failure time model, an additive log cumulative hazard model or a time-dependent 
 proportional hazards model. <pkg>kinship</pkg> implements 
 a mixed-effects Cox model.
   </li>
@@ -221,6 +221,11 @@ data using Kaplan-Meier or nearest neighbor estimation method.
 The <pkg>TwoWaySurv</pkg> package fits an additive hazard model
 for data where, besides the follow-time, a non-periodic calendar 
 time is also taken into account.
+The package <pkg>party</pkg> provides various recursive
+     partitioning algorithms that are also applicable to censored
+     responses (conditional inference trees/forests, model-based recursive
+     partitioning).
+
 </p>
 
 </info>
@@ -244,6 +249,7 @@ time is also taken into account.
   <pkg>frailtypack</pkg>
   <pkg>gamlss.cens</pkg>
   <pkg>gcmrec</pkg>
+  <pkg>glmpath</pkg>
   <pkg>Icens</pkg>
   <pkg>intcox</pkg>
   <pkg>JM</pkg>
@@ -276,10 +282,8 @@ time is also taken into account.
 <links>
   <view>SocialSciences</view>
   <view>Bayesian</view>
-  <a href="http://staff.pubhealth.ku.dk/~ts/timereg.html">timereg package</a>
-  <a href="http://biowww.dfci.harvard.edu/~gray">Robert J. Gray</a>
-  <a href="http://www.stat.uiuc.edu/~sportnoy/steve.html">Steve Portnoy webpage</a>
-  <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">The Design package</a>
+  <a href="http://staff.pubhealth.ku.dk/~ts/timereg.html">Package: timereg</a>
+  <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">Package: Design</a>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
   <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing 
