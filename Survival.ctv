@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurélien Latouche</maintainer>
-<version>2008-06-04</version>
+<version>2008-09-01</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -15,7 +15,7 @@ within the relevant time period, producing so-called censored observations.
 <p>This task view aims at presenting the useful R packages for the analysis
 of time to event data.</p>
 <p>This is a preliminary task view, and we have likely missed some important 
-information. Please email the task view maintener with any feedback.</p>
+information. Please email the task view maintainer with any feedback.</p>
 
 
 <h1>Standard Survival Analysis</h1>
@@ -35,12 +35,16 @@ for means, quantiles and hazards from possibly censored and/or truncated
 data. Package <pkg>dblcens</pkg> computes the NPMLE estimator of CDF for 
 doubly censored data, along with the CDF of the two censoring distributions.
 Package <pkg>coin</pkg> provides conditional inference (aka permutation tests)
-     for a general indepence hypothesis for arbitrary scales including
-     censored variables. Notably the <code>surv_test</code> function for testing the equality of survival distributions in two or more independent groups.
+for a general independence hypothesis for arbitrary scales including
+censored variables. Notably the <code>surv_test</code> function for testing 
+the equality of survival distributions in two or more independent groups.
+The <pkg>prodlim</pkg> package computes the Kaplan-Meier estimator with some
+extensions not provided in the <pkg>survival</pkg> package. 
+
   </li>
 
   <li><em><b>Cox Model:</b></em> <pkg>survival</pkg> permits to fit the well-known
-Cox proportional hazards model for right-, left-, interval-censored
+Cox proportional hazards model for right-, left-censored
 and counting process data. It can also be used with time-dependent
 covariates. Goodness-of-fit tests are also implemented.
 The <code>cph</code> function of the <pkg>Design</pkg> package
@@ -52,14 +56,15 @@ with Firth's penalized likelihood. This
 method has been shown to provide a solution in case of monotone likelihood.
 <pkg>coxrobust</pkg> fits efficiently and robustly Cox models, but in its
 basic form, that is without time-dependent covariates.
-<pkg>intcox</pkg> fits a Cox model for interval censored data by the iterative 
-convex minorant algorithm. The <pkg>NestedCohort</pkg> package permits to
+<pkg>intcox</pkg> fits a Cox model for interval censored data by the iterative  convex minorant algorithm. 
+The <pkg>NestedCohort</pkg> package permits to
 display the Kaplan-Meier estimates of the survival probability
 and to fit a Cox proportional hazards model for nested cohorts.
-<pkg>survival</pkg> and <pkg>proptest</pkg> provides methods 
-to test for the proportional hazards assumption.
 The path following algorithms for GLMs and Cox proportional hazards models havebeen implemented in the <pkg>glmpath</pkg> package. 
 This strategy provided  much smoother feature selection mechanism than the forward stepwise process. 
+The <pkg>mfp</pkg> package fits multiple fractional polynomials for the Cox model.
+<pkg>survival</pkg> and <pkg>proptest</pkg> provides methods 
+to test for the proportional hazards assumption.
 </li>
 
 
@@ -67,20 +72,26 @@ This strategy provided  much smoother feature selection mechanism than the forwa
 The <pkg>survival</pkg> package proposes as a complement of 
 the Cox model the <code>survreg</code> function, which fits linear
 models for the mean of survival or its logarithm with various
-parametric error distributions. Package <pkg>eha</pkg> implements
+parametric error distributions. This function can handle interval-censored 
+observations. The <code>psm</code> function from the <pkg>Design</pkg>
+package is a modification of <code>survreg</code>, using the <code>Design</code>
+class to employ other functionalities provided by the <pkg>Design</pkg> package.
+Package <pkg>eha</pkg> implements
 maximum likelihood estimation of proportional hazards models.
 It reduces to a Cox model when there are no ties in the data.
 This package also proposes the Weibull regression model. As for
 the <pkg>Design</pkg> package, it contains an implementation of the
-Buckley-James regression model. The <pkg>emplik</pkg> package also has
+Buckley-James regression model. 
+The <pkg>emplik</pkg> package also has
 a function to compute the Buckley-James model, but without
-intercept term. <pkg>rankreg</pkg> computes rank regression 
+intercept term. 
+<pkg>rankreg</pkg> computes rank regression 
 estimator for the accelerated failure time model and tests the coefficients against
 a given value. <pkg>emplik</pkg> performs the same test through
 empirical likelihood estimation. A conditional quantile regression
-model for censored data can be fitted using <tt>crq</tt> from the <pkg>quantreg</pkg>
-package. (An older implementation of one of the fitting algorithms is
-available also available in package <pkg>crq</pkg>.)
+model for censored data can be fitted thanks to the <pkg>crq</pkg> package.
+The <pkg>quantreg</pkg> package implements quantile regression and related methods. 
+Portnoy's (2003) method for estimating quantile regression models with random censoring is available in a separate package, <pkg>crq</pkg>, that is folded into <pkg>quantreg</pkg>.
 <pkg>lss</pkg> implements a recent inference procedure based
 on the least-squares principle for the accelerated failure time model.
 The generalized additive models for location, scale and shape (GAMLSS) can also
@@ -94,16 +105,14 @@ regressing survival function based on the restricted mean and
 the Kaplan-Meier estimator.
 The <pkg>tpr</pkg> package fits regression models for temporal
 process responses with time-varying coefficients
-<br />
-The <b>timereg</b> package, not available on CRAN (see links below), contains
-implementations of various models to deal with time-varying effects, like
+The <pkg>timereg</pkg> package contains implementations of various models to deal with time-varying effects, like
 the Aalen additive risk model, the semi-parametric additive risk model 
 by McKeague and Sasieni, the Cox-Aalen model by Scheike and Zhang, 
 the proportional excess hazards model by Martinussen and Scheike, 
 the Cox model with partly time-varying effects by Martinussen, 
 Scheike and Skovgaard, the two-stage estimation method for 
 the Clayton-Oakes-Glidden model and the semiparametric proportional odds model.
-Can also do flexible regression modelling  for competing risks data based on the IPCW direct binomial regression approach (Scheike, Zhang, Gerds, 2008).   </li>
+</li>
 </ul>
 
 <h1>Multistate Models</h1>
@@ -111,16 +120,19 @@ Can also do flexible regression modelling  for competing risks data based on the
   <li><em><b>General Multistate Models:</b></em>
 The <code>coxph</code> function from package <pkg>survival</pkg> can be
 fitted for any transition of a multistate model. It can also
-be used for comparing two transition hazards, using correspondance
+be used for comparing two transition hazards, using correspondence
 between multistate models and time-dependent covariates. Besides,
 all the regression methods presented above can be used for multistate models
 as long as they allow for left-truncation. <br />
 The <pkg>mvna</pkg> package provides convenient functions for estimating
 and plotting the cumulative transition hazards in any multistate model,
 possibly subject to right-censoring and left-truncation.
-<pkg>changeLOS</pkg> permits to estimate and plot the transition probabilties
+<pkg>changeLOS</pkg> permits to estimate and plot the transition probabilities
 for any multistate model. It also estimates the change of length of hospital
 stay. 
+The <pkg>etm</pkg> package estimates and plots transition probabilities
+for any multistate models. It can also estimate the variance of the 
+Aalen-Johansen estimator, and handle left-truncated data.
 The <pkg>msm</pkg> package contains functions for fitting general continuous-time
 Markov and hidden Markov multistate models to longitudinal data. Transition rates 
 and output processes can be modelled in terms of covariates.
@@ -144,9 +156,13 @@ functions for several causes of failure. The package also performs comparison
 in two samples. The package <pkg>cmprsk</pkg> also estimates the cumulative 
 incidence functions, but they can be compared in more than two samples.
 The package also implements the Fine and Gray model for regressing the
-subdistribution hazards. Package <pkg>pseudo</pkg> computes pseudo observations
+subdistribution hazards.
+ Package <pkg>pseudo</pkg> computes pseudo observations
 for modelling competing risks based on the cumulative incidence functions.
-  </li>
+ (Klein and Andersen 2005). 
+<pkg>timereg</pkg> does flexible regression modelling for competing risks data based 
+on the IPCW direct binomial regression approach (Scheike, Zhang, Gerds, 2008)
+</li>
 </ul>
  
 <h1>Relative Survival</h1>
@@ -156,17 +172,20 @@ relative survival with a binomial or a Poisson error, or the
 Andersen at al. multiplicative regression model, which is an 
 extension of the Cox model for relative survival. It can also
 fit the Cox proportional hazards model in transformed times. The 
-package also includes display facilities and miscellaneous others.
+package also includes display facilities and miscellaneous functions.
+The <pkg>timereg</pkg> permits to fit relative survival models like 
+the proportional excess and additive
+excess models.
   </p>
 
 <h1>Multivariate Survival</h1>
 <p> We mean by multivariate survival the analysis of unit,
-e.g., the survival of twins or a family. To analyse 
+e.g., the survival of twins or a family. To analyze 
 such data, we can estimate the joint distribution of the 
 survival times or use frailty models.</p>
 <ul>
   <li><em><b>Joint Modelling</b></em>
-Package <pkg>Icens</pkg> provides various implemention
+Package <pkg>Icens</pkg> provides various implementation
 of methods to find the NPMLE for censored and truncated
 multivariate survival data. Note that some of these
 techniques can be used for standard survival.
@@ -183,9 +202,10 @@ with random effects and possible smooth varying coefficients.
 a penalized likelihood on the hazard function for left-truncated
 and censored data, with a maximum of two strata.
 Joint models for survival data can be fitted using the <pkg>JM</pkg>
-package. It can fit a Weibull accelerated failure time model, an additive log cumulative hazard model or a time-dependent 
-proportional hazards model. <pkg>kinship</pkg> implements 
-a mixed-effects Cox model.
+package. It can fit a Weibull accelerated failure time model, 
+an additive log cumulative hazard model or a time-dependent 
+proportional hazards model. 
+<pkg>kinship</pkg> implements a mixed-effects Cox model.
   </li>
 </ul>
 
@@ -201,18 +221,34 @@ in package <pkg>survBayes</pkg>. Right- and interval-censored data
 and a lognormal or gamma frailty term can be fitted.
 </p>
 
-<h1>Boosting techniques</h1>
+<h1>High-dimensional data</h1>
 <p> The <pkg>mboost</pkg> package includes a random forest 
 and a generic gradient boosting algorithm for the construction
 of prognostic and diagnostic models for right-censored data.
-<pkg>CoxBoost</pkg> provides routines for fitting Cox proportional
-hazards models by likelihood based boosting.
+<pkg>CoxBoost</pkg> provides routines for fitting the Cox proportional
+hazards model and the Fine and Gray model by likelihood based boosting.
 An extension of Random Forest techniques to right-censored data
 can be found in <pkg>randomSurvivalForest</pkg>.
+<pkg>timereg</pkg> implements Lasso model for additive hazards model.
+The <pkg>rpart</pkg> package can do recursive partitioning and regression
+trees for survival data.
+</p>
+
+
+<h1>Predictions and prediction performance</h1>
+<p>
+The <pkg>pec</pkg> package provides utilities to plot 
+prediction error curves for several survival models.
+<pkg>peperr</pkg> implements prediction error techniques 
+which can be computed in a parallelized way. Useful 
+for high-dimensional data.
 </p>
 
 <h1>Other</h1>
-<p> <pkg>KMsurv</pkg> includes the data sets and functions which
+<p> 
+<pkg>prodlim</pkg> provides a function to simulate 
+survival data.
+<pkg>KMsurv</pkg> includes the data sets and functions which
 illustrates Klein and Moeschberger (1997), 
 <q>Survival Analysis, Techniques for Censored and Truncated Data</q>, Springer-Verlag.
 The package <pkg>boot</pkg> contains the function <code>bootcens</code>, which
@@ -259,22 +295,28 @@ The package <pkg>party</pkg> provides various recursive
   <pkg>lss</pkg>
   <pkg>MLEcens</pkg>
   <pkg>mboost</pkg>
+  <pkg>mfp</pkg>
   <pkg>mixPHM</pkg>
   <pkg>msm</pkg>
   <pkg priority="core">muhaz</pkg>
   <pkg>mvna</pkg>
   <pkg>NestedCohort</pkg>
+  <pkg>peperr</pkg>
+  <pkg>pec</pkg>
+  <pkg>prodlim</pkg>
   <pkg>proptest</pkg>
   <pkg>pseudo</pkg>
   <pkg>randomSurvivalForest</pkg>
   <pkg>rankreg</pkg>
   <pkg>relsurv</pkg>
+  <pkg>rpart</pkg>
   <pkg>smoothSurv</pkg>
   <pkg>surv2sample</pkg>
   <pkg>survBayes</pkg>
   <pkg priority="core">survival</pkg>
   <pkg>survivalROC</pkg>
   <pkg>survrec</pkg>
+  <pkg priority="core">timereg</pkg>
   <pkg>TSHRC</pkg>
   <pkg>TwoWaySurvival</pkg>
   <pkg>tpr</pkg>
@@ -283,8 +325,8 @@ The package <pkg>party</pkg> provides various recursive
 <links>
   <view>SocialSciences</view>
   <view>Bayesian</view>
-  <a href="http://staff.pubhealth.ku.dk/~ts/timereg.html">Package: timereg</a>
-  <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">Package: Design</a>
+  
+    <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/Design">The Design package</a>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
   <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing 
