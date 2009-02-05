@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurélien Latouche</maintainer>
-<version>2008-09-01</version>
+<version>2009-02-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -14,8 +14,9 @@ within the relevant time period, producing so-called censored observations.
 </p>
 <p>This task view aims at presenting the useful R packages for the analysis
 of time to event data.</p>
-<p>This is a preliminary task view, and we have likely missed some important 
-information. Please email the task view maintainer with any feedback.</p>
+<p>Please let the 
+<a href="mailto:arthur.allignol@fdm.uni-freiburg.de">maintainers</a> know if 
+something is inaccurate or missing.</p>
 
 
 <h1>Standard Survival Analysis</h1>
@@ -39,7 +40,8 @@ for a general independence hypothesis for arbitrary scales including
 censored variables. Notably the <code>surv_test</code> function for testing 
 the equality of survival distributions in two or more independent groups.
 The <pkg>prodlim</pkg> package computes the Kaplan-Meier estimator with some
-extensions not provided in the <pkg>survival</pkg> package. 
+extensions not provided in the <pkg>survival</pkg> package. The <pkg>NADA</pkg>
+implements basic survival methods for left-censored data.
 
   </li>
 
@@ -60,31 +62,34 @@ basic form, that is without time-dependent covariates.
 The <pkg>NestedCohort</pkg> package permits to
 display the Kaplan-Meier estimates of the survival probability
 and to fit a Cox proportional hazards model for nested cohorts.
-The path following algorithms for GLMs and Cox proportional hazards models havebeen implemented in the <pkg>glmpath</pkg> package. 
+The path following algorithms for GLMs and Cox proportional hazards models have
+been implemented in the <pkg>glmpath</pkg> package. 
 This strategy provided  much smoother feature selection mechanism than the forward stepwise process. 
 The <pkg>mfp</pkg> package fits multiple fractional polynomials for the Cox model.
+<pkg>coxphw</pkg> implements weighted estimation in Cox regression.
 <pkg>survival</pkg> and <pkg>proptest</pkg> provides methods 
 to test for the proportional hazards assumption.
 </li>
 
 
-  <li><em><b>Other Regression Models:</b></em> 
-The <pkg>survival</pkg> package proposes as a complement of 
-the Cox model the <code>survreg</code> function, which fits linear
-models for the mean of survival or its logarithm with various
-parametric error distributions. This function can handle interval-censored 
+  <li><em><b>Other Regression Models:</b></em> The <pkg>survival</pkg>
+package proposes as a complement of the Cox model
+the <code>survreg</code> function, which fits linear models for the
+mean of survival or its logarithm with various parametric error
+distributions. This function can handle interval-censored
+observations. The <pkg>NADA</pkg> package proposes the frontends of
+the <code>survreg</code> function for left-censored
 observations. The <code>psm</code> function from the <pkg>Design</pkg>
-package is a modification of <code>survreg</code>, using the <code>Design</code>
-class to employ other functionalities provided by the <pkg>Design</pkg> package.
-Package <pkg>eha</pkg> implements
-maximum likelihood estimation of proportional hazards models.
-It reduces to a Cox model when there are no ties in the data.
-This package also proposes the Weibull regression model. As for
+package is a modification of <code>survreg</code>, using
+the <code>Design</code> class to employ other functionalities provided
+by the <pkg>Design</pkg> package.  Package <pkg>eha</pkg> implements
+maximum likelihood estimation of proportional hazards models.  It
+reduces to a Cox model when there are no ties in the data.  This
+package also proposes the Weibull regression model. As for
 the <pkg>Design</pkg> package, it contains an implementation of the
-Buckley-James regression model. 
-The <pkg>emplik</pkg> package also has
-a function to compute the Buckley-James model, but without
-intercept term. 
+Buckley-James regression model.  The <pkg>emplik</pkg> package also
+has a function to compute the Buckley-James model, but without
+intercept term.
 <pkg>rankreg</pkg> computes rank regression 
 estimator for the accelerated failure time model and tests the coefficients against
 a given value. <pkg>emplik</pkg> performs the same test through
@@ -104,15 +109,13 @@ The <pkg>pseudo</pkg> package computes pseudo observations for
 regressing survival function based on the restricted mean and
 the Kaplan-Meier estimator.
 The <pkg>tpr</pkg> package fits regression models for temporal
-process responses with time-varying coefficients
+process responses with time-varying coefficients.
 The <pkg>timereg</pkg> package contains implementations of various models to deal with time-varying effects, like
 the Aalen additive risk model, the semi-parametric additive risk model 
 by McKeague and Sasieni, the Cox-Aalen model by Scheike and Zhang, 
 the proportional excess hazards model by Martinussen and Scheike, 
 the Cox model with partly time-varying effects by Martinussen, 
-Scheike and Skovgaard, the two-stage estimation method for 
-the Clayton-Oakes-Glidden model and the semiparametric proportional odds model.
-</li>
+Scheike and Skovgaard and the semiparametric proportional odds model.</li>
 </ul>
 
 <h1>Multistate Models</h1>
@@ -132,7 +135,7 @@ for any multistate model. It also estimates the change of length of hospital
 stay. 
 The <pkg>etm</pkg> package estimates and plots transition probabilities
 for any multistate models. It can also estimate the variance of the 
-Aalen-Johansen estimator, and handle left-truncated data.
+Aalen-Johansen estimator, and handles left-truncated data.
 The <pkg>msm</pkg> package contains functions for fitting general continuous-time
 Markov and hidden Markov multistate models to longitudinal data. Transition rates 
 and output processes can be modelled in terms of covariates.
@@ -191,7 +194,7 @@ multivariate survival data. Note that some of these
 techniques can be used for standard survival.
 The package <pkg>MLEcens</pkg> permits to compute the nonparametric
 maximum likelihood estimator for bivariate distributions when the 
-failure times cannot be directly observed.
+failure times cannot be directly observed. 
   </li>
 
   <li><em><b>Frailties:</b></em>
@@ -206,6 +209,10 @@ package. It can fit a Weibull accelerated failure time model,
 an additive log cumulative hazard model or a time-dependent 
 proportional hazards model. 
 <pkg>kinship</pkg> implements a mixed-effects Cox model.
+The <pkg>timereg</pkg> implements the two-stage estimation method for 
+the Clayton-Oakes-Glidden model. Frailties can also be fitted
+by <code>coxph</code> and functions in <pkg>timereg</pkg>.
+
   </li>
 </ul>
 
@@ -231,7 +238,8 @@ An extension of Random Forest techniques to right-censored data
 can be found in <pkg>randomSurvivalForest</pkg>.
 <pkg>timereg</pkg> implements Lasso model for additive hazards model.
 The <pkg>rpart</pkg> package can do recursive partitioning and regression
-trees for survival data.
+trees for survival data. The <pkg>lpc</pkg> package computes the Lassoed 
+Principal Components method for survival outcomes, among others. 
 </p>
 
 
@@ -259,10 +267,11 @@ The <pkg>TwoWaySurv</pkg> package fits an additive hazard model
 for data where, besides the follow-time, a non-periodic calendar 
 time is also taken into account.
 The package <pkg>party</pkg> provides various recursive
-     partitioning algorithms that are also applicable to censored
-     responses (conditional inference trees/forests, model-based recursive
-     partitioning).
-
+partitioning algorithms that are also applicable to censored
+responses (conditional inference trees/forests, model-based recursive
+partitioning). Fonctions to analyse censored data from generalised 
+Birnbaum-Saunders distributions can be found in the <pkg>gbs</pkg>
+package.
 </p>
 
 </info>
@@ -277,6 +286,7 @@ The package <pkg>party</pkg> provides various recursive
   <pkg priority="core">cmprsk</pkg>
   <pkg>coxphf</pkg>
   <pkg>coxrobust</pkg>
+  <pkg>coxphw</pkg>
   <pkg>crq</pkg>
   <pkg priority="core">Design</pkg>
   <pkg>DPpackage</pkg>
@@ -290,8 +300,10 @@ The package <pkg>party</pkg> provides various recursive
   <pkg>Icens</pkg>
   <pkg>intcox</pkg>
   <pkg>JM</pkg>
+  <pkg>gbs</pkg>
   <pkg>KMsurv</pkg>
   <pkg>kinship</pkg>
+  <pkg>lpc</pkg>
   <pkg>lss</pkg>
   <pkg>MLEcens</pkg>
   <pkg>mboost</pkg>
@@ -300,6 +312,7 @@ The package <pkg>party</pkg> provides various recursive
   <pkg>msm</pkg>
   <pkg priority="core">muhaz</pkg>
   <pkg>mvna</pkg>
+  <pkg>NADA</pkg>
   <pkg>NestedCohort</pkg>
   <pkg>peperr</pkg>
   <pkg>pec</pkg>
@@ -337,3 +350,4 @@ The package <pkg>party</pkg> provides various recursive
 </links>
 
 </CRANTaskView>
+
