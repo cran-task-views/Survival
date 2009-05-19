@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurélien Latouche</maintainer>
-<version>2009-02-04</version>
+<version>2009-05-19</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -58,7 +58,6 @@ with Firth's penalized likelihood. This
 method has been shown to provide a solution in case of monotone likelihood.
 <pkg>coxrobust</pkg> fits efficiently and robustly Cox models, but in its
 basic form, that is without time-dependent covariates.
-<pkg>intcox</pkg> fits a Cox model for interval censored data by the iterative  convex minorant algorithm. 
 The <pkg>NestedCohort</pkg> package permits to
 display the Kaplan-Meier estimates of the survival probability
 and to fit a Cox proportional hazards model for nested cohorts.
@@ -223,9 +222,6 @@ Parameter estimation is made using MCMC methods.
 The package <pkg>DPpackage</pkg> includes a generic function
 to fit a mixture of Dirichlet process in an accelerated failure
 time model for interval censored data.
-A proportional hazards model using a Bayesian approach is implemented
-in package <pkg>survBayes</pkg>. Right- and interval-censored data
-and a lognormal or gamma frailty term can be fitted.
 </p>
 
 <h1>High-dimensional data</h1>
@@ -298,7 +294,6 @@ package.
   <pkg>gcmrec</pkg>
   <pkg>glmpath</pkg>
   <pkg>Icens</pkg>
-  <pkg>intcox</pkg>
   <pkg>JM</pkg>
   <pkg>gbs</pkg>
   <pkg>KMsurv</pkg>
@@ -325,7 +320,6 @@ package.
   <pkg>rpart</pkg>
   <pkg>smoothSurv</pkg>
   <pkg>surv2sample</pkg>
-  <pkg>survBayes</pkg>
   <pkg priority="core">survival</pkg>
   <pkg>survivalROC</pkg>
   <pkg>survrec</pkg>
