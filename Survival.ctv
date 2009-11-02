@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aur??lien Latouche</maintainer>
-<version>2009-09-29</version>
+<version>2009-11-02</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -155,9 +155,7 @@ something is inaccurate or missing.</p>
     A Cox model model can be fitted to data from complex survey design 
     using the <code>svycoxph</code> function in <pkg>survey</pkg>.
     The <pkg>OrdFacReg</pkg> package implements the Cox model using an active
-    set algorithm for dummy variables of ordered factors.
-    Package <pkg>SimHap</pkg> fits the Cox model to epidemiological, 
-    SNP and haplotypes survival data.<br/>
+    set algorithm for dummy variables of ordered factors.<br/>
     The <code>cumres</code> function in <pkg>gof</pkg> computes goodness-of-fit
     methods for the Cox proportional hazards model.
     The proportionality assumption can be checked using the <code>cox.zph</code> function 
@@ -202,8 +200,6 @@ something is inaccurate or missing.</p>
     The <pkg>NADA</pkg> package proposes the frontend of the <code>survreg</code> 
     function for left-censored data.
     The <pkg>lss</pkg> package implements an AFT model based on the least-squares principle.
-    The <pkg>rankreg</pkg> package fits an AFT model using 
-    rank methodology.
   </li>
 
   <li>
@@ -594,13 +590,11 @@ something is inaccurate or missing.</p>
 <pkg>pseudo</pkg>
 <pkg>randomSurvivalForest</pkg>
 <pkg>rankhazard</pkg>
-<pkg>rankreg</pkg>
 <pkg>relsurv</pkg>
 <pkg>risksetROC</pkg>
 <pkg>rhosp</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>rpart</pkg>
-<pkg>SimHap</pkg>
 <pkg>SMIR</pkg>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
