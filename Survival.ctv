@@ -3,8 +3,8 @@
 
 <name>Survival</name>
 <topic>Survival Analysis</topic>
-<maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aur??lien Latouche</maintainer>
-<version>2009-11-02</version>
+<maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
+<version>2010-05-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -32,7 +32,7 @@ something is inaccurate or missing.</p>
     not included in <pkg>survival</pkg>.
     Various confidence intervals and confidence bands for the Kaplan-Meier estimator 
     are implemented in the <pkg>km.ci</pkg> package.
-    <code>plot.Surv</code> of package <pkg>eha</pkg> permits to plot 
+    <code>plot.Surv</code> of package <pkg>eha</pkg> plots
     the Kaplan-Meier estimator.
     The <pkg>NADA</pkg> package includes a function to compute the Kaplan-Meier 
     estimator for left-censored data.
@@ -58,6 +58,8 @@ something is inaccurate or missing.</p>
     function for left- and right-censored data.
     The <code>icfit</code> function in package <pkg>interval</pkg> computes the NPMLE
     for interval-censored data.
+    The <pkg>DTDA</pkg> implements several algorithms permitting to analyse possibly doubly 
+    truncated survival data.
   </li>
   <li>
     <b><em>MLE:</em></b>
@@ -90,8 +92,8 @@ something is inaccurate or missing.</p>
 <ul>
   <li>
     The <code>survdiff</code> function in <pkg>survival</pkg>
-    compares survival curves using the G-rho family of test,
-    while <pkg>NADA</pkg> implements the same tests for left-censored
+    compares survival curves using the Fleming-Harrington G-rho family of test. 
+    <pkg>NADA</pkg> implements this class of tests for left-censored
     data.
   </li>
   <li>
@@ -105,7 +107,7 @@ something is inaccurate or missing.</p>
   </li>
   <li>
     <pkg>surv2sample</pkg> computes Neyman's smooth, logrank,
-    Kolmogorov???Smirnov, Cramer???von Mises and Anderson???Darling tests
+    Kolmogorov-Smirnov, Cramer-von Mises and Anderson-Darling tests
     to compare 2 survival curves.
   </li>
   <li>
@@ -113,7 +115,7 @@ something is inaccurate or missing.</p>
     rank statistics.
   </li>
   <li>
-    The <pkg>interval</pkg> package implements lograng and Wilcoxon type tests 
+    The <pkg>interval</pkg> package implements logrank and Wilcoxon type tests 
     for interval-censored data.
   </li>
   <li>
@@ -149,6 +151,8 @@ something is inaccurate or missing.</p>
     <pkg>intcox</pkg> package.
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.
+    The <pkg>flexCrossHaz</pkg> permits to fit Cox models with time-varying effects 
+    using P-splines and possible crossing points.
     The <pkg>mfp</pkg> package permits to fit Cox models with multiple 
     fractional polynomial.
     The <pkg>NestedCohort</pkg> fits Cox models for covariates with missing data.
@@ -174,8 +178,7 @@ something is inaccurate or missing.</p>
 
   <li>
     <b><em>Parametric Proportional Hazards Model:</em></b>
-    <code>survreg</code> (from <pkg>survival</pkg>) and other 
-    version of it (see below), can be used to fit a parametric
+    <code>survreg</code> (from <pkg>survival</pkg>) fits a parametric
     proportional hazards model.
     The <pkg>eha</pkg> and <pkg>mixPHM</pkg> packages
     implement a proportional hazards model with a parametric baseline
@@ -197,7 +200,7 @@ something is inaccurate or missing.</p>
     (function <code>aftreg</code>).
     An AFT model with an error distribution assumed to be a mixture of G-splines
     is implemented in the <pkg>smoothSurv</pkg> package.
-    The <pkg>NADA</pkg> package proposes the frontend of the <code>survreg</code> 
+    The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
     function for left-censored data.
     The <pkg>lss</pkg> package implements an AFT model based on the least-squares principle.
   </li>
@@ -270,22 +273,33 @@ something is inaccurate or missing.</p>
     The <pkg>mvna</pkg> package provides convenient functions for estimating
     and plotting the cumulative transition hazards in any multistate model,
     possibly subject to right-censoring and left-truncation.
-    <pkg>changeLOS</pkg> permits to estimate and plot the transition probabilities
-    for any multistate model. It also estimates the change of length of hospital
-    stay. 
-    The <pkg>etm</pkg> package estimates and plots transition probabilities
-    for any multistate models. It can also estimate the variance of the 
-    Aalen-Johansen estimator, and handles left-truncated data. It also implements 
-    the technique for estimating the length of hospital stay included in <pkg>changeLOS</pkg>
-    in the presence of left-truncation.
-    The <pkg>mstate</pkg> package permits to estimate hazards and probabilities, 
-    possibly depending on covariates, and to obtain prediction probabilities in the 
-    context of competing risks and multistate models.
-    The <pkg>msm</pkg> package contains functions for fitting general continuous-time
-    Markov and hidden Markov multistate models to longitudinal data. Transition rates 
-    and output processes can be modelled in terms of covariates.
-    Nonparametric estimates in illness-death models and other three state models can be 
-    obtained with package <pkg>p3state.msm</pkg>.
+    <pkg>changeLOS</pkg> permits to estimate and plot the transition
+    probabilities for any multistate model. It also estimates the
+    change of length of hospital stay.  
+    The <pkg>etm</pkg> package
+    estimates and plots transition probabilities for any multistate
+    models. It can also estimate the variance of the Aalen-Johansen
+    estimator, and handles left-truncated data. It also implements the
+    technique for estimating the length of hospital stay included
+    in <pkg>changeLOS</pkg> in the presence of left-truncation.
+    The <pkg>mstate</pkg> package permits to estimate hazards and
+    probabilities, possibly depending on covariates, and to obtain
+    prediction probabilities in the context of competing risks and
+    multistate models.  
+    The <pkg>msm</pkg> package contains functions
+    for fitting general continuous-time Markov and hidden Markov
+    multistate models to longitudinal data. Transition rates and
+    output processes can be modelled in terms of covariates. 
+    The <pkg>mspath</pkg> package, based on <pkg>msm</pkg>, can fit 
+    non-Markov multistate models by maximum likelihood, using a 
+    discrete-time approximation.
+    Nonparametric estimates in illness-death models and other three
+    state models can be obtained with
+    package <pkg>p3state.msm</pkg>.<br/>
+    The <pkg>Epi</pkg> package implements Lexis objects as a way to represent, 
+    manipulate and summarise data from multistate models. 
+    The <pkg>TraMineR</pkg> package is intended for analysing
+    state or event sequences that describe life courses. 
   </li>
   
   <li>
@@ -295,7 +309,7 @@ something is inaccurate or missing.</p>
     in two samples. 
     The package <pkg>cmprsk</pkg> also estimates the cumulative 
     incidence functions, but they can be compared in more than two samples.
-    The package also implements the Fine and Gray model (1999) for regressing the
+    The package also implements the Fine and Gray model for regressing the
     subdistribution hazard of a competing risk.
     The <pkg>kmi</pkg> package performs a Kaplan-Meier multiple imputation to recover missing 
     potential censoring information from competing risks events, permitting to use standard
@@ -303,11 +317,16 @@ something is inaccurate or missing.</p>
     Package <pkg>pseudo</pkg> computes pseudo observations
     for modelling competing risks based on the cumulative incidence functions.
     <pkg>timereg</pkg> does flexible regression modelling for competing risks data based 
-    on the IPCW direct binomial regression approach.
+    on the on the inverse-probability-censoring-weights and direct binomial regression approach.
     The <pkg>CompetingRiskFrailty</pkg> package estimates the cause-specific hazards
     of a competing risks model using frailties and splines. 
+    The <pkg>Cprob</pkg> package estimates the  conditional probability  of a competing event, aka., 
+    the conditional cumulative incidence. It also implements a proportional-odds model using either  
+    the temporal process regression or the pseudo-value approaches.
     Packages <pkg>survival</pkg> (via <code>survfit</code>) and <pkg>prodlim</pkg>
     can also be used to estimate the cumulative incidence function.
+    <pkg>RandomSurvivalForest</pkg> provides summary measures for 
+    competing risk such as ensemble CIF.
   </li>
   
   <li>
@@ -316,7 +335,9 @@ something is inaccurate or missing.</p>
     analyse recurrent event data.
     The <code>cph</code> function of the <pkg>rms</pkg> package fits the Anderson-Gill
     model for recurrent events, model that can also be fitted with the
-    <pkg>frailtypack</pkg> package. The <pkg>survrec</pkg> package proposes
+    <pkg>frailtypack</pkg> package. The latter also permits to fit joint 
+    frailty models for joint modelling of recurrent events and a terminal event. 
+    The <pkg>survrec</pkg> package proposes
     implementations of several models for recurrent events data, such as
     the Pe??a-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
     under a Gamma Frailty model. The Pe??a-Hollander model can be fitted using
@@ -343,7 +364,7 @@ something is inaccurate or missing.</p>
 
 <h1>Multivariate Survival</h1>
 <p> 
-  We mean by multivariate survival the analysis of unit,
+  Multivariate survival refers to  the analysis of unit,
   e.g., the survival of twins or a family. To analyse 
   such data, we can estimate the joint distribution of the 
   survival times or use frailty models.
@@ -352,7 +373,7 @@ something is inaccurate or missing.</p>
   <li>
     <em><b>Joint modelling:</b></em>
     Both <pkg>Icens</pkg> and <pkg>MLEcens</pkg> can estimate bivariate
-    survival data subject to interval censoring.
+    survival data subject to interval censoring. 
   </li>
   <li>
     <em><b>Frailties:</b></em>
@@ -364,7 +385,9 @@ something is inaccurate or missing.</p>
     fits the Clayton-Oakes-Glidden model.
     The <pkg>frailtypack</pkg> package fits proportional hazards models with a shared Gamma
     frailty to right-censored and/or left-truncated data using a penalised 
-    likelihood on the hazard function.
+    likelihood on the hazard function. The package also fits additive and nested frailty 
+    models that can be used for, e.g., meta-analysis and for hierarchically clustered data 
+    (with 2 levels of clustering), respectively.
     A proportional hazards model with mixed effects can be fitted using the 
     <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
     linear mixed-effects model for left-censored data.
@@ -382,11 +405,11 @@ something is inaccurate or missing.</p>
     AFT model. 
   </li>
   <li> 
-    The package <pkg>BMA</pkg> computes a bayesian model averaging for
+    The package <pkg>BMA</pkg> computes a Bayesian model averaging for
     Cox proportional hazards models.
   </li>
   <li>
-    The <code>DPsurvint</code> function in <pkg>DPpackage</pkg> fits a bayesian
+    The <code>DPsurvint</code> function in <pkg>DPpackage</pkg> fits a Bayesian
     semiparametric AFT model. <code>LDDPsurvival</code> in the same package 
     fits a Linear Dependent Dirichlet Process Mixture of survival models.
   </li>
@@ -426,7 +449,7 @@ something is inaccurate or missing.</p>
     <em><b>Random forest:</b></em>
     Package <pkg>ipred</pkg> implements bagging for survival data.
     The <pkg>randomSurvivalForest</pkg> package fits random forest
-    to survival data
+    to survival data,
     while a variant of the random forest is implemented in <pkg>party</pkg>.
   </li>
   <li>
@@ -455,7 +478,9 @@ something is inaccurate or missing.</p>
   <li>
     <em><b>Other:</b></em>
     The <pkg>superpc</pkg> package implements the supervised principal components
-    for survival data.
+    for survival data. 
+    The <pkg>AIM</pkg> package can construct index models for survival outcomes, that is, 
+    construct scores based on a training dataset.
   </li>
 </ul>
 
@@ -470,14 +495,26 @@ something is inaccurate or missing.</p>
     be computed in a parallelised way. Useful for high-dimensional
     data.
   </li>
+  <li> 
+    <pkg>survivalROC</pkg>  computes time-dependent ROC curves and time-dependent AUC from 
+    censored data using Kaplan-Meier or Akritas's nearest neighbour estimation method 
+    (Cumulative sensitivity and dynamic specificity).
+    <pkg>risksetROC</pkg>  considers time-dependent  
+    Incident sensitivity and dynamic specificity to compute 
+    time-dependent accuracy measures.
+  </li>
+  <li>
+    The <pkg>survcomp</pkg> package provides several functions to
+    assess and compare the performance of survival models.
+  </li>
 </ul>
 
 <h1>Miscellaneous</h1>
 <ul>
   <li>
-    The <pkg>Epi</pkg> package implements functions for demographic and epidemiological 
-    analysis in the Lexis diagram, that can be used also for interval-censored data
-    and for representing multistate model data.
+    Inverse probability weights can be estimated using the <pkg>ipw</pkg> package.
+    These can be used to fit marginal structural models to estimate causal effects
+    from observational data.
   </li>
   <li>
     Package <pkg>boot</pkg> proposes the <code>censboot</code> function that 
@@ -490,21 +527,13 @@ something is inaccurate or missing.</p>
     and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
     W.J. (2003, 2007) also contain survival data sets.
   </li>
-  <li> <pkg>survivalROC</pkg> computes time-dependent ROC curves from
-    censored data using Kaplan-Meier or nearest neighbour estimation
-    method, while <pkg>risksetROC</pkg> computes ROC curves and AUC  
-    under proportional or non-proportional hazards assumption.
-  </li>
-  <li>
-    The <pkg>survcomp</pkg> package provides several functions to
-    assess and compare the performance of survival models.
-  </li>
 </ul>
 
 </info>
 
 <packagelist>
 <pkg>AER</pkg>
+<pkg>AIM</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
 <pkg>BMA</pkg>
@@ -522,16 +551,19 @@ something is inaccurate or missing.</p>
 <pkg>coxphw</pkg>
 <pkg>coxrobust</pkg>
 <pkg>CPE</pkg>
+<pkg>Cprob</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
 <pkg>Design</pkg>
 <pkg>DPpackage</pkg>
+<pkg>DTDA</pkg>
 <pkg priority="core">eha</pkg>
 <pkg>emplik</pkg>
 <pkg>Epi</pkg>
 <pkg>epiR</pkg>
 <pkg>etm</pkg>
 <pkg>fitdistrplus</pkg>
+<pkg>flexCrossHaz</pkg>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
 <pkg>gbm</pkg>
@@ -544,6 +576,7 @@ something is inaccurate or missing.</p>
 <pkg>intcox</pkg>
 <pkg>interval</pkg>
 <pkg>ipred</pkg>
+<pkg>ipw</pkg>
 <pkg>JM</pkg>
 <pkg>kinship</pkg>
 <pkg>km.ci</pkg>
@@ -566,6 +599,7 @@ something is inaccurate or missing.</p>
 <pkg>mixPHM</pkg>
 <pkg>MLEcens</pkg>
 <pkg>msm</pkg>
+<pkg>mspath</pkg>
 <pkg>mstate</pkg>
 <pkg priority="core">muhaz</pkg>
 <pkg>multcomp</pkg>
@@ -609,6 +643,7 @@ something is inaccurate or missing.</p>
 <pkg>survrec</pkg>
 <pkg priority="core">timereg</pkg>
 <pkg>tpr</pkg>
+<pkg>TraMineR</pkg>
 <pkg>TSHRC</pkg>
 <pkg>TwoWaySurvival</pkg>
 <pkg>uniCox</pkg>
