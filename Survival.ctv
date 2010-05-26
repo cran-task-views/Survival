@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2010-05-04</version>
+<version>2010-05-26</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -339,8 +339,8 @@ something is inaccurate or missing.</p>
     frailty models for joint modelling of recurrent events and a terminal event. 
     The <pkg>survrec</pkg> package proposes
     implementations of several models for recurrent events data, such as
-    the Pe??a-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
-    under a Gamma Frailty model. The Pe??a-Hollander model can be fitted using
+    the Pe&#241;a-Strawderman-Hollander, Wang-Chang estimators, and MLE estimation 
+    under a Gamma Frailty model. The Pe&#241;a-Hollander model can be fitted using
     the <pkg>gcmrec</pkg> package. 
     The <pkg>condGEE</pkg> package implements the conditional GEE for recurrent 
     event gap times.
@@ -662,7 +662,11 @@ something is inaccurate or missing.</p>
     risks and multistate models</a>
   <a href="http://www.msbi.nl/dnn/Research/SurvivalAnalysis/Multistate/tabid/144/Default.aspx">Associated
     functions from the tutorial</a>
-  <a href="http://staff.pubhealth.ku.dk/~ts/survival/2008/">Course on survival analysis</a>
+  <a href="http://www.math.uu.se/staff/pages/?uname=garmo">Course and exercise on survival analysis</a>
+  <a href="http://cran.r-project.org/doc/contrib/Fox-Companion/appendix-cox-regression.pdf">Proportional-Hazards
+    Regression for Survival Data. Appendix to An R and S-PLUS
+    Companion to Applied Regression.</a>
+
 </links>
 
 </CRANTaskView>
