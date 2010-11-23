@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2010-07-30</version>
+<version>2010-11-23</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -17,6 +17,7 @@ of time to event data.</p>
 <p>Please let the 
 <a href="mailto:arthur.allignol@fdm.uni-freiburg.de">maintainers</a> know if 
 something is inaccurate or missing.</p>
+
 
 <h1>Standard Survival Analysis</h1>
 
@@ -46,6 +47,8 @@ something is inaccurate or missing.</p>
     The <code>KM</code> function in package <pkg>rhosp</pkg> plots the survival 
     function using a variant of the Kaplan-Meier estimator in a hospitalisation 
     risk context.
+    The <pkg>survPresmooth</pkg> package computes presmoothed estimates of the main quantities used 
+    for right-censored data, i.e., survival, hazard and density functions.
   </li>
 
   <li>
@@ -102,6 +105,10 @@ something is inaccurate or missing.</p>
     covariates.
   </li>
   <li>
+    The <pkg>exactRankTests</pkg> implements the shift-algorithm by Streitberg and Roehmel for 
+    computing exact conditional p-values and quantiles, possibly for censored data.
+  </li>
+  <li>
     <code>SurvTest</code> in the <pkg>coin</pkg> package implements 
     the logrank test reformulated as a linear rank test.
   </li>
@@ -119,6 +126,10 @@ something is inaccurate or missing.</p>
     for interval-censored data.
   </li>
   <li>
+    Three generalised logrank tests and a score test for interval-censored data
+    are implemented in the <pkg>glrt</pkg> package.
+  </li>
+  <li>
     <pkg>survcomp</pkg> compares 2 hazard ratios.
   </li>
   <li>
@@ -128,7 +139,7 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>cmprskContin</pkg> package compares continuous mark-specific relative 
     risks in two treatment groups, with a view towards vaccine trials.
-  </li>  
+  </li>
 </ul>
   
 <p><strong>Regression Modelling</strong></p>
@@ -172,6 +183,8 @@ something is inaccurate or missing.</p>
     model and other parametric survival models.
     The <pkg>multtest</pkg> package proposes a resampling based multiple hypothesis testing
     that can be applied to the Cox model.
+    Testing coefficients of Cox regression models using a Wald test with a 
+    sandwich estimator of variance can be done using the <pkg>saws</pkg> package.
     The <pkg>rankhazard</pkg> package permits to plot visualisation of the relative importance 
     of covariates in a proportional hazards model.
   </li>
@@ -202,7 +215,9 @@ something is inaccurate or missing.</p>
     is implemented in the <pkg>smoothSurv</pkg> package.
     The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
     function for left-censored data.
-    The <pkg>lss</pkg> package implements an AFT model based on the least-squares principle.
+    A least-square principled implementation of the AFT model can be found in the <pkg>lss</pkg> package.
+    The <pkg>simexaft</pkg> package implements the Simulation-Extrapolation algorithm for the 
+    AFT model, that can be used when covariates are subject to measurement error.
   </li>
 
   <li>
@@ -229,10 +244,12 @@ something is inaccurate or missing.</p>
     a tobit model.
     The <pkg>AER</pkg> package provides the <code>tobit</code> function,
     which is a wrapper of <code>survreg</code> to fit the tobit model.
+    An implementation of the tobit model for cross-sectional data and panel data
+    can be found in the <pkg>censReg</pkg> package.
     The <pkg>timereg</pkg> package provides implementation of 
     the proportional odds model and of the proportional excess hazards
     model.
-    The <pkg>pseuso</pkg> package computes the pseudo-observation for 
+    The <pkg>pseudo</pkg> package computes the pseudo-observation for 
     modelling the survival function based on the Kaplan-Meier estimator
     and the restricted mean.
     The <code>Icens</code> function in package <pkg>Epi</pkg> provides
@@ -256,6 +273,10 @@ something is inaccurate or missing.</p>
     package.
     The <pkg>TwoWaySurvival</pkg> package permits to fit an additive model using 
     two time scales.
+    The <pkg>spef</pkg> package fits a proportional means model for panel count 
+    survival data.
+    Aster models, which combine aspects of generalized linear models and Cox models, are 
+    implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
   </li>
 </ul>
 
@@ -432,6 +453,11 @@ something is inaccurate or missing.</p>
     The <pkg>MCMCglmm</pkg> fits generalised linear mixed models using MCMC
     to right-, left- and interval censored data.
   </li>
+  <li>
+    The <pkg>splinesurv</pkg> package implements a proportional hazards model 
+    for possibly clustered survival data using MCMC. Baseline hazard and frailty 
+    densities are modelled using B-splines.
+  </li>
 </ul>
 
 <h1>High-Dimensional Data</h1>
@@ -530,10 +556,13 @@ something is inaccurate or missing.</p>
 <packagelist>
 <pkg>AER</pkg>
 <pkg>AIM</pkg>
+<pkg>aster</pkg>
+<pkg>aster2</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
 <pkg>BMA</pkg>
 <pkg>boot</pkg>
+<pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
@@ -558,6 +587,7 @@ something is inaccurate or missing.</p>
 <pkg>Epi</pkg>
 <pkg>epiR</pkg>
 <pkg>etm</pkg>
+<pkg>exactRankTests</pkg>
 <pkg>fitdistrplus</pkg>
 <pkg>flexCrossHaz</pkg>
 <pkg>frailtypack</pkg>
@@ -565,6 +595,7 @@ something is inaccurate or missing.</p>
 <pkg>gbm</pkg>
 <pkg>gcmrec</pkg>
 <pkg>glmpath</pkg>
+<pkg>glrt</pkg>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
@@ -624,10 +655,14 @@ something is inaccurate or missing.</p>
 <pkg>rhosp</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>rpart</pkg>
+<pkg>saws</pkg>
+<pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
+<pkg>spef</pkg>
+<pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
 <pkg>survBayes</pkg>
@@ -636,6 +671,7 @@ something is inaccurate or missing.</p>
 <pkg priority="core">survival</pkg>
 <pkg>survivalROC</pkg>
 <pkg>survrec</pkg>
+<pkg>survPresmooth</pkg>
 <pkg priority="core">timereg</pkg>
 <pkg>tpr</pkg>
 <pkg>TraMineR</pkg>
