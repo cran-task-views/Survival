@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2010-11-30</version>
+<version>2011-04-26</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -126,15 +126,15 @@ something is inaccurate or missing.</p>
     are implemented in the <pkg>glrt</pkg> package.
   </li>
   <li>
-    <pkg>survcomp</pkg> compares 2 hazard ratios.
-  </li>
-  <li>
     The <pkg>TSHRC</pkg> implements a two stage procedure for comparing
     hazard functions.
   </li>
   <li>
     The <pkg>cmprskContin</pkg> package compares continuous mark-specific relative 
     risks in two treatment groups, with a view towards vaccine trials.
+  </li>
+  <li>
+    <bioc>survcomp</bioc> compares 2 hazard ratios.
   </li>
 </ul>
   
@@ -520,7 +520,7 @@ something is inaccurate or missing.</p>
     (Cumulative sensitivity and dynamic specificity).
   </li>
   <li>
-    The <pkg>survcomp</pkg> package provides several functions to
+    The <bioc>survcomp</bioc> package provides several functions to
     assess and compare the performance of survival models.
   </li>
 </ul>
@@ -659,7 +659,6 @@ something is inaccurate or missing.</p>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
 <pkg>survBayes</pkg>
-<pkg>survcomp</pkg>
 <pkg>survey</pkg>
 <pkg priority="core">survival</pkg>
 <pkg>survivalROC</pkg>
@@ -679,6 +678,7 @@ something is inaccurate or missing.</p>
   <view>SocialSciences</view>
   <view>Bayesian</view>
   <view>MachineLearning</view>
+  <bioc>survcomp</bioc>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
   <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing 
