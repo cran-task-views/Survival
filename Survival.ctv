@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-05-02</version>
+<version>2011-05-11</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -181,7 +181,7 @@ something is inaccurate or missing.</p>
     curve of the survival distribution as a function of covariates.
     The <pkg>multcomp</pkg> package computes simultaneous tests and confidence intervals for the Cox 
     model and other parametric survival models.
-    The <pkg>multtest</pkg> package proposes a resampling based multiple hypothesis testing
+    The <bioc>multtest</bioc> package on Bioconductor proposes a resampling based multiple hypothesis testing
     that can be applied to the Cox model.
     Testing coefficients of Cox regression models using a Wald test with a 
     sandwich estimator of variance can be done using the <pkg>saws</pkg> package.
@@ -680,7 +680,6 @@ something is inaccurate or missing.</p>
 <pkg>mstate</pkg>
 <pkg priority="core">muhaz</pkg>
 <pkg>multcomp</pkg>
-<pkg>multtest</pkg>
 <pkg>mvna</pkg>
 <pkg>mvpart</pkg>
 <pkg>NADA</pkg>
@@ -742,6 +741,7 @@ something is inaccurate or missing.</p>
   <view>SocialSciences</view>
   <view>Bayesian</view>
   <view>MachineLearning</view>
+  <bioc>multtest</bioc>
   <bioc>survcomp</bioc>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
