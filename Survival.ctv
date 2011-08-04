@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-05-11</version>
+<version>2011-08-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -162,8 +162,6 @@ something is inaccurate or missing.</p>
     <pkg>intcox</pkg> package.
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.
-    The <pkg>flexCrossHaz</pkg> permits to fit Cox models with time-varying effects 
-    using P-splines and possible crossing points.
     The <pkg>mfp</pkg> package permits to fit Cox models with multiple 
     fractional polynomial.
     The <pkg>NestedCohort</pkg> fits Cox models for covariates with missing data.
@@ -636,7 +634,6 @@ something is inaccurate or missing.</p>
 <pkg>etm</pkg>
 <pkg>exactRankTests</pkg>
 <pkg>fitdistrplus</pkg>
-<pkg>flexCrossHaz</pkg>
 <pkg>frailtyHL</pkg>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
