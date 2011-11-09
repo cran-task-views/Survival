@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-08-04</version>
+<version>2011-11-09</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -53,7 +53,7 @@ something is inaccurate or missing.</p>
 
   <li>
     <b><em>Nonparametric maximum likelihood estimation (NPMLE):</em></b>
-    The <pkg>Icens</pkg> package provides several ways to compute the NPMLE
+    The <bioc>Icens</bioc> package provides several ways to compute the NPMLE
     of the survival distribution for various censoring and truncation 
     schemes.
     <pkg>MLEcens</pkg> can also be used to compute the MLE for interval-censored data.
@@ -399,7 +399,7 @@ something is inaccurate or missing.</p>
 <ul>
   <li>
     <em><b>Joint modelling:</b></em>
-    Both <pkg>Icens</pkg> and <pkg>MLEcens</pkg> can estimate bivariate
+    Both <bioc>Icens</bioc> and <pkg>MLEcens</pkg> can estimate bivariate
     survival data subject to interval censoring. 
   </li>
   <li>
@@ -645,7 +645,6 @@ something is inaccurate or missing.</p>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
-<pkg>Icens</pkg>
 <pkg>intcox</pkg>
 <pkg>interval</pkg>
 <pkg>ipred</pkg>
@@ -738,6 +737,7 @@ something is inaccurate or missing.</p>
   <view>SocialSciences</view>
   <view>Bayesian</view>
   <view>MachineLearning</view>
+  <bioc>Icens</bioc>
   <bioc>multtest</bioc>
   <bioc>survcomp</bioc>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
