@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-11-09</version>
+<version>2011-11-14</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -27,7 +27,7 @@ something is inaccurate or missing.</p>
   <li><b><em>Kaplan-Meier:</em></b>
     The <code>survfit</code> function from the <pkg>survival</pkg> package 
     computes the Kaplan-Meier estimator for truncated and/or censored data.
-    <pkg>rms</pkg> (replacement of the <pkg>Design</pkg> package) 
+    <pkg>rms</pkg> (replacement of the Design package) 
     proposes a modified version of the <code>survfit</code> function.
     The <pkg>prodlim</pkg> package implements a fast algorithm and some features
     not included in <pkg>survival</pkg>.
@@ -624,7 +624,6 @@ something is inaccurate or missing.</p>
 <pkg>crrSC</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
-<pkg>Design</pkg>
 <pkg>DPpackage</pkg>
 <pkg>DTDA</pkg>
 <pkg priority="core">eha</pkg>
