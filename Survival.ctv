@@ -173,8 +173,8 @@ something is inaccurate or missing.</p>
     methods for the Cox proportional hazards model.
     The proportionality assumption can be checked using the <code>cox.zph</code> function 
     in <pkg>survival</pkg>, and also with the <pkg>proptest</pkg> package.
-    The <pkg>CPE</pkg> package calculates concordance probability estimate for the Cox model,
-    as does the <code>coxphCPE</code> function in <pkg>clinfun</pkg>. 
+    The <code>coxphCPE</code> function in <pkg>clinfun</pkg> calculates concordance
+    probability estimates for the Cox model. 
     The <code>coxphQuantile</code> in the latter package draws a quantile 
     curve of the survival distribution as a function of covariates.
     The <pkg>multcomp</pkg> package computes simultaneous tests and confidence intervals for the Cox 
@@ -619,7 +619,6 @@ something is inaccurate or missing.</p>
 <pkg>coxphf</pkg>
 <pkg>coxphw</pkg>
 <pkg>coxrobust</pkg>
-<pkg>CPE</pkg>
 <pkg>Cprob</pkg>
 <pkg>crrSC</pkg>
 <pkg>DAAG</pkg>
