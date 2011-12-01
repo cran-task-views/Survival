@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-11-27</version>
+<version>2011-12-01</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -544,6 +544,10 @@ something is inaccurate or missing.</p>
     AUC and integrated AUC of Heagerty and Zheng (Biometrics, 2005).
   </li>
   <li>
+    Various time-dependent true/false positive rates and 
+    Cumulative/Dynamic AUC are implemented in the <pkg>survAUC</pkg> package.
+  </li>
+  <li>
     The <bioc>survcomp</bioc> package provides several functions to 
     assess and compare the performance of survival models. 
   </li>
@@ -708,6 +712,7 @@ something is inaccurate or missing.</p>
 <pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
+<pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
 <pkg>survey</pkg>
 <pkg priority="core">survival</pkg>
