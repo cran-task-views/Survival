@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2011-12-02</version>
+<version>2012-03-14</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -405,9 +405,8 @@ something is inaccurate or missing.</p>
   <li>
     <em><b>Frailties:</b></em>
     Frailty terms can be added in <code>coxph</code> and <code>survreg</code>
-    functions in package <pkg>survival</pkg>. The <code>coxme</code> function
-    in package <pkg>kinship</pkg> fits a mixed-effects Cox model. A more broad 
-    version of it is implemented in the <pkg>coxme</pkg> package.
+    functions in package <pkg>survival</pkg>. The mixed-effects Cox model
+    is implemented in the <pkg>coxme</pkg> package.
     The <code>two.stage.reg</code> function in the <pkg>timereg</pkg> package
     fits the Clayton-Oakes-Glidden model.
     The <pkg>frailtypack</pkg> package fits proportional hazards models with a shared Gamma
@@ -649,7 +648,6 @@ something is inaccurate or missing.</p>
 <pkg>ipred</pkg>
 <pkg>ipw</pkg>
 <pkg>JM</pkg>
-<pkg>kinship</pkg>
 <pkg>km.ci</pkg>
 <pkg>kmi</pkg>
 <pkg>KMsurv</pkg>
