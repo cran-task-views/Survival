@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-03-14</version>
+<version>2012-03-18</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -271,8 +271,6 @@ something is inaccurate or missing.</p>
     package.
     The <pkg>TwoWaySurvival</pkg> package permits to fit an additive model using 
     two time scales.
-    The <pkg>spef</pkg> package fits a proportional means model for panel count 
-    survival data.
     Aster models, which combine aspects of generalized linear models and Cox models, are 
     implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
     The <pkg>concreg</pkg> package implements conditional logistic 
@@ -707,7 +705,6 @@ something is inaccurate or missing.</p>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
-<pkg>spef</pkg>
 <pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>surv2sample</pkg>
