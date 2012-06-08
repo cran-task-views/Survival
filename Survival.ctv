@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-05-29</version>
+<version>2012-06-09</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -341,7 +341,8 @@ something is inaccurate or missing.</p>
     Lexis objects as a way to represent, manipulate and summarise data
     from multistate models.  The <pkg>TraMineR</pkg> package is
     intended for analysing state or event sequences that describe life
-    courses. <pkg>asbio</pkg> computes the
+    courses. Also, the <pkg>Biograph</pkg> package provides various
+    functions for exploring life histories. <pkg>asbio</pkg> compute the
     expected numbers of individuals in specified age classes or life
     stages given survivorship probabilities from a transition matrix.
   </li>
@@ -659,6 +660,7 @@ something is inaccurate or missing.</p>
 <pkg>BaSTA</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
+<pkg>Biograph</pkg>
 <pkg>BMA</pkg>
 <pkg>bujar</pkg>
 <pkg>boot</pkg>
