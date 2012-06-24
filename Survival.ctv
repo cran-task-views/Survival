@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-06-09</version>
+<version>2012-06-24</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -391,8 +391,7 @@ something is inaccurate or missing.</p>
     package proposes implementations of several models for recurrent
     events data, such as the Pe&#241;a-Strawderman-Hollander,
     Wang-Chang estimators, and MLE estimation under a Gamma Frailty
-    model. The Pe&#241;a-Hollander model can be fitted using the
-    <pkg>gcmrec</pkg> package.  The <pkg>condGEE</pkg> package
+    model.  The <pkg>condGEE</pkg> package
     implements the conditional GEE for recurrent event gap times.
     <pkg>survivalBIV</pkg> permits to estimate the bivariate
     distribution of two gap times.
@@ -703,7 +702,6 @@ something is inaccurate or missing.</p>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
 <pkg>gbm</pkg>
-<pkg>gcmrec</pkg>
 <pkg>glmpath</pkg>
 <pkg>globalboosttest</pkg>
 <pkg>glrt</pkg>
