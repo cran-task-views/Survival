@@ -579,10 +579,6 @@ something is inaccurate or missing.</p>
     (Cumulative sensitivity and dynamic specificity).
   </li>
   <li>
-    <pkg>risksetROC</pkg> implements time-dependent ROC curves,
-    AUC and integrated AUC of Heagerty and Zheng (Biometrics, 2005).
-  </li>
-  <li>
     Various time-dependent true/false positive rates and 
     Cumulative/Dynamic AUC are implemented in the <pkg>survAUC</pkg> package.
   </li>
@@ -768,7 +764,6 @@ something is inaccurate or missing.</p>
 <pkg>relsurv</pkg>
 <pkg>rhosp</pkg>
 <pkg>riskRegression</pkg>
-<pkg>risksetROC</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>RobustAFT</pkg>
 <pkg>rpart</pkg>
