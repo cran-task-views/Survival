@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-06-24</version>
+<version>2012-07-09</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -634,10 +634,6 @@ something is inaccurate or missing.</p>
     W.J. (2003, 2007) also contain survival data sets.
   </li>
   <li>
-    The <pkg>rtv</pkg> package proposes convenience functions for
-    representing, manipulating and visualising time data.
-  </li>
-  <li>
     The <pkg>logconcens</pkg> package compute the MLE of a density
     (log-concave) possibly for interval censored data.
   </li>
@@ -767,7 +763,6 @@ something is inaccurate or missing.</p>
 <pkg priority="core">rms</pkg>
 <pkg>RobustAFT</pkg>
 <pkg>rpart</pkg>
-<pkg>rtv</pkg>
 <pkg>saws</pkg>
 <pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
