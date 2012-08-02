@@ -290,8 +290,7 @@ something is inaccurate or missing.</p>
     censored data.  The <pkg>JM</pkg> package fits shared parameter
     models for the joint modelling of a longitudinal response and
     event times.  The temporal process regression model is implemented
-    in the <pkg>tpr</pkg> package.  The <pkg>TwoWaySurvival</pkg>
-    package permits to fit an additive model using two time scales.
+    in the <pkg>tpr</pkg> package. 
     Aster models, which combine aspects of
     generalized linear models and Cox models, are implemented in
     the <pkg>aster</pkg> and <pkg>aster2</pkg> packages.
@@ -785,7 +784,6 @@ something is inaccurate or missing.</p>
 <pkg>tpr</pkg>
 <pkg>TraMineR</pkg>
 <pkg>TSHRC</pkg>
-<pkg>TwoWaySurvival</pkg>
 <pkg>uniCox</pkg>
 <pkg>VGAM</pkg>
 </packagelist>
