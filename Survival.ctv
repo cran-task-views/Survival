@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-07-09</version>
+<version>2012-08-02</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -367,8 +367,6 @@ something is inaccurate or missing.</p>
     <pkg>riskRegression</pkg> implements risk regression for competing risks data, 
     along with other extensions of existing packages useful for survival analysis and 
     competing risks data. 
-    The <pkg>CompetingRiskFrailty</pkg> package estimates the cause-specific hazards
-    of a competing risks model using frailties and splines. 
     The <pkg>Cprob</pkg> package estimates the  conditional probability  of a competing event, aka., 
     the conditional cumulative incidence. It also implements a proportional-odds model using either  
     the temporal process regression or the pseudo-value approaches.
@@ -665,7 +663,6 @@ something is inaccurate or missing.</p>
 <pkg>concreg</pkg>
 <pkg>condGEE</pkg>
 <pkg>compeir</pkg>
-<pkg>CompetingRiskFrailty</pkg>
 <pkg>CoxBoost</pkg>
 <pkg>coxme</pkg>
 <pkg>coxphf</pkg>
