@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-08-02</version>
+<version>2012-08-10</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -66,8 +66,6 @@ something is inaccurate or missing.</p>
     in the presence of interval censoring.
     The <pkg>DTDA</pkg> implements several algorithms permitting to analyse possibly doubly 
     truncated survival data.
-    The conditional survival function can be estimated nonparametrically for successive 
-    survival times using the <pkg>bwsurvival</pkg> package.
   </li>
   <li>
     <b><em>MLE:</em></b>
@@ -652,7 +650,6 @@ something is inaccurate or missing.</p>
 <pkg>BMA</pkg>
 <pkg>bujar</pkg>
 <pkg>boot</pkg>
-<pkg>bwsurvival</pkg>
 <pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
