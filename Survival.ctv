@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-10-03</version>
+<version>2012-10-22</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -67,8 +67,6 @@ something is inaccurate or missing.</p>
     function for left- and right-censored data.
     The <code>icfit</code> function in package <pkg>interval</pkg> computes the NPMLE
     for interval-censored data.
-    The <pkg>dcens</pkg> package simultaneously estimates marginal survival probabilities 
-    in the presence of interval censoring.
     The <pkg>DTDA</pkg> implements several algorithms permitting to analyse possibly doubly 
     truncated survival data.
   </li>
@@ -780,7 +778,6 @@ something is inaccurate or missing.</p>
 <pkg>crrstep</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
-<pkg>dcens</pkg>
 <pkg>DPpackage</pkg>
 <pkg>DTDA</pkg>
 <pkg>dynpred</pkg>
