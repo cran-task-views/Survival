@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-10-22</version>
+<version>2012-10-30</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -368,9 +368,7 @@ something is inaccurate or missing.</p>
     The package <pkg>cmprsk</pkg> also estimates the cumulative 
     incidence functions, but they can be compared in more than two samples.
     The package also implements the Fine and Gray model for regressing the
-    subdistribution hazard of a competing risk.
-    <pkg>crrSC</pkg> extends the <pkg>cmprsk</pkg> package to
-    stratified and clustered data.  The <pkg>kmi</pkg> package
+    subdistribution hazard of a competing risk. The <pkg>kmi</pkg> package
     performs a Kaplan-Meier multiple imputation to recover missing
     potential censoring information from competing risks events,
     permitting to use standard right-censored methods to analyse
@@ -774,7 +772,6 @@ something is inaccurate or missing.</p>
 <pkg>CPHshape</pkg>
 <pkg>Cprob</pkg>
 <pkg>CR</pkg>
-<pkg>crrSC</pkg>
 <pkg>crrstep</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
