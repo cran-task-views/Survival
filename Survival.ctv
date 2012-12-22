@@ -339,9 +339,7 @@ something is inaccurate or missing.</p>
     <pkg>msm</pkg> package contains functions for fitting general
     continuous-time Markov and hidden Markov multistate models to
     longitudinal data. Transition rates and output processes can be
-    modelled in terms of covariates.  The <pkg>mspath</pkg> package,
-    based on <pkg>msm</pkg>, can fit non-Markov multistate models by
-    maximum likelihood, using a discrete-time approximation.
+    modelled in terms of covariates. 
     Nonparametric estimates in illness-death models and other three
     state models can be obtained with package
     <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits
@@ -830,7 +828,6 @@ something is inaccurate or missing.</p>
 <pkg>mixPHM</pkg>
 <pkg>MLEcens</pkg>
 <pkg>msm</pkg>
-<pkg>mspath</pkg>
 <pkg>msSurv</pkg>
 <pkg>mstate</pkg>
 <pkg priority="core">muhaz</pkg>
