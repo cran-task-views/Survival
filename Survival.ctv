@@ -39,9 +39,7 @@ something is inaccurate or missing.</p>
     estimator for left-censored data.
     <code>svykm</code> in <pkg>survey</pkg> provides a weighted Kaplan-Meier 
     estimator.
-    <code>nested.km</code> in <pkg>NestedCohort</pkg> estimates the
-    survival curve for each level of categorical variables with
-    missing data.  The <code>kaplan-meier</code> function
+    The <code>kaplan-meier</code> function
     in <pkg>spatstat</pkg> computes the Kaplan-Meier estimator from
     histogram data.  The <code>KM</code> function in
     package <pkg>rhosp</pkg> plots the survival function using a
@@ -171,8 +169,7 @@ something is inaccurate or missing.</p>
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.  The <pkg>mfp</pkg> package
     permits to fit Cox models with multiple fractional polynomial.
-    The <pkg>NestedCohort</pkg> fits Cox models for covariates with
-    missing data.  A Cox model model can be fitted to data from
+    A Cox model model can be fitted to data from
     complex survey design using the <code>svycoxph</code> function
     in <pkg>survey</pkg>.  The <pkg>dynsurv</pkg> package fits
     time-varying coefficient models for interval censored and right
@@ -826,7 +823,6 @@ something is inaccurate or missing.</p>
 <pkg>mvna</pkg>
 <pkg>mvpart</pkg>
 <pkg>NADA</pkg>
-<pkg>NestedCohort</pkg>
 <pkg>nltm</pkg>
 <pkg>NPHMC</pkg>
 <pkg>OIsurv</pkg>
