@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2012-12-22</version>
+<version>2013-01-29</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -785,6 +785,7 @@ something is inaccurate or missing.</p>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
 <pkg>interval</pkg>
+<pkg>ipdmeta</pkg>
 <pkg>ipred</pkg>
 <pkg>ipw</pkg>
 <pkg>JM</pkg>
