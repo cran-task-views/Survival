@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-01-29</version>
+<version>2013-01-31</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -512,11 +512,6 @@ something is inaccurate or missing.</p>
     to right-, left- and interval censored data.
   </li>
   <li>
-    The <pkg>splinesurv</pkg> package implements a proportional hazards model 
-    for possibly clustered survival data using MCMC. Baseline hazard and frailty 
-    densities are modelled using B-splines.
-  </li>
-  <li>
     The <pkg>BaSTA</pkg> package aims at drawing inference on
     age-specific mortality from capture-recapture/recovery data when
     some or all records have missing information on times of birth
@@ -858,7 +853,6 @@ something is inaccurate or missing.</p>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
-<pkg>splinesurv</pkg>
 <pkg>superpc</pkg>
 <pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
