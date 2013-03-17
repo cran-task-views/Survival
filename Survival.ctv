@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-01-31</version>
+<version>2013-03-17</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -37,9 +37,8 @@ something is inaccurate or missing.</p>
     the Kaplan-Meier estimator.
     The <pkg>NADA</pkg> package includes a function to compute the Kaplan-Meier 
     estimator for left-censored data.
-    <code>svykm</code> in <pkg>survey</pkg> provides a weighted Kaplan-Meier 
-    estimator.
-    The <code>kaplan-meier</code> function
+    <code>svykm</code> in <pkg>survey</pkg> provides a weighted
+    Kaplan-Meier estimator.  The <code>kaplan-meier</code> function
     in <pkg>spatstat</pkg> computes the Kaplan-Meier estimator from
     histogram data.  The <code>KM</code> function in
     package <pkg>rhosp</pkg> plots the survival function using a
@@ -51,7 +50,10 @@ something is inaccurate or missing.</p>
     estimator following Pollock et al. (1998). The <pkg>bpcp</pkg>
     package provides several functions for computing confidence
     intervals of the survival distribution (e.g., beta product
-    confidence procedure).
+    confidence procedure). The <pkg>jackknifeKME</pkg> package
+    implements the modified jackknife estimator of the Kaplan-Meier
+    estimator. The <pkg>lbiassurv</pkg> package offers various
+    length-bias corrections to survival curve estimation.
   </li>
 
   <li>
@@ -171,7 +173,9 @@ something is inaccurate or missing.</p>
     permits to fit Cox models with multiple fractional polynomial.
     A Cox model model can be fitted to data from
     complex survey design using the <code>svycoxph</code> function
-    in <pkg>survey</pkg>.  The <pkg>dynsurv</pkg> package fits
+    in <pkg>survey</pkg>. The <pkg>intcox</pkg> package implements the
+    Cox model for interval-censored data using the ICM-algorithm.
+    The <pkg>dynsurv</pkg> package fits
     time-varying coefficient models for interval censored and right
     censored survival data using a Bayesian Cox model, a spline based
     Cox model or a transformation model.  The <pkg>CPHshape</pkg>
@@ -333,15 +337,21 @@ something is inaccurate or missing.</p>
     modelled in terms of covariates. 
     Nonparametric estimates in illness-death models and other three
     state models can be obtained with package
-    <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits
-    to estimate transition probabilities of an illness-death model
-    or three-state progressive model. <br/>
+    <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits to
+    estimate transition probabilities of an illness-death model or
+    three-state progressive model. The <pkg>SmoothHazard</pkg> package
+    fits illness-death model with possibly interval-censored data for
+    the transition time into the transient state. Weibull baseline
+    intensities or a semi-parametric approach with M-splines
+    approximation of baseline intensities is used.<br/>
 
     The <pkg>Epi</pkg> package implements
     Lexis objects as a way to represent, manipulate and summarise data
     from multistate models.  The <pkg>TraMineR</pkg> package is
     intended for analysing state or event sequences that describe life
-    courses. <pkg>asbio</pkg> computes the
+    courses. The <pkg>Biograph</pkg> package permits to describe and
+    analyse life histories following a multistate perspective on the
+    life course. <pkg>asbio</pkg> computes the
     expected numbers of individuals in specified age classes or life
     stages given survivorship probabilities from a transition matrix.
   </li>
@@ -413,6 +423,11 @@ something is inaccurate or missing.</p>
     The <pkg>JPSurv</pkg> package implements methods for
     population-based survival analysis, like the proportional hazard
     relative survival model and the join point relative survival model.
+  </li>
+  <li>
+    The <pkg>survexp.fr</pkg> package computes relative survival,
+    absolute excess risk and standardized mortality ratio based on
+    French death rates.
   </li>
 </ul>
 
@@ -521,6 +536,11 @@ something is inaccurate or missing.</p>
     The <pkg>JMbayes</pkg> package performs joint modelling of
     longitudinal and time-to-event data under a bayesian approach.
 </li>
+  <li>
+    Bayesian parametric and semiparametric estimation for
+    semi-competing risks data is available via the <pkg>bscr</pkg>
+    package.
+</li>
 </ul>
 
 <h1>High-Dimensional Data</h1>
@@ -542,6 +562,8 @@ something is inaccurate or missing.</p>
     The <pkg>randomSurvivalForest</pkg> package fits random forest
     to survival data,
     while a variant of the random forest is implemented in <pkg>party</pkg>.
+    Another implementation is proposed in the <pkg>randomForestSRC</pkg> package.
+ 
   </li>
   <li>
     <b><em>Regularised and shrinkage methods:</em></b>
@@ -578,7 +600,9 @@ something is inaccurate or missing.</p>
     The <pkg>AIM</pkg> package can construct index models for survival
     outcomes, that is, construct scores based on a training dataset.
     The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
-    model using the compound covariate method.
+    model using the compound covariate method. <pkg>plsRcox</pkg>
+    provides partial least squares regression and various techniques
+    for fitting Cox models in high dimensionnal settings.
   </li>
 </ul>
 
@@ -592,6 +616,11 @@ something is inaccurate or missing.</p>
     <pkg>peperr</pkg> implements prediction error techniques which can
     be computed in a parallelised way. Useful for high-dimensional
     data.
+  </li>
+  <li>
+    The <pkg>timeROC</pkg> package permits to estimate time-dependent
+    ROC curves and time-dependent AUC with censored data, possibly
+    with competing risks.
   </li>
   <li> 
     <pkg>survivalROC</pkg>  computes time-dependent ROC curves and time-dependent AUC from 
@@ -620,7 +649,10 @@ something is inaccurate or missing.</p>
     reclassification index for comparing competing risks prediction
     models.
   </li>
-
+  <li>
+    The <pkg>aBioMarVsuit</pkg> package provides tools for validating
+    predictive gene signatures when the primary endpoint is survival.
+  </li>
 </ul>
 
 <h1>Power Analysis</h1>
@@ -672,6 +704,12 @@ something is inaccurate or missing.</p>
     The <pkg>prodlim</pkg> package proposes some functions for
     simulating complex event history data.
   </li>
+  <li>
+    The <pkg>gems</pkg> package also permits to simulate and analyse
+    multistate models. The package allows for a general specification
+    of the transition hazard functions, for non-Markov models and
+    for dependencies on the history.   
+  </li>
 </ul>
 
 <h1>Miscellaneous</h1>
@@ -690,6 +728,10 @@ something is inaccurate or missing.</p>
     implements several types of bootstrap techniques for right-censored data.
   </li>
   <li>
+    The <pkg>currentSurvival</pkg> package estimates the current
+    cumulative incidence and the current leukaemia free survival function.
+</li>
+  <li>
     The <pkg>survJamda</pkg> package provides functions for performing meta-analyses 
     of gene expression data and to predict patients' survival and risk assessment.
   </li>
@@ -698,12 +740,23 @@ something is inaccurate or missing.</p>
     level data and mulivariate survival estimates for aggregate studies.
   </li>
   <li>
-    The <pkg>KMsurv</pkg> package includes the data sets from Klein and Moeschberger (1997).
-    Some supplementary data sets and functions can be found in the <pkg>OIsurv</pkg> package.
-    The package <pkg>SMIR</pkg> that accompanies Aitkin et al. (2009), 
+    The <pkg>KMsurv</pkg> package includes the data sets from Klein
+    and Moeschberger (1997).  Some supplementary data sets and
+    functions can be found in the <pkg>OIsurv</pkg> package.  The
+    package <pkg>SMIR</pkg> that accompanies Aitkin et al. (2009),
     <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
     and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
     W.J. (2003, 2007) also contain survival data sets.
+  </li>
+  <li>
+    The <pkg>bwsurvival</pkg> package proposes a nonparametric
+    estimator of the conditional survival function for successive
+    survival times.
+  </li>
+  <li>
+    The <pkg>SvyNom</pkg> package permits to construct, validate and
+    calibrate nomograms stemming from complex right-censored survey
+    data.
   </li>
   <li>
     The <pkg>logconcens</pkg> package compute the MLE of a density
@@ -718,6 +771,7 @@ something is inaccurate or missing.</p>
 </info>
 
 <packagelist>
+<pkg>aBioMarVsuit</pkg>
 <pkg>AER</pkg>
 <pkg>ahaz</pkg>
 <pkg>AIM</pkg>
@@ -727,9 +781,12 @@ something is inaccurate or missing.</p>
 <pkg>BaSTA</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
+<pkg>Biograph</pkg>
 <pkg>BMA</pkg>
 <pkg>bpcp</pkg>
 <pkg>boot</pkg>
+<pkg>bscr</pkg>
+<pkg>bwsurvival</pkg>
 <pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
@@ -752,6 +809,7 @@ something is inaccurate or missing.</p>
 <pkg>CR</pkg>
 <pkg>crrSC</pkg>
 <pkg>crrstep</pkg>
+<pkg>currentSurvival</pkg>
 <pkg>DAAG</pkg>
 <pkg>dblcens</pkg>
 <pkg>DPpackage</pkg>
@@ -772,6 +830,7 @@ something is inaccurate or missing.</p>
 <pkg>frailtypack</pkg>
 <pkg>gamlss.cens</pkg>
 <pkg>gbm</pkg>
+<pkg>gems</pkg>
 <pkg>genSurv</pkg>
 <pkg>glmpath</pkg>
 <pkg>globalboosttest</pkg>
@@ -779,10 +838,12 @@ something is inaccurate or missing.</p>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
+<pkg>intcox</pkg>
 <pkg>interval</pkg>
 <pkg>ipdmeta</pkg>
 <pkg>ipred</pkg>
 <pkg>ipw</pkg>
+<pkg>jackknifeKME</pkg>
 <pkg>JM</pkg>
 <pkg>JMbayes</pkg>
 <pkg>jmec</pkg>
@@ -794,6 +855,7 @@ something is inaccurate or missing.</p>
 <pkg>kmi</pkg>
 <pkg>KMsurv</pkg>
 <pkg>lava.tobit</pkg>
+<pkg>lbiassurv</pkg>
 <pkg>LearnBayes</pkg>
 <pkg>lmec</pkg>
 <pkg>locfit</pkg>
@@ -830,6 +892,7 @@ something is inaccurate or missing.</p>
 <pkg>penalized</pkg>
 <pkg>peperr</pkg>
 <pkg>PermAlgo</pkg>
+<pkg>plsRcox</pkg>
 <pkg>polspline</pkg>
 <pkg>prodlim</pkg>
 <pkg>quantreg</pkg>
@@ -837,6 +900,7 @@ something is inaccurate or missing.</p>
 <pkg>phmm</pkg>
 <pkg>powerSurvEpi</pkg>
 <pkg>pseudo</pkg>
+<pkg>randomForestSRC</pkg>
 <pkg>randomSurvivalForest</pkg>
 <pkg>rankhazard</pkg>
 <pkg>relsurv</pkg>
@@ -850,6 +914,7 @@ something is inaccurate or missing.</p>
 <pkg>SGL</pkg>
 <pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
+<pkg>SmoothHazard</pkg>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
@@ -857,6 +922,7 @@ something is inaccurate or missing.</p>
 <pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
 <pkg>survC1</pkg>
+<pkg>survexp.fr</pkg>
 <pkg>survey</pkg>
 <pkg>Survgini</pkg>
 <pkg priority="core">survival</pkg>
@@ -867,9 +933,11 @@ something is inaccurate or missing.</p>
 <pkg>survrec</pkg>
 <pkg>survPresmooth</pkg>
 <pkg>survSNP</pkg>
+<pkg>SvyNom</pkg>
 <pkg>TBSSurvival</pkg>
 <pkg>TestSurvRec</pkg>
 <pkg priority="core">timereg</pkg>
+<pkg>timeROC</pkg>
 <pkg>tlmec</pkg>
 <pkg>TPmsm</pkg>
 <pkg>tpr</pkg>
