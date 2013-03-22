@@ -145,10 +145,6 @@ something is inaccurate or missing.</p>
     two survival distributions based on the Gini index.
   </li>
   <li>
-    The <pkg>cmprskContin</pkg> package compares continuous mark-specific relative 
-    risks in two treatment groups, with a view towards vaccine trials.
-  </li>
-  <li>
     The <pkg>TestSurvRec</pkg> package implements statistical tests to
     compare two survival curves with recurrent events.
   </li>
@@ -797,7 +793,6 @@ something is inaccurate or missing.</p>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
-<pkg>cmprskContin</pkg>
 <pkg>coin</pkg>
 <pkg>complex.surv.dat.sim</pkg>
 <pkg>concreg</pkg>
