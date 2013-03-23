@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-03-22</version>
+<version>2013-03-23</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -284,9 +284,6 @@ something is inaccurate or missing.</p>
     additive models for censored data.  The <pkg>gamlss.cens</pkg>
     package implements the generalised additive model for location,
     scale and shape that can be fitted to censored data.
-    The <pkg>nltm</pkg> package fits non-linear transformation models
-    for censored data, which include, <em>e.g.</em>, proportional
-    hazards, proportional odds, or cure models.
     The <code>locfit.censor</code> function in <pkg>locfit</pkg>
     produces local regression estimates.  The <code>crq</code>
     function included in the <pkg>quantreg</pkg> package implements a
@@ -883,7 +880,6 @@ something is inaccurate or missing.</p>
 <pkg>mvpart</pkg>
 <pkg>NADA</pkg>
 <pkg>NestedCohort</pkg>
-<pkg>nltm</pkg>
 <pkg>NPHMC</pkg>
 <pkg>OIsurv</pkg>
 <pkg>OrdFacReg</pkg>
