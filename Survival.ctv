@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-04-09</version>
+<version>2013-05-17</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -35,8 +35,6 @@ something is inaccurate or missing.</p>
     are implemented in the <pkg>km.ci</pkg> package.
     <code>plot.Surv</code> of package <pkg>eha</pkg> plots
     the Kaplan-Meier estimator.
-    The <pkg>NADA</pkg> package includes a function to compute the Kaplan-Meier 
-    estimator for left-censored data.
     <code>svykm</code> in <pkg>survey</pkg> provides a weighted
     Kaplan-Meier estimator.
     <code>nested.km</code> in <pkg>NestedCohort</pkg> estimates the
@@ -105,8 +103,6 @@ something is inaccurate or missing.</p>
   <li>
     The <code>survdiff</code> function in <pkg>survival</pkg>
     compares survival curves using the Fleming-Harrington G-rho family of test. 
-    <pkg>NADA</pkg> implements this class of tests for left-censored
-    data.
   </li>
   <li>
     <pkg>clinfun</pkg> implements a permutation version of the 
@@ -233,8 +229,6 @@ something is inaccurate or missing.</p>
     (function <code>aftreg</code>).
     An AFT model with an error distribution assumed to be a mixture of G-splines
     is implemented in the <pkg>smoothSurv</pkg> package.
-    The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
-    function for left-censored data.
     A least-square principled implementation of the AFT model can be found in the <pkg>lss</pkg> package.
     The <pkg>simexaft</pkg> package implements the Simulation-Extrapolation algorithm for the 
     AFT model, that can be used when covariates are subject to measurement error.
@@ -876,7 +870,6 @@ something is inaccurate or missing.</p>
 <pkg>multcomp</pkg>
 <pkg>mvna</pkg>
 <pkg>mvpart</pkg>
-<pkg>NADA</pkg>
 <pkg>NestedCohort</pkg>
 <pkg>NPHMC</pkg>
 <pkg>OIsurv</pkg>
