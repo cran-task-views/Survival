@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-05-17</version>
+<version>2013-05-26</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -330,7 +330,9 @@ something is inaccurate or missing.</p>
     modelled in terms of covariates. 
     Nonparametric estimates in illness-death models and other three
     state models can be obtained with package
-    <pkg>p3state.msm</pkg>. The <pkg>SmoothHazard</pkg> package
+    <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits to
+    estimate transition probabilities of an illness-death model or
+    three-state progressive model. The <pkg>SmoothHazard</pkg> package
     fits illness-death model with possibly interval-censored data for
     the transition time into the transient state. Weibull baseline
     intensities or a semi-parametric approach with M-splines
@@ -928,6 +930,7 @@ something is inaccurate or missing.</p>
 <pkg priority="core">timereg</pkg>
 <pkg>timeROC</pkg>
 <pkg>tlmec</pkg>
+<pkg>TPmsm</pkg>
 <pkg>tpr</pkg>
 <pkg>TraMineR</pkg>
 <pkg>TSHRC</pkg>
