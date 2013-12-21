@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-13-10</version>
+<version>2013-12-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -537,7 +537,7 @@ something is inaccurate or missing.</p>
 </li>
   <li>
     Bayesian parametric and semiparametric estimation for
-    semi-competing risks data is available via the <pkg>bscr</pkg>
+    semi-competing risks data is available via the <pkg>SemiCompRisks</pkg>
     package.
 </li>
 </ul>
@@ -774,7 +774,6 @@ something is inaccurate or missing.</p>
 <pkg>BMA</pkg>
 <pkg>bpcp</pkg>
 <pkg>boot</pkg>
-<pkg>bscr</pkg>
 <pkg>censReg</pkg>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
@@ -899,6 +898,7 @@ something is inaccurate or missing.</p>
 <pkg>RobustAFT</pkg>
 <pkg>rpart</pkg>
 <pkg>saws</pkg>
+<pkg>SemiCompRisks</pkg>
 <pkg>SGL</pkg>
 <pkg>simexaft</pkg>
 <pkg>SMIR</pkg>
