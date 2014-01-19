@@ -3,8 +3,8 @@
 
 <name>Survival</name>
 <topic>Survival Analysis</topic>
-<maintainer email="arthur.allignol@fdm.uni-freiburg.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2013-12-21</version>
+<maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
+<version>2014-01-19</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -15,7 +15,7 @@ within the relevant time period, producing so-called censored observations.
 <p>This task view aims at presenting the useful R packages for the analysis
 of time to event data.</p>
 <p>Please let the 
-<a href="mailto:arthur.allignol@fdm.uni-freiburg.de">maintainers</a> know if 
+<a href="mailto:arthur.allignol@uni-ulm.de">maintainers</a> know if 
 something is inaccurate or missing.</p>
 
 
@@ -57,7 +57,11 @@ something is inaccurate or missing.</p>
     confidence procedure). The <pkg>jackknifeKME</pkg> package
     implements the modified jackknife estimator of the Kaplan-Meier
     estimator. The <pkg>lbiassurv</pkg> package offers various
-    length-bias corrections to survival curve estimation.
+    length-bias corrections to survival curve
+    estimation. Nonparametric confidance bands for the Kaplan-Meier
+    estimator can be computed using the <pkg>kmconfband</pkg> package.
+    The <pkg>kmc</pkg> package implements the Kaplan-Meier estimator
+    with constraints.
   </li>
 
   <li>
@@ -145,14 +149,18 @@ something is inaccurate or missing.</p>
     two survival distributions based on the Gini index.
   </li>
   <li>
-    The <pkg>TestSurvRec</pkg> package implements statistical tests to
-    compare two survival curves with recurrent events.
-  </li>
-  <li>
     The <pkg>FHtest</pkg> package offers several tests based on the
     Fleming-Harrington class for comparing surival curves with right-
     and interval-censored data.
 </li>
+  <li>
+    The <pkg>LogrankA</pkg> package provides a logrank test for which
+    aggregated data can be used as input.
+  </li>
+  <li>
+    The short term and long term hazard ratio model for two samples
+    survival data can be found in the <pkg>YPmodel</pkg> package.
+  </li>
 </ul>
   
 <p><strong>Regression Modelling</strong></p>
@@ -172,37 +180,38 @@ something is inaccurate or missing.</p>
     with possibly time-varying effects.  The <pkg>mfp</pkg> package
     permits to fit Cox models with multiple fractional polynomial.
     The <pkg>NestedCohort</pkg> fits Cox models for covariates with
-    missing data.
-    A Cox model model can be fitted to data from
+    missing data.  A Cox model model can be fitted to data from
     complex survey design using the <code>svycoxph</code> function
     in <pkg>survey</pkg>. The <pkg>intcox</pkg> package implements the
     Cox model for interval-censored data using the ICM-algorithm.
-    The <pkg>dynsurv</pkg> package fits
-    time-varying coefficient models for interval censored and right
-    censored survival data using a Bayesian Cox model, a spline based
-    Cox model or a transformation model.  The <pkg>CPHshape</pkg>
-    package computes the Cox proportional hazards model with shape
-    constrained hazard functions.  The <pkg>OrdFacReg</pkg> package
-    implements the Cox model using an active set algorithm for dummy
-    variables of ordered factors.<br/>  The <code>cumres</code>
-    function in <pkg>gof</pkg> computes goodness-of-fit methods for
-    the Cox proportional hazards model.  The proportionality
-    assumption can be checked using the <code>cox.zph</code> function
-    in <pkg>survival</pkg>.  The <pkg>CPE</pkg> package calculates concordance
-    probability estimate for the Cox model, as does
-    the <code>coxphCPE</code> function in <pkg>clinfun</pkg>.
-    The <code>coxphQuantile</code> in the latter package draws a
-    quantile curve of the survival distribution as a function of
-    covariates.  The <pkg>multcomp</pkg> package computes simultaneous
-    tests and confidence intervals for the Cox model and other
-    parametric survival models.  The <bioc>multtest</bioc> package on
-    Bioconductor proposes a resampling based multiple hypothesis
-    testing that can be applied to the Cox model.  Testing
-    coefficients of Cox regression models using a Wald test with a
-    sandwich estimator of variance can be done using
-    the <pkg>saws</pkg> package.  The <pkg>rankhazard</pkg> package
-    permits to plot visualisation of the relative importance of
-    covariates in a proportional hazards model. 
+    The <pkg>dynsurv</pkg> package fits time-varying coefficient
+    models for interval censored and right censored survival data
+    using a Bayesian Cox model, a spline based Cox model or a
+    transformation model.  The <pkg>CPHshape</pkg> package computes
+    the Cox proportional hazards model with shape constrained hazard
+    functions.  The <pkg>OrdFacReg</pkg> package implements the Cox
+    model using an active set algorithm for dummy variables of ordered
+    factors.<br/>  The <code>cumres</code> function in <pkg>gof</pkg>
+    computes goodness-of-fit methods for the Cox proportional hazards
+    model.  The proportionality assumption can be checked using
+    the <code>cox.zph</code> function in <pkg>survival</pkg>.
+    The <pkg>CPE</pkg> package calculates concordance probability
+    estimate for the Cox model, as does the <code>coxphCPE</code>
+    function in <pkg>clinfun</pkg>.  The <code>coxphQuantile</code> in
+    the latter package draws a quantile curve of the survival
+    distribution as a function of covariates.  The <pkg>multcomp</pkg>
+    package computes simultaneous tests and confidence intervals for
+    the Cox model and other parametric survival models.
+    The <bioc>multtest</bioc> package on Bioconductor proposes a
+    resampling based multiple hypothesis testing that can be applied
+    to the Cox model.  Testing coefficients of Cox regression models
+    using a Wald test with a sandwich estimator of variance can be
+    done using the <pkg>saws</pkg> package.  The <pkg>rankhazard</pkg>
+    package permits to plot visualisation of the relative importance
+    of covariates in a proportional hazards
+    model. The <pkg>smoothHR</pkg> package provides hazard ratio
+    curves that allows for nonlinear relationship between predictor
+    and survival.
   </li>
 
   <li>
@@ -219,7 +228,9 @@ something is inaccurate or missing.</p>
     implements the model of Royston and Parmar (2002). The model uses
     natural cubic splines for the baseline survival function, and
     proportional hazards, proportional odds or probit functions for
-    regression.
+    regression. The <pkg>SurvRegCensCov</pkg> package fits a Weibull
+    regression model for right-censored data in which one covariate
+    might be censored. 
   </li>
 
   <li>
@@ -227,18 +238,22 @@ something is inaccurate or missing.</p>
     The <code>survreg</code> function in package <pkg>survival</pkg>
     can fit an accelerated failure time model.
     A modified version of <code>survreg</code> is implemented in the 
-    <pkg>rms</pkg> package (<code>psm</code> function). It permits to use some of the <pkg>rms</pkg>
-    functionalities.
-    The <pkg>eha</pkg> package also proposes an implementation of the AFT model
-    (function <code>aftreg</code>).
-    An AFT model with an error distribution assumed to be a mixture of G-splines
-    is implemented in the <pkg>smoothSurv</pkg> package.
-    The <pkg>NADA</pkg> package proposes the front end of the <code>survreg</code> 
-    function for left-censored data.
-    A least-square principled implementation of the AFT model can be found in the <pkg>lss</pkg> package.
-    The <pkg>simexaft</pkg> package implements the Simulation-Extrapolation algorithm for the 
-    AFT model, that can be used when covariates are subject to measurement error.
-    A robust version of the accelerated failure time model can be found in <pkg>RobustAFT</pkg>.
+    <pkg>rms</pkg> package (<code>psm</code> function). It permits to
+    use some of the <pkg>rms</pkg> functionalities.
+    The <pkg>eha</pkg> package also proposes an implementation of the
+    AFT model (function <code>aftreg</code>).  An AFT model with an
+    error distribution assumed to be a mixture of G-splines is
+    implemented in the <pkg>smoothSurv</pkg> package.
+    The <pkg>NADA</pkg> package proposes the front end of
+    the <code>survreg</code> function for left-censored data.  A
+    least-square principled implementation of the AFT model can be
+    found in the <pkg>lss</pkg> package.  The <pkg>simexaft</pkg>
+    package implements the Simulation-Extrapolation algorithm for the
+    AFT model, that can be used when covariates are subject to
+    measurement error.  A robust version of the accelerated failure
+    time model can be found
+    in <pkg>RobustAFT</pkg>. The <pkg>coarseDataTools</pkg> package
+    fits AFT models for interval censored data.
   </li>
 
   <li>
@@ -298,7 +313,13 @@ something is inaccurate or missing.</p>
     regression for survival data as an alternative to the Cox model
     when hazards are non-proportional. <pkg>lava.tobit</pkg>, an
     extension of the <b>lava</b> package, fits latent variable models
-    for censored outcomes via a probit link formulation.
+    for censored outcomes via a probit link
+    formulation. The <pkg>BGPhazard</pkg> package implements Markov
+    beta and gamma processes for modelling the hazard ratio for
+    discrete failure time data. The <pkg>surv2sampleComp</pkg>
+    packages proposes some model-free contrast comparison measures
+    such as difference/ratio of cumulative hazards, quantiles and
+    restricted mean.
   </li>
 </ul>
 
@@ -333,9 +354,12 @@ something is inaccurate or missing.</p>
     <pkg>msm</pkg> package contains functions for fitting general
     continuous-time Markov and hidden Markov multistate models to
     longitudinal data. Transition rates and output processes can be
-    modelled in terms of covariates. 
-    Nonparametric estimates in illness-death models and other three
-    state models can be obtained with package
+    modelled in terms of covariates. The <pkg>SemiMarkov</pkg> package
+    can be used to fit semi-Markov multistate models in continuous
+    time.  The distribution of the waiting times can be chosen between
+    the exponential, the Weibull and exponentiated Weibull
+    distributions.  Nonparametric estimates in illness-death models
+    and other three state models can be obtained with package
     <pkg>p3state.msm</pkg>. The <pkg>TPmsm</pkg> package permits to
     estimate transition probabilities of an illness-death model or
     three-state progressive model. The <pkg>SmoothHazard</pkg> package
@@ -356,11 +380,11 @@ something is inaccurate or missing.</p>
   </li>
   
   <li>
-    <em><b>Competing risks:</b></em>
-    The package <pkg>cmprsk</pkg> estimates the cumulative 
-    incidence functions, but they can be compared in more than two samples.
-    The package also implements the Fine and Gray model for regressing the
-    subdistribution hazard of a competing risk.
+    <em><b>Competing risks:</b></em> The package <pkg>cmprsk</pkg>
+    estimates the cumulative incidence functions, but they can be
+    compared in more than two samples.  The package also implements
+    the Fine and Gray model for regressing the subdistribution hazard
+    of a competing risk.
     <pkg>crrSC</pkg> extends the <pkg>cmprsk</pkg> package to
     stratified and clustered data.  The <pkg>kmi</pkg> package
     performs a Kaplan-Meier multiple imputation to recover missing
@@ -371,20 +395,29 @@ something is inaccurate or missing.</p>
     model. Package <pkg>pseudo</pkg> computes pseudo observations for
     modelling competing risks based on the cumulative incidence
     functions.
-    <pkg>timereg</pkg> does flexible regression modelling for competing risks data based 
-    on the on the inverse-probability-censoring-weights and direct binomial regression approach.
-    <pkg>riskRegression</pkg> implements risk regression for competing risks data, 
-    along with other extensions of existing packages useful for survival analysis and 
-    competing risks data. 
-    The <pkg>Cprob</pkg> package estimates the  conditional probability  of a competing event, aka., 
-    the conditional cumulative incidence. It also implements a proportional-odds model using either  
-    the temporal process regression or the pseudo-value approaches.
-    Packages <pkg>survival</pkg> (via <code>survfit</code>) and <pkg>prodlim</pkg>
-    can also be used to estimate the cumulative incidence function.
-    The <pkg>compeir</pkg> package estimates event-specific incidence rates,
-    rate ratios, event-specific incidence proportions and cumulative incidence functions.
-    <pkg>randomSurvivalForest</pkg> provides summary measures for 
-    competing risk such as ensemble CIF.
+    <pkg>timereg</pkg> does flexible regression modelling for
+    competing risks data based on the on the
+    inverse-probability-censoring-weights and direct binomial
+    regression approach.
+    <pkg>riskRegression</pkg> implements risk regression for competing
+    risks data, along with other extensions of existing packages
+    useful for survival analysis and competing risks data.
+    The <pkg>Cprob</pkg> package estimates the conditional probability
+    of a competing event, aka., the conditional cumulative
+    incidence. It also implements a proportional-odds model using
+    either the temporal process regression or the pseudo-value
+    approaches.  Packages <pkg>survival</pkg>
+    (via <code>survfit</code>) and <pkg>prodlim</pkg> can also be used
+    to estimate the cumulative incidence function.
+    The <pkg>compeir</pkg> package estimates event-specific incidence
+    rates, rate ratios, event-specific incidence proportions and
+    cumulative incidence functions.
+    <pkg>randomSurvivalForest</pkg> provides summary measures for
+    competing risk such as ensemble CIF.  The <pkg>NPMLEcmprsk</pkg>
+    package implements the semiparametric mixture model for competing
+    risks data. The <pkg>wtcrsk</pkg> package implements a proportional
+    subdistribution hazards model with adjustment for
+    covariate-dependent censoring.
   </li>
   
   <li>
@@ -401,7 +434,8 @@ something is inaccurate or missing.</p>
     model.  The <pkg>condGEE</pkg> package
     implements the conditional GEE for recurrent event gap times.
     <pkg>survivalBIV</pkg> permits to estimate the bivariate
-    distribution of two gap times.
+    distribution of two gap times. The <pkg>TestSurvRec</pkg> package
+    implements weighted logrank type tests for recurrent events.
   </li>
 </ul>
 
@@ -427,6 +461,14 @@ something is inaccurate or missing.</p>
     The <pkg>survexp.fr</pkg> package computes relative survival,
     absolute excess risk and standardized mortality ratio based on
     French death rates.
+  </li>
+  <li>
+    The <pkg>MRsurv</pkg> package permits to fit multiplicative
+    regression models for relative survival. 
+  </li>
+  <li>
+    The <pkg>ROCt</pkg> package implements time-dependent ROC curves
+    and extensions to relative survival.
   </li>
 </ul>
 
@@ -540,6 +582,14 @@ something is inaccurate or missing.</p>
     semi-competing risks data is available via the <pkg>SemiCompRisks</pkg>
     package.
 </li>
+  <li>The <pkg>psbcGroup</pkg> package implements penalized
+  semiparametric Bayesian Cox models with elastic net, fused lasso and
+  group lasso priors.
+</li>
+  <li>
+    The <pkg>spatsurv</pkg> package fits a Bayesian parametric
+    proportional hazards model for which events have been geo-located.
+  </li>
 </ul>
 
 <h1>High-Dimensional Data</h1>
@@ -567,20 +617,22 @@ something is inaccurate or missing.</p>
   <li>
     <b><em>Regularised and shrinkage methods:</em></b>
     The <pkg>glmpath</pkg> package implements a L1 regularised Cox
-    proportional hazards model.
-    An L1 and L2 penalised Cox models are available in <pkg>penalized</pkg>.
-    The <pkg>pamr</pkg> package computes a nearest shrunken centroid 
-    for survival gene expression data.
-    A high dimensional Cox model using univariate shrinkage is available 
-    in <pkg>uniCox</pkg>.
-    The <pkg>lpc</pkg> package implements the lassoed principal components
-    method.
-    The <pkg>ahaz</pkg> package implements the LASSO and elastic net estimator for the
-    additive risk model.
-    The <pkg>fastcox</pkg> package implements
-    the Lasso and elastic-net penalized Cox's regression using the cockail algorithm.
-    The <pkg>SGL</pkg> package permits to fit Cox models with a combination of 
-    lasso and group lasso regularisation.
+    proportional hazards model.  An L1 and L2 penalised Cox models are
+    available in <pkg>penalized</pkg>.  The <pkg>pamr</pkg> package
+    computes a nearest shrunken centroid for survival gene expression
+    data.  A high dimensional Cox model using univariate shrinkage is
+    available in <pkg>uniCox</pkg>.  The <pkg>lpc</pkg> package
+    implements the lassoed principal components method.
+    The <pkg>ahaz</pkg> package implements the LASSO and elastic net
+    estimator for the additive risk model.  The <pkg>fastcox</pkg>
+    package implements the Lasso and elastic-net penalized Cox's
+    regression using the cockail algorithm.  The <pkg>SGL</pkg>
+    package permits to fit Cox models with a combination of lasso and
+    group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
+    with penalized ridge-type (ridge, dynamic and weighted dynamic)
+    partial likelihood. The <pkg>AdapEnetClass</pkg> package implements
+    accelerated failure time models using regularised weighted least
+    squares (e.g., weighted elastic net, adaptive elastic net). 
   </li>
   <li>
     <em><b>Boosting:</b></em>
@@ -601,7 +653,10 @@ something is inaccurate or missing.</p>
     The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
     model using the compound covariate method. <pkg>plsRcox</pkg>
     provides partial least squares regression and various techniques
-    for fitting Cox models in high dimensionnal settings.
+    for fitting Cox models in high dimensionnal
+    settings. The <pkg>rsig</pkg> package implements feature selection
+    algorithms based on subsampling and averaging linear models
+    obtained from the Lasso algorithm for predicting survival risk. 
   </li>
 </ul>
 
@@ -705,6 +760,21 @@ something is inaccurate or missing.</p>
     of the transition hazard functions, for non-Markov models and
     for dependencies on the history.   
   </li>
+  <li>
+    The <pkg>simMSM</pkg> package provides functions for simulating
+    complex multistate models data with possibly nonlinear baseline
+    hazards and nonlinear covariate effects.
+  </li>
+  <li>
+    The <pkg>simPH</pkg> package implements tools for simulating and
+    plotting quantities of interest estimated from proportional
+    hazards models.
+  </li>
+  <li>
+    The <pkg>survsim</pkg> package permits to simulate simple and
+    complex survival data such as recurrent event data and competing
+    risks.
+</li>
 </ul>
 
 <h1>Miscellaneous</h1>
@@ -755,12 +825,24 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>TBSSurvival</pkg> package fits parametric
     Transform-both-sides models used in reliability analysis
+  </li>
+  <li>The <pkg>OutlierDC</pkg> package implements algorithms to detect outliers
+  based on quantile regression for censored data.
+  </li>
+  <li>The <pkg>survMisc</pkg> package proposes miscellaneous functions
+  that extends the <pkg>survival</pkg> package, e.g., additional
+  logrank type tests, goodness of fit plots.
+  </li>
+  <li>
+    The <pkg>coarseDataTools</pkg> package implements an EM algorithm
+    to estimate the relative case fatality ratio between two groups.
 </li>
 </ul>
 
 </info>
 
 <packagelist>
+<pkg>AdapEnetClass</pkg>
 <pkg>AER</pkg>
 <pkg>ahaz</pkg>
 <pkg>AIM</pkg>
@@ -770,6 +852,7 @@ something is inaccurate or missing.</p>
 <pkg>BaSTA</pkg>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
+<pkg>BGPhazard</pkg>
 <pkg>Biograph</pkg>
 <pkg>BMA</pkg>
 <pkg>bpcp</pkg>
@@ -778,6 +861,7 @@ something is inaccurate or missing.</p>
 <pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
+<pkg>coarseDataTools</pkg>
 <pkg>coin</pkg>
 <pkg>complex.surv.dat.sim</pkg>
 <pkg>concreg</pkg>
@@ -788,6 +872,7 @@ something is inaccurate or missing.</p>
 <pkg>coxme</pkg>
 <pkg>coxphf</pkg>
 <pkg>coxphw</pkg>
+<pkg>CoxRidge</pkg>
 <pkg>coxrobust</pkg>
 <pkg>CPE</pkg>
 <pkg>CPHshape</pkg>
@@ -838,6 +923,8 @@ something is inaccurate or missing.</p>
 <pkg>JPSurv</pkg>
 <pkg>kaps</pkg>
 <pkg>km.ci</pkg>
+<pkg>kmc</pkg>
+<pkg>kmconfband</pkg>
 <pkg>kmi</pkg>
 <pkg>KMsurv</pkg>
 <pkg>lava.tobit</pkg>
@@ -847,6 +934,7 @@ something is inaccurate or missing.</p>
 <pkg>locfit</pkg>
 <pkg>logconcens</pkg>
 <pkg>LogicReg</pkg>
+<pkg>LogrankA</pkg>
 <pkg>logspline</pkg>
 <pkg>lpc</pkg>
 <pkg>lss</pkg>
@@ -860,6 +948,7 @@ something is inaccurate or missing.</p>
 <pkg>mixAK</pkg>
 <pkg>mixPHM</pkg>
 <pkg>MLEcens</pkg>
+<pkg>MRsurv</pkg>
 <pkg>msm</pkg>
 <pkg>msSurv</pkg>
 <pkg>mstate</pkg>
@@ -870,8 +959,10 @@ something is inaccurate or missing.</p>
 <pkg>NADA</pkg>
 <pkg>NestedCohort</pkg>
 <pkg>NPHMC</pkg>
+<pkg>NPMLEcmprsk</pkg>
 <pkg>OIsurv</pkg>
 <pkg>OrdFacReg</pkg>
+<pkg>OutlierDC</pkg>
 <pkg>p3state.msm</pkg>
 <pkg>pamr</pkg>
 <pkg>party</pkg>
@@ -884,6 +975,7 @@ something is inaccurate or missing.</p>
 <pkg>prodlim</pkg>
 <pkg>quantreg</pkg>
 <pkg>parfm</pkg>
+<pkg>psbcGroup</pkg>
 <pkg>phmm</pkg>
 <pkg>powerSurvEpi</pkg>
 <pkg>pseudo</pkg>
@@ -896,17 +988,25 @@ something is inaccurate or missing.</p>
 <pkg>risksetROC</pkg>
 <pkg priority="core">rms</pkg>
 <pkg>RobustAFT</pkg>
+<pkg>ROCt</pkg>
 <pkg>rpart</pkg>
+<pkg>rsig</pkg>
 <pkg>saws</pkg>
 <pkg>SemiCompRisks</pkg>
+<pkg>SemiMarkov</pkg>
 <pkg>SGL</pkg>
 <pkg>simexaft</pkg>
+<pkg>simMSM</pkg>
+<pkg>simPH</pkg>
 <pkg>SMIR</pkg>
 <pkg>SmoothHazard</pkg>
+<pkg>smoothHR</pkg>
 <pkg>smoothSurv</pkg>
 <pkg>SMPracticals</pkg>
 <pkg>spatstat</pkg>
+<pkg>spatsurv</pkg>
 <pkg>superpc</pkg>
+<pkg>surv2sampleComp</pkg>
 <pkg>survAUC</pkg>
 <pkg>survBayes</pkg>
 <pkg>survC1</pkg>
@@ -918,8 +1018,11 @@ something is inaccurate or missing.</p>
 <pkg>survivalROC</pkg>
 <pkg>survIDINRI</pkg>
 <pkg>survJamda</pkg>
+<pkg>survMisc</pkg>
 <pkg>survrec</pkg>
+<pkg>SurvRegCensCov</pkg>
 <pkg>survPresmooth</pkg>
+<pkg>survsim</pkg>
 <pkg>survSNP</pkg>
 <pkg>SvyNom</pkg>
 <pkg>TBSSurvival</pkg>
@@ -933,6 +1036,8 @@ something is inaccurate or missing.</p>
 <pkg>TSHRC</pkg>
 <pkg>uniCox</pkg>
 <pkg>VGAM</pkg>
+<pkg>wtcrsk</pkg>
+<pkg>YPmodel</pkg>
 </packagelist>
 
 <links>
