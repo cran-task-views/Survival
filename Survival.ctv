@@ -134,10 +134,6 @@ something is inaccurate or missing.</p>
     for interval-censored data.
   </li>
   <li>
-    Three generalised logrank tests and a score test for interval-censored data
-    are implemented in the <pkg>glrt</pkg> package.
-  </li>
-  <li>
     <bioc>survcomp</bioc> compares 2 hazard ratios.
   </li>
   <li>
@@ -899,7 +895,6 @@ something is inaccurate or missing.</p>
 <pkg>genSurv</pkg>
 <pkg>glmpath</pkg>
 <pkg>globalboosttest</pkg>
-<pkg>glrt</pkg>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
