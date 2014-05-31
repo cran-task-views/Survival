@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2014-03-07</version>
+<version>2014-05-31</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -770,10 +770,6 @@ something is inaccurate or missing.</p>
 <h1>Miscellaneous</h1>
 <ul>
   <li>
-    <pkg>dynpred</pkg> is the companion package to "Dynamic Prediction
-    in Clinical Survival Analysis".
-  </li>
-  <li>
     Inverse probability weights can be estimated using the <pkg>ipw</pkg> package.
     These can be used to fit marginal structural models to estimate causal effects
     from observational data.
@@ -875,7 +871,6 @@ something is inaccurate or missing.</p>
 <pkg>dblcens</pkg>
 <pkg>DPpackage</pkg>
 <pkg>DTDA</pkg>
-<pkg>dynpred</pkg>
 <pkg>dynsurv</pkg>
 <pkg priority="core">eha</pkg>
 <pkg>emplik</pkg>
