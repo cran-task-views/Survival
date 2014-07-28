@@ -491,9 +491,7 @@ something is inaccurate or missing.</p>
     using h-likelihood estimation for the frailty terms can be fitted
     using the <pkg>frailtyHL</pkg> package.  The <pkg>tlmec</pkg>
     package implements a linear mixed effects model for censored data
-    with Student-t or normal distributions. The <pkg>jmec</pkg>
-    package fits joint models for event and censoring times,
-    respectively.
+    with Student-t or normal distributions.
   </li>
   <li>
     <em><b>Joint modelling of time-to-event and longitudinal
@@ -895,7 +893,6 @@ something is inaccurate or missing.</p>
 <pkg>jackknifeKME</pkg>
 <pkg>JM</pkg>
 <pkg>JMbayes</pkg>
-<pkg>jmec</pkg>
 <pkg>joineR</pkg>
 <pkg>JPSurv</pkg>
 <pkg>kaps</pkg>
