@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2014-05-31</version>
+<version>2014-07-29</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -770,11 +770,6 @@ something is inaccurate or missing.</p>
 <h1>Miscellaneous</h1>
 <ul>
   <li>
-    Inverse probability weights can be estimated using the <pkg>ipw</pkg> package.
-    These can be used to fit marginal structural models to estimate causal effects
-    from observational data.
-  </li>
-  <li>
     Package <pkg>boot</pkg> proposes the <code>censboot</code> function that 
     implements several types of bootstrap techniques for right-censored data.
   </li>
@@ -897,7 +892,6 @@ something is inaccurate or missing.</p>
 <pkg>interval</pkg>
 <pkg>ipdmeta</pkg>
 <pkg>ipred</pkg>
-<pkg>ipw</pkg>
 <pkg>jackknifeKME</pkg>
 <pkg>JM</pkg>
 <pkg>JMbayes</pkg>
