@@ -518,10 +518,6 @@ something is inaccurate or missing.</p>
 
 <h1>Bayesian Models</h1>
 <ul>
-  <li> 
-    <pkg>survBayes</pkg> fits through a Bayesian approach a proportional hazards 
-    model for right and interval-censored data.
-  </li>
   <li>
     The <pkg>bayesSurv</pkg> package proposes an implementation of a bivariate
     AFT model. 
@@ -975,7 +971,6 @@ something is inaccurate or missing.</p>
 <pkg>superpc</pkg>
 <pkg>surv2sampleComp</pkg>
 <pkg>survAUC</pkg>
-<pkg>survBayes</pkg>
 <pkg>survC1</pkg>
 <pkg>survexp.fr</pkg>
 <pkg>survey</pkg>
