@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2014-09-05</version>
+<version>2014-09-19</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -173,8 +173,7 @@ something is inaccurate or missing.</p>
     The <pkg>coxrobust</pkg> package proposes a robust implementation
     of the Cox model.
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
-    with possibly time-varying effects.  The <pkg>mfp</pkg> package
-    permits to fit Cox models with multiple fractional polynomial.
+    with possibly time-varying effects. 
     The <pkg>NestedCohort</pkg> fits Cox models for covariates with
     missing data.  A Cox model model can be fitted to data from
     complex survey design using the <code>svycoxph</code> function
@@ -914,7 +913,6 @@ something is inaccurate or missing.</p>
 <pkg>MCMCglmm</pkg>
 <pkg>MCMCpack</pkg>
 <pkg>mets</pkg>
-<pkg>mfp</pkg>
 <pkg>mixAK</pkg>
 <pkg>mixPHM</pkg>
 <pkg>MLEcens</pkg>
