@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2014-09-22</version>
+<version>2014-12-05</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -452,8 +452,7 @@ something is inaccurate or missing.</p>
     The <pkg>compeir</pkg> package estimates event-specific incidence
     rates, rate ratios, event-specific incidence proportions and
     cumulative incidence functions.
-    <pkg>randomSurvivalForest</pkg> provides summary measures for
-    competing risk such as ensemble CIF.  The <pkg>NPMLEcmprsk</pkg>
+    The <pkg>NPMLEcmprsk</pkg>
     package implements the semi-parametric mixture model for competing
     risks data. The <pkg>wtcrsk</pkg> package implements a
     proportional subdistribution hazards model with adjustment for
@@ -663,12 +662,9 @@ something is inaccurate or missing.</p>
   </li>
   <li>
     <em><b>Random forest:</b></em> Package <pkg>ipred</pkg> implements
-    bagging for survival data.  The <pkg>randomSurvivalForest</pkg>
+    bagging for survival data.  The <pkg>randomForestSRC</pkg>
     package fits random forest to survival data, while a variant of
-    the random forest is implemented in <pkg>party</pkg>.  Another
-    implementation is proposed in the <pkg>randomForestSRC</pkg>
-    package.
- 
+    the random forest is implemented in <pkg>party</pkg>.
   </li>
   <li>
     <b><em>Regularised and shrinkage methods:</em></b>
@@ -1070,7 +1066,6 @@ something is inaccurate or missing.</p>
 <pkg>PReMiuM</pkg>
 <pkg>pseudo</pkg>
 <pkg>randomForestSRC</pkg>
-<pkg>randomSurvivalForest</pkg>
 <pkg>rankhazard</pkg>
 <pkg>relsurv</pkg>
 <pkg>rhosp</pkg>
