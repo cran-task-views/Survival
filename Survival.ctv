@@ -794,11 +794,6 @@ something is inaccurate or missing.</p>
     covariates.
   </li>
   <li>
-    The <pkg>complex.surv.dat.sim</pkg> package permits to simulate
-    complex survival cohort data (e.g., multiple events, recurrent
-    events, ...).
-  </li>
-  <li>
     The <pkg>prodlim</pkg> package proposes some functions for
     simulating complex event history data.
   </li>
@@ -934,7 +929,6 @@ something is inaccurate or missing.</p>
 <pkg priority="core">cmprsk</pkg>
 <pkg>coarseDataTools</pkg>
 <pkg>coin</pkg>
-<pkg>complex.surv.dat.sim</pkg>
 <pkg>concreg</pkg>
 <pkg>condGEE</pkg>
 <pkg>compeir</pkg>
