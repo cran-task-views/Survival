@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2014-12-05</version>
+<version>2014-12-07</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -368,15 +368,11 @@ something is inaccurate or missing.</p>
     <pkg>mvna</pkg> package provides convenient functions for
     estimating and plotting the cumulative transition hazards in any
     multistate model, possibly subject to right-censoring and
-    left-truncation.  <pkg>changeLOS</pkg> permits to estimate and
-    plot the transition probabilities for any multistate model. It
-    also estimates the change of length of hospital stay.  The
+    left-truncation. The
     <pkg>etm</pkg> package estimates and plots transition
     probabilities for any multistate models. It can also estimate the
     variance of the Aalen-Johansen estimator, and handles
-    left-truncated data. It also implements the technique for
-    estimating the length of hospital stay included in
-    <pkg>changeLOS</pkg> in the presence of left-truncation.  The
+    left-truncated data. The
     <pkg>msSurv</pkg> package provides non-parametric estimation for
     multistate models subject to right-censoring (possibly
     state-dependent) and left-truncation. The <pkg>mstate</pkg>
@@ -934,7 +930,6 @@ something is inaccurate or missing.</p>
 <pkg>bshazard</pkg>
 <pkg>bujar</pkg>
 <pkg>censReg</pkg>
-<pkg>changeLOS</pkg>
 <pkg>clinfun</pkg>
 <pkg priority="core">cmprsk</pkg>
 <pkg>coarseDataTools</pkg>
