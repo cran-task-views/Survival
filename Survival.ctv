@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2014-12-07</version>
+<version>2014-12-13</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -646,7 +646,7 @@ something is inaccurate or missing.</p>
 <ul>
   <li>
     <em><b>Recursive partitioning:</b></em> 
-    <pkg>rpart</pkg> and <pkg>mvpart</pkg> packages implement CART-like trees that can be used with 
+    <pkg>rpart</pkg> implements CART-like trees that can be used with 
     censored outcomes.
     The <pkg>party</pkg> package implements recursive partitioning for survival
     data.
@@ -1026,7 +1026,6 @@ something is inaccurate or missing.</p>
 <pkg>multcomp</pkg>
 <pkg>multipleNCC</pkg>
 <pkg>mvna</pkg>
-<pkg>mvpart</pkg>
 <pkg>NADA</pkg>
 <pkg>NestedCohort</pkg>
 <pkg>NPHMC</pkg>
