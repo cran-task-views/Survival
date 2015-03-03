@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2015-02-06</version>
+<version>2015-03-03</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -517,8 +517,6 @@ something is inaccurate or missing.</p>
     implemented in the <pkg>coxme</pkg> package.
     The <code>two.stage</code> function in the <pkg>timereg</pkg>
     package fits the Clayton-Oakes-Glidden model.
-    The <pkg>parfm</pkg> package fits fully parametric frailty models
-    via maximisation of the marginal likelihood.
     The <pkg>frailtypack</pkg> package fits proportional hazards
     models with a shared Gamma frailty to right-censored and/or
     left-truncated data using a penalised likelihood on the hazard
@@ -1045,7 +1043,6 @@ something is inaccurate or missing.</p>
 <pkg>polspline</pkg>
 <pkg>prodlim</pkg>
 <pkg>quantreg</pkg>
-<pkg>parfm</pkg>
 <pkg>psbcGroup</pkg>
 <pkg>phmm</pkg>
 <pkg>powerSurvEpi</pkg>
