@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2015-03-03</version>
+<version>2015-03-13</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -277,9 +277,6 @@ something is inaccurate or missing.</p>
     fits AFT models for interval censored data. The <pkg>aftgee</pkg>
     package implements both rank-based estimates and least square
     estimates (via generalised estimating equations) to the AFT model.
-    An alternative weighting scheme for parameter estimation in the
-    AFT model is proposed in the <pkg>imputeYn</pkg>
-    package.
   </li>
 
   <li>
@@ -972,7 +969,6 @@ something is inaccurate or missing.</p>
 <pkg>ICE</pkg>
 <pkg>ICsurv</pkg>
 <pkg>IDPSurvival</pkg>
-<pkg>imputeYn</pkg>
 <pkg>intcox</pkg>
 <pkg>interval</pkg>
 <pkg>invGauss</pkg>
