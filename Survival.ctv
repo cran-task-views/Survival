@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2015-03-13</version>
+<version>2015-06-18</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -136,6 +136,10 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>interval</pkg> package implements logrank and Wilcoxon type tests 
     for interval-censored data.
+  </li>
+  <li>
+    Three generalised logrank tests and a score test for interval-censored data
+    are implemented in the <pkg>glrt</pkg> package.
   </li>
   <li>
     <bioc>survcomp</bioc> compares 2 hazard ratios.
@@ -512,6 +516,8 @@ something is inaccurate or missing.</p>
     implemented in the <pkg>coxme</pkg> package.
     The <code>two.stage</code> function in the <pkg>timereg</pkg>
     package fits the Clayton-Oakes-Glidden model.
+    The <pkg>parfm</pkg> package fits fully parametric frailty models
+    via maximisation of the marginal likelihood.
     The <pkg>frailtypack</pkg> package fits proportional hazards
     models with a shared Gamma frailty to right-censored and/or
     left-truncated data using a penalised likelihood on the hazard
@@ -854,7 +860,11 @@ something is inaccurate or missing.</p>
   <li>
     The <pkg>currentSurvival</pkg> package estimates the current
     cumulative incidence and the current leukaemia free survival function.
-</li>
+  </li>
+  <li>
+    The <pkg>survJamda</pkg> package provides functions for performing meta-analyses 
+    of gene expression data and to predict patients' survival and risk assessment.
+  </li>
   <li>
     <pkg>ipdmeta</pkg> provides tools for individual patient data meta-analysis, mixed-level meta-analysis with patient 
     level data and mulivariate survival estimates for aggregate studies.
@@ -962,6 +972,7 @@ something is inaccurate or missing.</p>
 <pkg>genSurv</pkg>
 <pkg>glmpath</pkg>
 <pkg>globalboosttest</pkg>
+<pkg>glrt</pkg>
 <pkg>gof</pkg>
 <pkg>gss</pkg>
 <pkg>ICE</pkg>
@@ -1025,6 +1036,7 @@ something is inaccurate or missing.</p>
 <pkg>p3state.msm</pkg>
 <pkg>paf</pkg>
 <pkg>pamr</pkg>
+<pkg>parfm</pkg>
 <pkg>party</pkg>
 <pkg>pec</pkg>
 <pkg>penalized</pkg>
@@ -1079,6 +1091,7 @@ something is inaccurate or missing.</p>
 <pkg>survivalMPL</pkg>
 <pkg>survivalROC</pkg>
 <pkg>survIDINRI</pkg>
+<pkg>survJamda</pkg>
 <pkg>survMisc</pkg>
 <pkg>survrec</pkg>
 <pkg>SurvRegCensCov</pkg>
