@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2015-06-18</version>
+<version>2015-07-01</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -251,9 +251,7 @@ something is inaccurate or missing.</p>
     implements the model of Royston and Parmar (2002). The model uses
     natural cubic splines for the baseline survival function, and
     proportional hazards, proportional odds or probit functions for
-    regression. The <pkg>SurvRegCensCov</pkg> package fits a Weibull
-    regression model for right-censored data in which one covariate
-    might be censored. 
+    regression.
   </li>
 
   <li>
@@ -1094,7 +1092,6 @@ something is inaccurate or missing.</p>
 <pkg>survJamda</pkg>
 <pkg>survMisc</pkg>
 <pkg>survrec</pkg>
-<pkg>SurvRegCensCov</pkg>
 <pkg>survPresmooth</pkg>
 <pkg>survsim</pkg>
 <pkg>survSNP</pkg>
