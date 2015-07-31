@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2015-07-01</version>
+<version>2015-07-31</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -852,6 +852,10 @@ something is inaccurate or missing.</p>
 <h1>Miscellaneous</h1>
 <ul>
   <li>
+    <pkg>dynpred</pkg> is the companion package to "Dynamic Prediction
+    in Clinical Survival Analysis".
+  </li>
+  <li>
     Package <pkg>boot</pkg> proposes the <code>censboot</code> function that 
     implements several types of bootstrap techniques for right-censored data.
   </li>
@@ -950,6 +954,7 @@ something is inaccurate or missing.</p>
 <pkg>DPpackage</pkg>
 <pkg>DStree</pkg>
 <pkg>DTDA</pkg>
+<pkg>dynpred</pkg>
 <pkg>dynsurv</pkg>
 <pkg priority="core">eha</pkg>
 <pkg>emplik</pkg>
