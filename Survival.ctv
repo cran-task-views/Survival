@@ -1123,16 +1123,15 @@ something is inaccurate or missing.</p>
   <bioc>multtest</bioc>
   <bioc>survcomp</bioc>
   <a href="http://www.imbi.uni-freiburg.de/comprisksmultistate">Competing Risks and Multistate Models with R</a>
-  <a href="http://www.msbi.nl/DynamicPrediction">Dynamic prediction in clinical survival analysis</a>
+  <a href="https://www.lumc.nl/org/msbi/research/medische-statistiek/survival-analysis/MethodologicalResearch/dynamic-prediction/">Dynamic prediction in clinical survival analysis</a>
   <a href="http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS">Regression modelling strategy</a>
   <a href="http://www.gamlss.com/">GAMLSS</a>
   <a href="http://www3.interscience.wiley.com/cgi-bin/abstract/113390852/ABSTRACT">Tutorial in competing 
     risks and multistate models</a>
   <a href="http://www.msbi.nl/dnn/Research/SurvivalAnalysis/Multistate/tabid/144/Default.aspx">Associated
     functions from the tutorial</a>
-  <a href="http://cran.r-project.org/doc/contrib/Fox-Companion/appendix-cox-regression.pdf">Proportional-Hazards
-    Regression for Survival Data. Appendix to An R and S-PLUS
-    Companion to Applied Regression.</a>
+  <a href="http://socserv.mcmaster.ca/jfox/Books/Companion/appendix/Appendix-Cox-Regression.pdf">Proportional-Hazards
+    Regression for Survival Data. Appendix to An R and S-PLUS Companion to Applied Regression.</a>
     <a href="http://www.jstatsoft.org/v38">Journal of Statistical Software. Special Volume: Competing Risks and Multi-State Models</a>
 </links>
 
