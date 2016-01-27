@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2015-09-01</version>
+<version>2016-01-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -825,7 +825,7 @@ something is inaccurate or missing.</p>
   useful in the context of event history analysis.</p> 
 <ul>
   <li>
-    The <pkg>survMisc</pkg> and <pkg>rms</pkg> packages both propose
+    The <pkg>rms</pkg> package proposes
     functions for plotting survival curves with the at risk table aligned to
     the x axis. <pkg>prodlim</pkg> extends this to the competing risks
     model. 
@@ -893,10 +893,6 @@ something is inaccurate or missing.</p>
   </li>
   <li>The <pkg>OutlierDC</pkg> package implements algorithms to detect outliers
   based on quantile regression for censored data.
-  </li>
-  <li>The <pkg>survMisc</pkg> package proposes miscellaneous functions
-  that extends the <pkg>survival</pkg> package, e.g., additional
-  logrank type tests, goodness of fit plots.
   </li>
   <li>
     The <pkg>coarseDataTools</pkg> package implements an EM algorithm
@@ -1092,7 +1088,6 @@ something is inaccurate or missing.</p>
 <pkg>survivalROC</pkg>
 <pkg>survIDINRI</pkg>
 <pkg>survJamda</pkg>
-<pkg>survMisc</pkg>
 <pkg>survrec</pkg>
 <pkg>survPresmooth</pkg>
 <pkg>survsim</pkg>
