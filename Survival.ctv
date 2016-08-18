@@ -282,7 +282,8 @@ something is inaccurate or missing.</p>
     estimates (via generalised estimating equations) to the AFT model.
     An alternative weighting scheme for parameter estimation in the
     AFT model is proposed in the <pkg>imputeYn</pkg>
-    package.
+    package. The <pkg>AdapEnetClass</pkg> package implements elastic
+    net regularisation for the AFT model.
   </li>
 
   <li>
@@ -681,7 +682,9 @@ something is inaccurate or missing.</p>
     package permits to fit Cox models with a combination of lasso and
     group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
     with penalized ridge-type (ridge, dynamic and weighted dynamic)
-    partial likelihood.
+    partial likelihood. The <pkg>AdapEnetClass</pkg> package implements
+    accelerated failure time models using regularised weighted least
+    squares (e.g., weighted elastic net, adaptive elastic net). 
   </li>
   <li>
     <em><b>Boosting:</b></em>
@@ -915,6 +918,7 @@ something is inaccurate or missing.</p>
 </info>
 
 <packagelist>
+<pkg>AdapEnetClass</pkg>
 <pkg>AER</pkg>
 <pkg>aftgee</pkg>
 <pkg>ahaz</pkg>
