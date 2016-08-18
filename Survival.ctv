@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2016-05-26</version>
+<version>2016-08-18</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -54,7 +54,9 @@ something is inaccurate or missing.</p>
     estimator following Pollock et al. (1998). The <pkg>bpcp</pkg>
     package provides several functions for computing confidence
     intervals of the survival distribution (e.g., beta product
-    confidence procedure). The <pkg>lbiassurv</pkg> package offers various
+    confidence procedure). The <pkg>jackknifeKME</pkg> package
+    implements the modified jackknife estimator of the Kaplan-Meier
+    estimator. The <pkg>lbiassurv</pkg> package offers various
     length-bias corrections to survival curve
     estimation. Non-Parametric confidance bands for the Kaplan-Meier
     estimator can be computed using the <pkg>kmconfband</pkg> package.
@@ -250,7 +252,9 @@ something is inaccurate or missing.</p>
     implements the model of Royston and Parmar (2002). The model uses
     natural cubic splines for the baseline survival function, and
     proportional hazards, proportional odds or probit functions for
-    regression.
+    regression. The <pkg>SurvRegCensCov</pkg> package fits a Weibull
+    regression model for right-censored data in which one covariate
+    might be censored. 
   </li>
 
   <li>
@@ -276,6 +280,9 @@ something is inaccurate or missing.</p>
     fits AFT models for interval censored data. The <pkg>aftgee</pkg>
     package implements both rank-based estimates and least square
     estimates (via generalised estimating equations) to the AFT model.
+    An alternative weighting scheme for parameter estimation in the
+    AFT model is proposed in the <pkg>imputeYn</pkg>
+    package.
   </li>
 
   <li>
@@ -404,7 +411,9 @@ something is inaccurate or missing.</p>
     Lexis objects as a way to represent, manipulate and summarise data
     from multistate models.  The <pkg>TraMineR</pkg> package is
     intended for analysing state or event sequences that describe life
-    courses. <pkg>asbio</pkg> computes the
+    courses. The <pkg>Biograph</pkg> package permits to describe and
+    analyse life histories following a multistate perspective on the
+    life course. <pkg>asbio</pkg> computes the
     expected numbers of individuals in specified age classes or life
     stages given survivorship probabilities from a transition matrix.
   </li>
@@ -824,7 +833,7 @@ something is inaccurate or missing.</p>
   useful in the context of event history analysis.</p> 
 <ul>
   <li>
-    The <pkg>rms</pkg> package proposes
+    The <pkg>survMisc</pkg> and <pkg>rms</pkg> packages both propose
     functions for plotting survival curves with the at risk table aligned to
     the x axis. <pkg>prodlim</pkg> extends this to the competing risks
     model. 
@@ -893,6 +902,10 @@ something is inaccurate or missing.</p>
   <li>The <pkg>OutlierDC</pkg> package implements algorithms to detect outliers
   based on quantile regression for censored data.
   </li>
+  <li>The <pkg>survMisc</pkg> package proposes miscellaneous functions
+  that extends the <pkg>survival</pkg> package, e.g., additional
+  logrank type tests, goodness of fit plots.
+  </li>
   <li>
     The <pkg>coarseDataTools</pkg> package implements an EM algorithm
     to estimate the relative case fatality ratio between two groups.
@@ -913,6 +926,7 @@ something is inaccurate or missing.</p>
 <pkg>bayesSurv</pkg>
 <pkg>BayHaz</pkg>
 <pkg>BGPhazard</pkg>
+<pkg>Biograph</pkg>
 <pkg>BMA</pkg>
 <pkg>bpcp</pkg>
 <pkg>boot</pkg>
@@ -973,10 +987,12 @@ something is inaccurate or missing.</p>
 <pkg>ICE</pkg>
 <pkg>ICsurv</pkg>
 <pkg>IDPSurvival</pkg>
+<pkg>imputeYn</pkg>
 <pkg>interval</pkg>
 <pkg>invGauss</pkg>
 <pkg>ipdmeta</pkg>
 <pkg>ipred</pkg>
+<pkg>jackknifeKME</pkg>
 <pkg>JM</pkg>
 <pkg>JMbayes</pkg>
 <pkg>joineR</pkg>
@@ -1086,8 +1102,10 @@ something is inaccurate or missing.</p>
 <pkg>survivalROC</pkg>
 <pkg>survIDINRI</pkg>
 <pkg>survJamda</pkg>
-<pkg>survrec</pkg>
+<pkg>survMisc</pkg>
 <pkg>survPresmooth</pkg>
+<pkg>survrec</pkg>
+<pkg>SurvRegCensCov</pkg>
 <pkg>survsim</pkg>
 <pkg>survSNP</pkg>
 <pkg>SvyNom</pkg>
