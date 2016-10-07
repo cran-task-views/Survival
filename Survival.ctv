@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2016-08-19</version>
+<version>2016-10-07</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -607,16 +607,15 @@ something is inaccurate or missing.</p>
 <h1>Random Effect Models</h1>
 <ul>
   <li>
-    <em><b>Frailties:</b></em> Frailty terms can be added
-    in <code>coxph</code> and <code>survreg</code> functions in
-    package <pkg>survival</pkg>. A mixed-effects Cox model is
-    implemented in the <pkg>coxme</pkg> package.
-    The <code>two.stage</code> function in the <pkg>timereg</pkg>
-    package fits the Clayton-Oakes-Glidden model.
-    The <pkg>parfm</pkg> package fits fully parametric frailty models
-    via maximisation of the marginal likelihood.
-    The <pkg>frailtypack</pkg> package fits proportional hazards
-    models with a shared Gamma frailty to right-censored and/or
+    <em><b>Frailties:</b></em> Frailty terms can be added in
+    <code>coxph</code> and <code>survreg</code> functions in package
+    <pkg>survival</pkg>. A mixed-effects Cox model is implemented in
+    the <pkg>coxme</pkg> package.  The <code>two.stage</code> function
+    in the <pkg>timereg</pkg> package fits the Clayton-Oakes-Glidden
+    model.  The <pkg>parfm</pkg> package fits fully parametric frailty
+    models via maximisation of the marginal likelihood.  The
+    <pkg>frailtypack</pkg> package fits proportional hazards models
+    with a shared Gamma frailty to right-censored and/or
     left-truncated data using a penalised likelihood on the hazard
     function. The package also fits additive and nested frailty models
     that can be used for, e.g., meta-analysis and for hierarchically
@@ -633,7 +632,10 @@ something is inaccurate or missing.</p>
     package implements parametric frailty models by maximum marginal
     likelihood. The <pkg>PenCoxFrail</pkg> package provides a
     regularisation approach for Cox frailty models through
-    penalisation. 
+    penalisation.  The <pkg>mexhaz</pkg> enables modelling of the
+    excess hazard regression model with time-dependent and/or
+    non-linear effect(s) and a random effect defined at the cluster
+    level
   </li>
   <li>
     <em><b>Joint modelling of time-to-event and longitudinal
@@ -644,7 +646,7 @@ something is inaccurate or missing.</p>
     model between tumour progression and death for
     meta-analysis. <pkg>JointModel</pkg> fits semiparametric
     regression model for longitudinal responses and a semiparametric
-    transformation model for time-to-event data.
+    transformation model for time-to-event data. 
   </li>
 </ul>
 
@@ -1012,6 +1014,12 @@ something is inaccurate or missing.</p>
     arrows from the initial event to each competing event describes
     the particular amount of every incidence rate.
   </li>
+  <li>
+    The <pkg>FamEvent</pkg> generates time-to-event outcomes for
+    families that habour genetic mutation under different sampling
+    designs and estimates the penetrance functions for family data
+    with ascertainment correction.
+  </li>
 </ul>
 
 <h1>Miscellaneous</h1>
@@ -1179,6 +1187,7 @@ something is inaccurate or missing.</p>
   <pkg>epiR</pkg>
   <pkg>etm</pkg>
   <pkg>exactRankTests</pkg>
+  <pkg>FamEvent</pkg>
   <pkg>fastcox</pkg>
   <pkg>fastpseudo</pkg>
   <pkg>FHtest</pkg>
