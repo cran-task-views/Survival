@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2016-10-07</version>
+<version>2017-03-22</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -517,9 +517,7 @@ something is inaccurate or missing.</p>
     rates, rate ratios, event-specific incidence proportions and
     cumulative incidence functions.  The <pkg>NPMLEcmprsk</pkg>
     package implements the semi-parametric mixture model for competing
-    risks data. The <pkg>wtcrsk</pkg> package implements a
-    proportional subdistribution hazards model with adjustment for
-    covariate-dependent censoring. The <pkg>MIICD</pkg> package
+    risks data. The <pkg>MIICD</pkg> package
     implements Pan's (2000) multiple imputation approach to the Fine
     and Gray model for interval censored data. The <pkg>crskdiag</pkg>
     package provides graphical and analytical approaches for checking
@@ -1391,7 +1389,6 @@ something is inaccurate or missing.</p>
   <pkg>uniCox</pkg>
   <pkg>VGAM</pkg>
   <pkg>vitality</pkg>
-  <pkg>wtcrsk</pkg>
   <pkg>YPmodel</pkg>
 </packagelist>
 
