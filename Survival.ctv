@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2017-03-22</version>
+<version>2017-04-25</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -803,9 +803,7 @@ something is inaccurate or missing.</p>
     available in <pkg>uniCox</pkg>.  The <pkg>lpc</pkg> package
     implements the lassoed principal components method.
     The <pkg>ahaz</pkg> package implements the LASSO and elastic net
-    estimator for the additive risk model.  The <pkg>fastcox</pkg>
-    package implements the Lasso and elastic-net penalized Cox's
-    regression using the cockail algorithm.  The <pkg>SGL</pkg>
+    estimator for the additive risk model. The <pkg>SGL</pkg>
     package permits to fit Cox models with a combination of lasso and
     group lasso regularisation. <pkg>CoxRidge</pkg> fits Cox models
     with penalized ridge-type (ridge, dynamic and weighted dynamic)
@@ -1186,7 +1184,6 @@ something is inaccurate or missing.</p>
   <pkg>etm</pkg>
   <pkg>exactRankTests</pkg>
   <pkg>FamEvent</pkg>
-  <pkg>fastcox</pkg>
   <pkg>fastpseudo</pkg>
   <pkg>FHtest</pkg>
   <pkg>fitdistrplus</pkg>
