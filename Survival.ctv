@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2017-04-25</version>
+<version>2017-12-05</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -538,14 +538,10 @@ something is inaccurate or missing.</p>
     fits the Anderson-Gill model for recurrent events, model that can
     also be fitted with the <pkg>frailtypack</pkg> package. The latter
     also permits to fit joint frailty models for joint modelling of
-    recurrent events and a terminal event.  The <pkg>survrec</pkg>
-    package proposes implementations of several models for recurrent
-    events data, such as the Pe&#241;a-Strawderman-Hollander,
-    Wang-Chang estimators, and MLE estimation under a Gamma Frailty
-    model.  The <pkg>condGEE</pkg> package implements the conditional
-    GEE for recurrent event gap times.  The <pkg>TestSurvRec</pkg>
-    package implements weighted logrank type tests for recurrent
-    events. The <pkg>reda</pkg> package provides function to fit gamma
+    recurrent events and a terminal event.
+    The <pkg>condGEE</pkg> package implements the conditional
+    GEE for recurrent event gap times.
+    The <pkg>reda</pkg> package provides function to fit gamma
     frailty model with either a piecewise constant or a spline as the
     baseline rate function for recurrent event data, as well as some
     miscellaneous functions for recurrent event data. Several
@@ -1362,7 +1358,6 @@ something is inaccurate or missing.</p>
   <pkg>survMisc</pkg>
   <pkg>survPresmooth</pkg>
   <pkg>SurvRank</pkg>
-  <pkg>survrec</pkg>
   <pkg>SurvRegCensCov</pkg>
   <pkg>survRM2</pkg>
   <pkg>survsim</pkg>
@@ -1370,7 +1365,6 @@ something is inaccurate or missing.</p>
   <pkg>SvyNom</pkg>
   <pkg>TBSSurvival</pkg>
   <pkg>tdROC</pkg>
-  <pkg>TestSurvRec</pkg>
   <pkg>thregI</pkg>
   <pkg priority="core">timereg</pkg>
   <pkg>timeROC</pkg>
