@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@uni-ulm.de">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2017-12-05</version>
+<version>2017-12-11</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -613,9 +613,8 @@ something is inaccurate or missing.</p>
     left-truncated data using a penalised likelihood on the hazard
     function. The package also fits additive and nested frailty models
     that can be used for, e.g., meta-analysis and for hierarchically
-    clustered data (with 2 levels of clustering), respectively.  A
-    proportional hazards model with mixed effects can be fitted using
-    the <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
+    clustered data (with 2 levels of clustering), respectively.
+    The <pkg>lmec</pkg> package fits a
     linear mixed-effects model for left-censored data. The Cox model
     using h-likelihood estimation for the frailty terms can be fitted
     using the <pkg>frailtyHL</pkg> package.  The <pkg>tlmec</pkg>
@@ -1294,7 +1293,6 @@ something is inaccurate or missing.</p>
   <pkg>peperr</pkg>
   <pkg>PermAlgo</pkg>
   <pkg>PHeval</pkg>
-  <pkg>phmm</pkg>
   <pkg>plac</pkg>
   <pkg>plsRcox</pkg>
   <pkg>polspline</pkg>
