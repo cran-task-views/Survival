@@ -494,6 +494,7 @@ or submit a pull request.</p>
     survivorship probabilities from a transition matrix.
   </li>
 
+  <li>
     <em><b>Competing risks:</b></em> The package <pkg>cmprsk</pkg>
     estimates the cumulative incidence functions, but they can be
     compared in more than two samples.  The package also implements
@@ -542,6 +543,7 @@ or submit a pull request.</p>
     fit the Fine and Gray model as well other models that belong to
     the class of semiparametric generalized odds rate transformation
     models to interval-censored competing risks data.
+  </li>
 
   <li>
     <em><b>Recurrent event data:</b></em> <code>coxph</code> from the
