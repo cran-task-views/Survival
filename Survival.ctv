@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-02-27</version>
+<version>2018-03-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -979,8 +979,7 @@ or submit a pull request.</p>
     partial likelihood. The <pkg>hdnom</pkg> package implements 9
     types of penalised Cox regression methods and provides methods for
     model validation, calibration, comparison, and nomogram
-    visualisation. Another implementation of regularised Cox models
-    can be found in <pkg>Coxnet</pkg>. A penalised version of the Fine
+    visualisation. A penalised version of the Fine
     and Gray model can be found
     in <pkg>crrp</pkg>. The <pkg>Cyclops</pkg> package implements
     cyclic coordinate descent for the Cox proportional hazards model.
@@ -1329,7 +1328,6 @@ or submit a pull request.</p>
   <pkg>CoxBoost</pkg>
   <pkg>coxinterval</pkg>
   <pkg>coxme</pkg>
-  <pkg>Coxnet</pkg>
   <pkg>coxphf</pkg>
   <pkg>coxphw</pkg>
   <pkg>CoxRidge</pkg>
