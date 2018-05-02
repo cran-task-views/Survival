@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-03-27</version>
+<version>2018-05-02</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -1001,10 +1001,8 @@ or submit a pull request.</p>
     The <pkg>AIM</pkg> package can construct index models for survival
     outcomes, that is, construct scores based on a training dataset.
     The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
-    model using the compound covariate method. <pkg>plsRcox</pkg>
-    provides partial least squares regression and various techniques
-    for fitting Cox models in high dimensionnal
-    settings. The <pkg>rsig</pkg> package implements feature selection
+    model using the compound covariate method. 
+    The <pkg>rsig</pkg> package implements feature selection
     algorithms based on subsampling and averaging linear models
     obtained from the Lasso algorithm for predicting survival risk.
   </li>
@@ -1482,7 +1480,6 @@ or submit a pull request.</p>
   <pkg>PHeval</pkg>
   <pkg>phmm</pkg>
   <pkg>plac</pkg>
-  <pkg>plsRcox</pkg>
   <pkg>polspline</pkg>
   <pkg>popEpi</pkg>
   <pkg>powerSurvEpi</pkg>
