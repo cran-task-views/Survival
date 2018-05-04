@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-05-02</version>
+<version>2018-05-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -60,8 +60,7 @@ or submit a pull request.</p>
     various length-bias corrections to survival curve
     estimation. Non-Parametric confidance bands for the Kaplan-Meier
     estimator can be computed using the <pkg>kmconfband</pkg> package.
-    The <pkg>kmc</pkg> package implements the Kaplan-Meier estimator
-    with constraints. The <pkg>landest</pkg> package allows landmark
+    The <pkg>landest</pkg> package allows landmark
     estimation and testing of survival
     probabilities. The <pkg>jackknifeKME</pkg> package computes the
     original and modified jackknife estimates of Kaplan-Meier
@@ -1413,7 +1412,6 @@ or submit a pull request.</p>
   <pkg>JPSurv</pkg>
   <pkg>kaps</pkg>
   <pkg>km.ci</pkg>
-  <pkg>kmc</pkg>
   <pkg>kmconfband</pkg>
   <pkg>kmi</pkg>
   <pkg>KMsurv</pkg>
