@@ -998,9 +998,6 @@ or submit a pull request.</p>
     outcomes, that is, construct scores based on a training dataset.
     The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
     model using the compound covariate method. 
-    The <pkg>rsig</pkg> package implements feature selection
-    algorithms based on subsampling and averaging linear models
-    obtained from the Lasso algorithm for predicting survival risk.
   </li>
 </ul>
 
@@ -1494,7 +1491,6 @@ or submit a pull request.</p>
   <pkg>RobustAFT</pkg>
   <pkg>ROCt</pkg>
   <pkg>rpart</pkg>
-  <pkg>rsig</pkg>
   <pkg>rstpm2</pkg>
   <pkg>saws</pkg>
   <pkg>SemiCompRisks</pkg>
