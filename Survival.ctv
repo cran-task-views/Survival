@@ -625,9 +625,8 @@ or submit a pull request.</p>
     left-truncated data using a penalised likelihood on the hazard
     function. The package also fits additive and nested frailty models
     that can be used for, e.g., meta-analysis and for hierarchically
-    clustered data (with 2 levels of clustering), respectively.  A
-    proportional hazards model with mixed effects can be fitted using
-    the <pkg>phmm</pkg> package.  The <pkg>lmec</pkg> package fits a
+    clustered data (with 2 levels of clustering), respectively. 
+    The <pkg>lmec</pkg> package fits a
     linear mixed-effects model for left-censored data. The <pkg>tlmec</pkg>
     package implements a linear mixed effects model for censored data
     with Student-t or normal distributions. The <pkg>frailtySurv</pkg>
@@ -1473,7 +1472,6 @@ or submit a pull request.</p>
   <pkg>peperr</pkg>
   <pkg>PermAlgo</pkg>
   <pkg>PHeval</pkg>
-  <pkg>phmm</pkg>
   <pkg>plac</pkg>
   <pkg>polspline</pkg>
   <pkg>popEpi</pkg>
