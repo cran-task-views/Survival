@@ -554,8 +554,7 @@ or submit a pull request.</p>
     package provides function to fit gamma frailty model with either a
     piecewise constant or a spline as the baseline rate function for
     recurrent event data, as well as some miscellaneous functions for
-    recurrent event data. Several regression models for recurrent
-    event data are implemented in the <pkg>reReg</pkg> package.
+    recurrent event data.
   </li>
 </ul>
 
@@ -1479,7 +1478,6 @@ or submit a pull request.</p>
   <pkg>rankhazard</pkg>
   <pkg>reda</pkg>
   <pkg>relsurv</pkg>
-  <pkg>reReg</pkg>
   <pkg>rhosp</pkg>
   <pkg>riskRegression</pkg>
   <pkg>risksetROC</pkg>
