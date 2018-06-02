@@ -1220,8 +1220,7 @@ or submit a pull request.</p>
     The <pkg>KMsurv</pkg> package includes the data sets from Klein
     and Moeschberger (1997).  Some supplementary data sets and
     functions can be found in the <pkg>OIsurv</pkg> package.  The
-    package <pkg>SMIR</pkg> that accompanies Aitkin et al. (2009),
-    <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
+    package <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
     and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
     W.J. (2003, 2007) also contain survival data sets.
   </li>
@@ -1494,7 +1493,6 @@ or submit a pull request.</p>
   <pkg>SimSCRPiecewise</pkg>
   <pkg>simsurv</pkg>
   <pkg>smcure</pkg>
-  <pkg>SMIR</pkg>
   <pkg>SmoothHazard</pkg>
   <pkg>smoothHR</pkg>
   <pkg>smoothSurv</pkg>
