@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-05-28</version>
+<version>2018-06-02</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -625,9 +625,7 @@ or submit a pull request.</p>
     The <pkg>lmec</pkg> package fits a
     linear mixed-effects model for left-censored data. The <pkg>tlmec</pkg>
     package implements a linear mixed effects model for censored data
-    with Student-t or normal distributions. The <pkg>frailtySurv</pkg>
-    package simulates and fits semiparametric shared frailty models
-    under a wide range of frailty distributions. The <pkg>parfm</pkg>
+    with Student-t or normal distributions. The <pkg>parfm</pkg>
     package implements parametric frailty models by maximum marginal
     likelihood. The <pkg>PenCoxFrail</pkg> package provides a
     regularisation approach for Cox frailty models through
@@ -1357,7 +1355,6 @@ or submit a pull request.</p>
   <pkg>flexsurv</pkg>
   <pkg>frailtyEM</pkg>
   <pkg>frailtypack</pkg>
-  <pkg>frailtySurv</pkg>
   <pkg>gamboostMSM</pkg>
   <pkg>gamlss.cens</pkg>
   <pkg>gbm</pkg>
