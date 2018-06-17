@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-06-02</version>
+<version>2018-06-17</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -64,9 +64,7 @@ or submit a pull request.</p>
     estimation and testing of survival
     probabilities. The <pkg>jackknifeKME</pkg> package computes the
     original and modified jackknife estimates of Kaplan-Meier
-    estimators. The <pkg>tranSurv</pkg> package permits to estimate a
-    survival distribution in the presence of dependent left-truncation
-    and right-censoring. The <pkg>condSURV</pkg> package provides
+    estimators. The <pkg>condSURV</pkg> package provides
     methods for estimating the conditional survival function for
     ordered multivariate failure time data. The <pkg>gte</pkg> package
     implements the generalised Turnbull estimator proposed by Dehghan
@@ -1536,7 +1534,6 @@ or submit a pull request.</p>
   <pkg>tpr</pkg>
   <pkg>TraMineR</pkg>
   <pkg>TransModel</pkg>
-  <pkg>tranSurv</pkg>
   <pkg>TSHRC</pkg>
   <pkg>uniah</pkg>
   <pkg>uniCox</pkg>
