@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-06-17</version>
+<version>2018-06-18</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -216,9 +216,7 @@ or submit a pull request.</p>
     The <pkg>dynsurv</pkg> package fits time-varying coefficient
     models for interval censored and right censored survival data
     using a Bayesian Cox model, a spline based Cox model or a
-    transformation model.  The <pkg>CPHshape</pkg> package computes
-    the Cox proportional hazards model with shape constrained hazard
-    functions.  The <pkg>OrdFacReg</pkg> package implements the Cox
+    transformation model.  The <pkg>OrdFacReg</pkg> package implements the Cox
     model using an active set algorithm for dummy variables of ordered
     factors. The <pkg>survivalMPL</pkg> package fits Cox models using
     maximum penalised likelihood and provide a non parametric smooth
@@ -1315,7 +1313,6 @@ or submit a pull request.</p>
   <pkg>coxrobust</pkg>
   <pkg>coxsei</pkg>
   <pkg>CPE</pkg>
-  <pkg>CPHshape</pkg>
   <pkg>Cprob</pkg>
   <pkg>CR</pkg>
   <pkg>crrp</pkg>
