@@ -579,11 +579,6 @@ or submit a pull request.</p>
     et al. (2007) and Mahboubi et al. (2011).
   </li>
   <li>
-    The <pkg>JPSurv</pkg> package implements methods for
-    population-based survival analysis, like the proportional hazard
-    relative survival model and the join point relative survival model.
-  </li>
-  <li>
     The <pkg>survexp.fr</pkg> package computes relative survival,
     absolute excess risk and standardized mortality ratio based on
     French death rates.
@@ -1388,7 +1383,6 @@ or submit a pull request.</p>
   <pkg>joineRML</pkg>
   <pkg>joint.Cox</pkg>
   <pkg>JointModel</pkg>
-  <pkg>JPSurv</pkg>
   <pkg>kaps</pkg>
   <pkg>km.ci</pkg>
   <pkg>kmconfband</pkg>
