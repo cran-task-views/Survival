@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-06-18</version>
+<version>2018-07-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -1039,10 +1039,6 @@ or submit a pull request.</p>
     estimating the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for
     survival data.
   </li>
-  <li>The <pkg>SurvRank</pkg> package provides functions for the
-    estimation of the prediction accuracy in a unified survival AUC
-    approach.
-  </li>
   <li> The <pkg>compareC</pkg> package permits to compare C indices
     with right-censored survival outcomes
   </li>
@@ -1508,7 +1504,6 @@ or submit a pull request.</p>
   <pkg>survminer</pkg>
   <pkg>survMisc</pkg>
   <pkg>survPresmooth</pkg>
-  <pkg>SurvRank</pkg>
   <pkg>SurvRegCensCov</pkg>
   <pkg>survRM2</pkg>
   <pkg>survsim</pkg>
