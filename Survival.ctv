@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-07-21</version>
+<version>2018-08-15</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -1205,8 +1205,7 @@ or submit a pull request.</p>
   </li>
   <li>
     The <pkg>KMsurv</pkg> package includes the data sets from Klein
-    and Moeschberger (1997).  Some supplementary data sets and
-    functions can be found in the <pkg>OIsurv</pkg> package.  The
+    and Moeschberger (1997).  The
     package <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
     and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
     W.J. (2003, 2007) also contain survival data sets.
@@ -1428,7 +1427,6 @@ or submit a pull request.</p>
   <pkg>NPHMC</pkg>
   <pkg>NPMLEcmprsk</pkg>
   <pkg>npsurv</pkg>
-  <pkg>OIsurv</pkg>
   <pkg>OrdFacReg</pkg>
   <pkg>OutlierDC</pkg>
   <pkg>p3state.msm</pkg>
