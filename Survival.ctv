@@ -946,8 +946,7 @@ or submit a pull request.</p>
     proportional hazards model.  An L1 and L2 penalised Cox models are
     available in <pkg>penalized</pkg>.  The <pkg>pamr</pkg> package
     computes a nearest shrunken centroid for survival gene expression
-    data.  A high dimensional Cox model using univariate shrinkage is
-    available in <pkg>uniCox</pkg>.  The <pkg>lpc</pkg> package
+    data.  The <pkg>lpc</pkg> package
     implements the lassoed principal components method.
     The <pkg>ahaz</pkg> package implements the LASSO and elastic net
     estimator for the additive risk model.  The <pkg>fastcox</pkg>
@@ -1515,7 +1514,6 @@ or submit a pull request.</p>
   <pkg>TransModel</pkg>
   <pkg>TSHRC</pkg>
   <pkg>uniah</pkg>
-  <pkg>uniCox</pkg>
   <pkg>VGAM</pkg>
   <pkg>vitality</pkg>
   <pkg>YPmodel</pkg>
