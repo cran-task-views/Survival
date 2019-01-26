@@ -1030,11 +1030,6 @@ or submit a pull request.</p>
     reclassification index for comparing competing risks prediction
     models.
   </li>
-  <li>
-    The <pkg>survAccuracyMeasures</pkg> package provides functions for
-    estimating the AUC, TPR(c), FPR(c), PPV(c), and NPV(c) for
-    survival data.
-  </li>
   <li> The <pkg>compareC</pkg> package permits to compare C indices
     with right-censored survival outcomes
   </li>
@@ -1480,7 +1475,6 @@ or submit a pull request.</p>
   <pkg>SSRMST</pkg>
   <pkg>superpc</pkg>
   <pkg>surv2sampleComp</pkg>
-  <pkg>survAccuracyMeasures</pkg>
   <pkg>survAUC</pkg>
   <pkg>survC1</pkg>
   <pkg>SurvCorr</pkg>
