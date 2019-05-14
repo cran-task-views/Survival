@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2019-01-26</version>
+<version>2019-05-14</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -492,11 +492,7 @@ or submit a pull request.</p>
     the Fine and Gray model for regressing the subdistribution hazard
     of a competing risk.
     <pkg>crrSC</pkg> extends the <pkg>cmprsk</pkg> package to
-    stratified and clustered data.  The <pkg>kmi</pkg> package
-    performs a Kaplan-Meier multiple imputation to recover missing
-    potential censoring information from competing risks events,
-    permitting to use standard right-censored methods to analyse
-    cumulative incidence functions. The <pkg>crrstep</pkg> package
+    stratified and clustered data. The <pkg>crrstep</pkg> package
     implements stepwise covariate selection for the Fine and Gray
     model. Package <pkg>pseudo</pkg> computes pseudo observations for
     modelling competing risks based on the cumulative incidence
@@ -1372,7 +1368,6 @@ or submit a pull request.</p>
   <pkg>kaps</pkg>
   <pkg>km.ci</pkg>
   <pkg>kmconfband</pkg>
-  <pkg>kmi</pkg>
   <pkg>KMsurv</pkg>
   <pkg>landest</pkg>
   <pkg>lava.tobit</pkg>
