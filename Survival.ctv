@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2019-05-14</version>
+<version>2019-07-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -334,9 +334,7 @@ or submit a pull request.</p>
     The <code>bj</code> function in <pkg>rms</pkg> and
     <code>BJnoint</code> in <pkg>emplik</pkg> compute the
     Buckley-James model, though the latter does it without
-    an intercept term. The <pkg>bujar</pkg> package fits the Buckley-James
-    model with high-dimensional covariates (L2 boosting, regression
-    trees and boosted MARS, elastic net).
+    an intercept term.
   </li>
 
   <li>
@@ -1265,7 +1263,6 @@ or submit a pull request.</p>
   <pkg>boot</pkg>
   <pkg>bpcp</pkg>
   <pkg>bshazard</pkg>
-  <pkg>bujar</pkg>
   <pkg>casebase</pkg>
   <pkg>censReg</pkg>
   <pkg>CFC</pkg>
