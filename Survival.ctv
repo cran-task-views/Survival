@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2019-07-04</version>
+<version>2019-08-06</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -683,11 +683,6 @@ or submit a pull request.</p>
     Cox proportional hazards models.
   </li>
   <li>
-    The <code>DPsurvint</code> function in <pkg>DPpackage</pkg> fits a Bayesian
-    semi-parametric AFT model. <code>LDDPsurvival</code> in the same package
-    fits a Linear Dependent Dirichlet Process Mixture of survival models.
-  </li>
-  <li>
     <code>NMixMCMC</code> in <pkg>mixAK</pkg> performs an MCMC estimation
     of normal mixtures for censored data.
   </li>
@@ -825,11 +820,6 @@ or submit a pull request.</p>
   <li>
     The package <pkg>BMA</pkg> computes a Bayesian model averaging for
     Cox proportional hazards models.
-  </li>
-  <li>
-    The <code>DPsurvint</code> function in <pkg>DPpackage</pkg> fits a Bayesian
-    semi-parametric AFT model. <code>LDDPsurvival</code> in the same package
-    fits a Linear Dependent Dirichlet Process Mixture of survival models.
   </li>
   <li>
     <code>NMixMCMC</code> in <pkg>mixAK</pkg> performs an MCMC estimation
@@ -1298,7 +1288,6 @@ or submit a pull request.</p>
   <pkg>DAAG</pkg>
   <pkg>dblcens</pkg>
   <pkg>discSurv</pkg>
-  <pkg>DPpackage</pkg>
   <pkg>DStree</pkg>
   <pkg>DTDA</pkg>
   <pkg>dynamichazard</pkg>
