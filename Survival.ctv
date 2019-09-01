@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2019-08-06</version>
+<version>2019-09-01</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -235,8 +235,7 @@ or submit a pull request.</p>
     the Cox model with left-truncated data using augmented information
     from the marginal of the truncation times.
 
-    <br/> The <code>cumres</code> function in <pkg>gof</pkg> computes
-    goodness-of-fit methods for the Cox proportional hazards model.
+    <br/>
     The proportionality assumption can be checked using
     the <code>cox.zph</code> function in <pkg>survival</pkg>.
     The <pkg>CPE</pkg> package calculates concordance probability
@@ -1322,7 +1321,6 @@ or submit a pull request.</p>
   <pkg>glmpath</pkg>
   <pkg>globalboosttest</pkg>
   <pkg>glrt</pkg>
-  <pkg>gof</pkg>
   <pkg>GORCure</pkg>
   <pkg>gss</pkg>
   <pkg>GSSE</pkg>
