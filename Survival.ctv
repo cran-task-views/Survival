@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2019-09-01</version>
+<version>2019-10-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -761,7 +761,6 @@ or submit a pull request.</p>
     censored outcomes.
     The <pkg>party</pkg> package implements recursive partitioning for survival
     data.
-    <pkg>LogicReg</pkg> can perform logic regression.
     <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
     partitioning algorithms for censored survival data.
     The <pkg>DStree</pkg> package implements trees and bagged trees
@@ -900,7 +899,6 @@ or submit a pull request.</p>
     censored outcomes.
     The <pkg>party</pkg> package implements recursive partitioning for survival
     data.
-    <pkg>LogicReg</pkg> can perform logic regression.
     <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
     partitioning algorithms for censored survival data.
     The <pkg>DStree</pkg> package implements trees and bagged trees
@@ -1361,7 +1359,6 @@ or submit a pull request.</p>
   <pkg>lmec</pkg>
   <pkg>locfit</pkg>
   <pkg>logconcens</pkg>
-  <pkg>LogicReg</pkg>
   <pkg>LogrankA</pkg>
   <pkg>logspline</pkg>
   <pkg>lpc</pkg>
