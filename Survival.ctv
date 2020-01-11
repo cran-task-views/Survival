@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2019-12-22</version>
+<version>2020-01-11</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -634,11 +634,7 @@ or submit a pull request.</p>
     meta-analysis. <pkg>JointModel</pkg> fits semiparametric
     regression model for longitudinal responses and a semiparametric
     transformation model for time-to-event
-    data. The <pkg>joineRML</pkg> package fits the joint model
-    proposed by Henderson and colleagues
-    (2000) <a href="http://dx.doi.org/10.1093/biostatistics/1.4.465">doi:10.1093/biostatistics/1.4.465</a>,
-    but extended to the case of multiple continuous longitudinal
-    measures.
+    data.
   </li>
 </ul>
 
@@ -1339,7 +1335,6 @@ or submit a pull request.</p>
   <pkg>JM</pkg>
   <pkg>JMbayes</pkg>
   <pkg>joineR</pkg>
-  <pkg>joineRML</pkg>
   <pkg>joint.Cox</pkg>
   <pkg>JointModel</pkg>
   <pkg>kaps</pkg>
