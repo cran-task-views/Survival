@@ -1170,9 +1170,7 @@ or submit a pull request.</p>
   <li>
     The <pkg>KMsurv</pkg> package includes the data sets from Klein
     and Moeschberger (1997).  The
-    package <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
-    and <pkg>DAAG</pkg> that accompanies Maindonald, J.H. and Braun,
-    W.J. (2003, 2007) also contain survival data sets.
+    package <pkg>SMPracticals</pkg> that accompanies Davidson (2003).
   </li>
   <li>
     The <pkg>SvyNom</pkg> package permits to construct, validate and
@@ -1274,7 +1272,6 @@ or submit a pull request.</p>
   <pkg>crskdiag</pkg>
   <pkg>currentSurvival</pkg>
   <pkg>Cyclops</pkg>
-  <pkg>DAAG</pkg>
   <pkg>dblcens</pkg>
   <pkg>discSurv</pkg>
   <pkg>DStree</pkg>
