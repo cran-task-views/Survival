@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2020-01-11</version>
+<version>2020-01-31</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -1201,11 +1201,6 @@ or submit a pull request.</p>
     the <pkg>SSRMST</pkg> package.
   </li>
   <li>
-    The <pkg>AHR</pkg> package allows for the estimation of
-    multivariate average hazard ratios as defined by Kalbfleisch and
-    Prentice.
-  </li>
-  <li>
     The <pkg>survMisc</pkg> provides miscellaneous routines to help in
     the analysis of right-censored survival data.
   </li>
@@ -1222,7 +1217,6 @@ or submit a pull request.</p>
   <pkg>addhazard</pkg>
   <pkg>AER</pkg>
   <pkg>ahaz</pkg>
-  <pkg>AHR</pkg>
   <pkg>AIM</pkg>
   <pkg>APtools</pkg>
   <pkg>asaur</pkg>
