@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2020-01-31</version>
+<version>2020-02-01</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -670,10 +670,6 @@ or submit a pull request.</p>
 <h1>Bayesian Models</h1>
 <ul>
   <li>
-    The <pkg>bayesSurv</pkg> package proposes an implementation of a bivariate
-    AFT model.
-  </li>
-  <li>
     The package <pkg>BMA</pkg> computes a Bayesian model averaging for
     Cox proportional hazards models.
   </li>
@@ -807,10 +803,6 @@ or submit a pull request.</p>
 
 <h1>Bayesian Models</h1>
 <ul>
-  <li>
-    The <pkg>bayesSurv</pkg> package proposes an implementation of a bivariate
-    AFT model.
-  </li>
   <li>
     The package <pkg>BMA</pkg> computes a Bayesian model averaging for
     Cox proportional hazards models.
@@ -1225,7 +1217,6 @@ or submit a pull request.</p>
   <pkg>aster</pkg>
   <pkg>BaSTA</pkg>
   <pkg>BayesPiecewiseICAR</pkg>
-  <pkg>bayesSurv</pkg>
   <pkg>BayHaz</pkg>
   <pkg>BGPhazard</pkg>
   <pkg>Biograph</pkg>
