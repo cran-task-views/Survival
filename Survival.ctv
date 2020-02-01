@@ -296,9 +296,7 @@ or submit a pull request.</p>
     (<code>psm</code> function). It permits to use some of the
     <pkg>rms</pkg> functionalities.  The <pkg>eha</pkg> package also
     proposes an implementation of the AFT model (function
-    <code>aftreg</code>).  An AFT model with an error distribution
-    assumed to be a mixture of G-splines is implemented in the
-    <pkg>smoothSurv</pkg> package.  The <pkg>NADA</pkg> package
+    <code>aftreg</code>).  The <pkg>NADA</pkg> package
     proposes the front end of the <code>survreg</code> function for
     left-censored data.  The
     <pkg>simexaft</pkg> package implements the
@@ -1415,7 +1413,6 @@ or submit a pull request.</p>
   <pkg>smcure</pkg>
   <pkg>SmoothHazard</pkg>
   <pkg>smoothHR</pkg>
-  <pkg>smoothSurv</pkg>
   <pkg>SMPracticals</pkg>
   <pkg>spatstat</pkg>
   <pkg>spatsurv</pkg>
