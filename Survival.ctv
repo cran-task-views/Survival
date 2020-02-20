@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-02-01</version>
+<version>2020-02-20</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -387,9 +387,7 @@ or submit a pull request.</p>
     flexible parametric models. The <pkg>TransModel</pkg> package
     implements a unified estimation procedure for the analysis of
     censored data using linear transformation
-    models. The <pkg>flexPM</pkg> package fits a flexible parametric
-    regression model to possibly right-censored, left-truncated
-    data. The <pkg>ICGOR</pkg> fits the generalized odds rate hazards
+    models. The <pkg>ICGOR</pkg> fits the generalized odds rate hazards
     model to interval-censored data while <pkg>GORCure</pkg>
     generalized odds rate mixture cure model to interval-censored
     data. The <pkg>thregI</pkg> package permits to fit a threshold
@@ -1276,7 +1274,6 @@ or submit a pull request.</p>
   <pkg>fastpseudo</pkg>
   <pkg>FHtest</pkg>
   <pkg>fitdistrplus</pkg>
-  <pkg>flexPM</pkg>
   <pkg>flexrsurv</pkg>
   <pkg>flexsurv</pkg>
   <pkg>frailtyEM</pkg>
