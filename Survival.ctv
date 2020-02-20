@@ -173,10 +173,6 @@ or submit a pull request.</p>
     The <pkg>LogrankA</pkg> package provides a logrank test for which
     aggregated data can be used as input.
   </li>
-  <li>
-    The short term and long term hazard ratio model for two samples
-    survival data can be found in the <pkg>YPmodel</pkg> package.
-  </li>
   <li>The <pkg>controlTest</pkg> implements a nonparametric two-sample
     procedure for comparing the median survival time.
   </li>
@@ -1452,7 +1448,6 @@ or submit a pull request.</p>
   <pkg>uniah</pkg>
   <pkg>VGAM</pkg>
   <pkg>vitality</pkg>
-  <pkg>YPmodel</pkg>
 </packagelist>
 
 <links>
