@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-02-20</version>
+<version>2020-03-03</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -500,9 +500,7 @@ or submit a pull request.</p>
     approaches.  Packages <pkg>survival</pkg>
     (via <code>survfit</code>) and <pkg>prodlim</pkg> can also be used
     to estimate the cumulative incidence function.
-    The <pkg>compeir</pkg> package estimates event-specific incidence
-    rates, rate ratios, event-specific incidence proportions and
-    cumulative incidence functions.  The <pkg>NPMLEcmprsk</pkg>
+    The <pkg>NPMLEcmprsk</pkg>
     package implements the semi-parametric mixture model for competing
     risks data. The <pkg>MIICD</pkg> package implements Pan's (2000)
     multiple imputation approach to the Fine and Gray model for
@@ -1105,12 +1103,6 @@ or submit a pull request.</p>
     representing multistate data, in particular Lexis diagrams.
   </li>
   <li>
-    The <pkg>compeir</pkg> package provide multistate-type graphics
-    for competing risks, in which the thickness of the transition
-    arrows from the initial event to each competing event describes
-    the particular amount of every incidence rate.
-  </li>
-  <li>
     The <pkg>FamEvent</pkg> generates time-to-event outcomes for
     families that habour genetic mutation under different sampling
     designs and estimates the penetrance functions for family data
@@ -1226,7 +1218,6 @@ or submit a pull request.</p>
   <pkg>coarseDataTools</pkg>
   <pkg>coin</pkg>
   <pkg>compareC</pkg>
-  <pkg>compeir</pkg>
   <pkg>compound.Cox</pkg>
   <pkg>concreg</pkg>
   <pkg>condGEE</pkg>
