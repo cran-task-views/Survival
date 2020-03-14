@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-03-03</version>
+<version>2020-03-14</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -391,9 +391,7 @@ or submit a pull request.</p>
     first-hitting-time of a boundary by the sample path of a Wiener
     diffusion process. The <pkg>miCoPTCM</pkg> package fits
     semiparametric promotion time cure models with possibly
-    mis-measured covariates. The <pkg>intercure</pkg> package
-    implements semiparametric cure rate estimators for interval
-    censored data. The <pkg>smcure</pkg> package permits to fit
+    mis-measured covariates. The <pkg>smcure</pkg> package permits to fit
     semiparametric proportional hazards and accelerated failure time
     mixture cure models. The <pkg>dynamichazard</pkg> package allows
     to estimate various hazard models where the coefficients follow a
@@ -1289,7 +1287,6 @@ or submit a pull request.</p>
   <pkg>IDPSurvival</pkg>
   <pkg>imputeYn</pkg>
   <pkg>intccr</pkg>
-  <pkg>intercure</pkg>
   <pkg>interval</pkg>
   <pkg>invGauss</pkg>
   <pkg>ipdmeta</pkg>
