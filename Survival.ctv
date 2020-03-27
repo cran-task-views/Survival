@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-03-14</version>
+<version>2020-03-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -218,9 +218,7 @@ or submit a pull request.</p>
     maximum penalised likelihood and provide a non parametric smooth
     estimate of the baseline hazard function. A Cox model with
     piecewise constant hazards can be fitted using the <pkg>pch</pkg>
-    package. The <pkg>isoph</pkg> allows nonparametric estimation of
-    an isotonic covariate effect for proportional hazards
-    model. The <pkg>icenReg</pkg> package implements several models
+    package. The <pkg>icenReg</pkg> package implements several models
     for interval-censored data, e.g., Cox, proportional odds, and
     accelerated failure time models. A Cox type Self-Exciting
     Intensity model can be fitted to right-censored data using
@@ -1291,7 +1289,6 @@ or submit a pull request.</p>
   <pkg>invGauss</pkg>
   <pkg>ipdmeta</pkg>
   <pkg>ipred</pkg>
-  <pkg>isoph</pkg>
   <pkg>jackknifeKME</pkg>
   <pkg>JM</pkg>
   <pkg>JMbayes</pkg>
