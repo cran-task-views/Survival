@@ -569,10 +569,6 @@ or submit a pull request.</p>
     Perme relative / net survival as well as standardized mortality
     ratios
   </li>
-  <li>
-    The <pkg>ROCt</pkg> package implements time-dependent ROC curves
-    and extensions to relative survival.
-  </li>
 </ul>
 
 <h1>Random Effect Models</h1>
@@ -1374,7 +1370,6 @@ or submit a pull request.</p>
   <pkg>risksetROC</pkg>
   <pkg priority="core">rms</pkg>
   <pkg>RobustAFT</pkg>
-  <pkg>ROCt</pkg>
   <pkg>rpart</pkg>
   <pkg>rstpm2</pkg>
   <pkg>saws</pkg>
