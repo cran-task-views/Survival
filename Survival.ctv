@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-03-27</version>
+<version>2020-04-10</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -913,8 +913,7 @@ or submit a pull request.</p>
     model validation, calibration, comparison, and nomogram
     visualisation. A penalised version of the Fine
     and Gray model can be found
-    in <pkg>crrp</pkg>. The <pkg>Cyclops</pkg> package implements
-    cyclic coordinate descent for the Cox proportional hazards model.
+    in <pkg>crrp</pkg>.
   </li>
   <li>
     <em><b>Boosting:</b></em>
@@ -1235,7 +1234,6 @@ or submit a pull request.</p>
   <pkg>crrstep</pkg>
   <pkg>crskdiag</pkg>
   <pkg>currentSurvival</pkg>
-  <pkg>Cyclops</pkg>
   <pkg>dblcens</pkg>
   <pkg>discSurv</pkg>
   <pkg>DStree</pkg>
