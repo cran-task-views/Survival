@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-04-10</version>
+<version>2020-04-23</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -463,9 +463,7 @@ or submit a pull request.</p>
     The <pkg>LexisPlotR</pkg> package, based on <b>ggplot2</b>,
     permits to draw Lexis diagrams. The <pkg>TraMineR</pkg> package is
     intended for analysing state or event sequences that describe life
-    courses. The <pkg>Biograph</pkg> package permits to describe and
-    analyse life histories following a multistate perspective on the
-    life course. <pkg>asbio</pkg> computes the expected numbers of
+    courses. <pkg>asbio</pkg> computes the expected numbers of
     individuals in specified age classes or life stages given
     survivorship probabilities from a transition matrix.
   </li>
@@ -1194,7 +1192,6 @@ or submit a pull request.</p>
   <pkg>BayesPiecewiseICAR</pkg>
   <pkg>BayHaz</pkg>
   <pkg>BGPhazard</pkg>
-  <pkg>Biograph</pkg>
   <pkg>BMA</pkg>
   <pkg>bnnSurvival</pkg>
   <pkg>boot</pkg>
