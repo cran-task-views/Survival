@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-04-23</version>
+<version>2020-05-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -84,8 +84,7 @@ or submit a pull request.</p>
     computes the NPMLE for interval-censored data.
     The <pkg>DTDA</pkg> package implements several algorithms
     permitting to analyse possibly doubly truncated survival
-    data. <pkg>npsurv</pkg> computes the NPMLE of a survival function
-    for general interval-censored data.
+    data.
   </li>
   <li>
     <b><em>Parametric:</em></b> The <pkg>fitdistrplus</pkg> package
@@ -1331,7 +1330,6 @@ or submit a pull request.</p>
   <pkg>NestedCohort</pkg>
   <pkg>NPHMC</pkg>
   <pkg>NPMLEcmprsk</pkg>
-  <pkg>npsurv</pkg>
   <pkg>OrdFacReg</pkg>
   <pkg>OutlierDC</pkg>
   <pkg>p3state.msm</pkg>
