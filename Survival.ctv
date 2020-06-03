@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-05-21</version>
+<version>2020-06-03</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -52,9 +52,7 @@ or submit a pull request.</p>
     context.  The <pkg>survPresmooth</pkg> package computes
     presmoothed estimates of the main quantities used for
     right-censored data, i.e., survival, hazard and density functions.
-    The <pkg>asbio</pkg> package permits to compute the Kaplan-Meier
-    estimator following Pollock et al. (1998). The <pkg>bpcp</pkg>
-    package provides several functions for computing confidence
+    The <pkg>bpcp</pkg> package provides several functions for computing confidence
     intervals of the survival distribution (e.g., beta product
     confidence procedure). The <pkg>lbiassurv</pkg> package offers
     various length-bias corrections to survival curve
@@ -462,9 +460,7 @@ or submit a pull request.</p>
     The <pkg>LexisPlotR</pkg> package, based on <b>ggplot2</b>,
     permits to draw Lexis diagrams. The <pkg>TraMineR</pkg> package is
     intended for analysing state or event sequences that describe life
-    courses. <pkg>asbio</pkg> computes the expected numbers of
-    individuals in specified age classes or life stages given
-    survivorship probabilities from a transition matrix.
+    courses.
   </li>
 
   <li>
@@ -1184,7 +1180,6 @@ or submit a pull request.</p>
   <pkg>AIM</pkg>
   <pkg>APtools</pkg>
   <pkg>asaur</pkg>
-  <pkg>asbio</pkg>
   <pkg>aster2</pkg>
   <pkg>aster</pkg>
   <pkg>BaSTA</pkg>
