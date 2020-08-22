@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-06-03</version>
+<version>2020-08-22</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -895,9 +895,7 @@ or submit a pull request.</p>
     The <pkg>ahaz</pkg> package implements the LASSO and elastic net
     estimator for the additive risk model.  The <pkg>fastcox</pkg>
     package implements the Lasso and elastic-net penalized Cox's
-    regression using the cockail algorithm. <pkg>CoxRidge</pkg> fits Cox models
-    with penalized ridge-type (ridge, dynamic and weighted dynamic)
-    partial likelihood. The <pkg>hdnom</pkg> package implements 9
+    regression using the cockail algorithm. The <pkg>hdnom</pkg> package implements 9
     types of penalised Cox regression methods and provides methods for
     model validation, calibration, comparison, and nomogram
     visualisation. A penalised version of the Fine
@@ -1210,7 +1208,6 @@ or submit a pull request.</p>
   <pkg>coxme</pkg>
   <pkg>coxphf</pkg>
   <pkg>coxphw</pkg>
-  <pkg>CoxRidge</pkg>
   <pkg>coxrobust</pkg>
   <pkg>coxsei</pkg>
   <pkg>CPE</pkg>
