@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-08-22</version>
+<version>2020-08-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -415,10 +415,6 @@ or submit a pull request.</p>
     estimating and plotting the cumulative transition hazards in any
     multistate model, possibly subject to right-censoring and
     left-truncation. The
-    <pkg>etm</pkg> package estimates and plots transition
-    probabilities for any multistate models. It can also estimate the
-    variance of the Aalen-Johansen estimator, and handles
-    left-truncated data. The
     <pkg>msSurv</pkg> package provides non-parametric estimation for
     multistate models subject to right-censoring (possibly
     state-dependent) and left-truncation. The <pkg>mstate</pkg>
@@ -1232,7 +1228,6 @@ or submit a pull request.</p>
   <pkg>emplik</pkg>
   <pkg>Epi</pkg>
   <pkg>epiR</pkg>
-  <pkg>etm</pkg>
   <pkg>exactRankTests</pkg>
   <pkg>FamEvent</pkg>
   <pkg>fastcox</pkg>
