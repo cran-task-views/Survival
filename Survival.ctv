@@ -902,8 +902,7 @@ or submit a pull request.</p>
     and the Fine and Gray model by likelihood based boosting.
   </li>
   <li>
-    <em><b>Other:</b></em> The <pkg>superpc</pkg> package implements
-    the supervised principal components for survival data.
+    <em><b>Other:</b></em>
     The <pkg>AIM</pkg> package can construct index models for survival
     outcomes, that is, construct scores based on a training dataset.
     The <pkg>compound.Cox</pkg> package fits Cox proportional hazards
@@ -1362,7 +1361,6 @@ or submit a pull request.</p>
   <pkg>spatsurv</pkg>
   <pkg>spBayesSurv</pkg>
   <pkg>SSRMST</pkg>
-  <pkg>superpc</pkg>
   <pkg>surv2sampleComp</pkg>
   <pkg>survAUC</pkg>
   <pkg>survC1</pkg>
