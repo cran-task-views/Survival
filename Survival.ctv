@@ -612,12 +612,6 @@ or submit a pull request.</p>
     survival data subject to interval censoring.
   </li>
   <li>
-    The <pkg>mets</pkg> package implements various statistical models
-    for multivariate event history data, e.g., multivariate cumulative
-    incidence models, bivariate random effects probit models,
-    Clayton-Oakes model.
-  </li>
-  <li>
     The <pkg>MST</pkg> package constructs trees for multivariate
     survival data using marginal and frailty models.
   </li>
@@ -744,12 +738,6 @@ or submit a pull request.</p>
     <em><b>Joint modelling:</b></em>
     Both <bioc>Icens</bioc> and <pkg>MLEcens</pkg> can estimate bivariate
     survival data subject to interval censoring.
-  </li>
-  <li>
-    The <pkg>mets</pkg> package implements various statistical models
-    for multivariate event history data, e.g., multivariate cumulative
-    incidence models, bivariate random effects probit models,
-    Clayton-Oakes model.
   </li>
   <li>
     The <pkg>MST</pkg> package constructs trees for multivariate
@@ -1281,7 +1269,6 @@ or submit a pull request.</p>
   <pkg>mboost</pkg>
   <pkg>MCMCglmm</pkg>
   <pkg>MCMCpack</pkg>
-  <pkg>mets</pkg>
   <pkg>mexhaz</pkg>
   <pkg>mfp</pkg>
   <pkg>miCoPTCM</pkg>
