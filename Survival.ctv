@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-08-27</version>
+<version>2020-09-13</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -365,10 +365,8 @@ or submit a pull request.</p>
     implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg>
     packages.  The <pkg>concreg</pkg> package implements conditional
     logistic regression for survival data as an alternative to the Cox
-    model when hazards are non-proportional. <pkg>lava.tobit</pkg>, an
-    extension of the <b>lava</b> package, fits latent variable models
-    for censored outcomes via a probit link
-    formulation. The <pkg>BGPhazard</pkg> package implements Markov
+    model when hazards are non-proportional.
+    The <pkg>BGPhazard</pkg> package implements Markov
     beta and gamma processes for modelling the hazard ratio for
     discrete failure time data. The <pkg>surv2sampleComp</pkg>
     packages proposes some model-free contrast comparison measures
@@ -1267,7 +1265,6 @@ or submit a pull request.</p>
   <pkg>kmconfband</pkg>
   <pkg>KMsurv</pkg>
   <pkg>landest</pkg>
-  <pkg>lava.tobit</pkg>
   <pkg>lbiassurv</pkg>
   <pkg>LearnBayes</pkg>
   <pkg>LexisPlotR</pkg>
