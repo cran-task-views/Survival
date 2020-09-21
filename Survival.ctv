@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-09-13</version>
+<version>2020-09-21</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -363,9 +363,7 @@ or submit a pull request.</p>
     in the <pkg>tpr</pkg> package.  Aster models, which combine
     aspects of generalized linear models and Cox models, are
     implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg>
-    packages.  The <pkg>concreg</pkg> package implements conditional
-    logistic regression for survival data as an alternative to the Cox
-    model when hazards are non-proportional.
+    packages.
     The <pkg>BGPhazard</pkg> package implements Markov
     beta and gamma processes for modelling the hazard ratio for
     discrete failure time data. The <pkg>surv2sampleComp</pkg>
@@ -1172,7 +1170,6 @@ or submit a pull request.</p>
   <pkg>coin</pkg>
   <pkg>compareC</pkg>
   <pkg>compound.Cox</pkg>
-  <pkg>concreg</pkg>
   <pkg>condGEE</pkg>
   <pkg>condSURV</pkg>
   <pkg>controlTest</pkg>
