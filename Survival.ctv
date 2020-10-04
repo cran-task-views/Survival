@@ -709,10 +709,8 @@ or submit a pull request.</p>
     <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
     partitioning algorithms for censored survival data.
     The <pkg>DStree</pkg> package implements trees and bagged trees
-    for discrete-times survival data. The <pkg>LTRCtrees</pkg> package
-    provides recursive partition algorithms designed for fitting
-    survival tree with left-truncated and right censored
-    data. The package also
+    for discrete-times survival data.</li>
+  <li>
     <em><b>Joint modelling of time-to-event and longitudinal
     data:</b></em> The <pkg>joineR</pkg> package allows the analysis
     of repeated measurements and time-to-event data via joint random
@@ -837,12 +835,8 @@ or submit a pull request.</p>
     <pkg>kaps</pkg> implements K-adaptive partitioning and recursive
     partitioning algorithms for censored survival data.
     The <pkg>DStree</pkg> package implements trees and bagged trees
-    for discrete-times survival data. The <pkg>LTRCtrees</pkg> package
-    provides recursive partition algorithms designed for fitting
-    survival tree with left-truncated and right censored data. The
-    package also includes an implementation of recursive partitioning
-    (conditional inference trees) for interval-censored
-    data. <pkg>bnnSurvival</pkg> implements a bootstrap aggregated
+    for discrete-times survival data.
+    <pkg>bnnSurvival</pkg> implements a bootstrap aggregated
     version of the k-nearest neighbors survival probability prediction
     method.
   </li>
@@ -1260,7 +1254,6 @@ or submit a pull request.</p>
   <pkg>logspline</pkg>
   <pkg>lpc</pkg>
   <pkg>lsmeans</pkg>
-  <pkg>LTRCtrees</pkg>
   <pkg>MAMSE</pkg>
   <pkg>maxstat</pkg>
   <pkg>mboost</pkg>
