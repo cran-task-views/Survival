@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-09-21</version>
+<version>2020-10-04</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -485,9 +485,7 @@ or submit a pull request.</p>
     package implements the semi-parametric mixture model for competing
     risks data. The <pkg>MIICD</pkg> package implements Pan's (2000)
     multiple imputation approach to the Fine and Gray model for
-    interval censored data. The <pkg>crskdiag</pkg> package provides
-    graphical and analytical approaches for checking the assumptions
-    of the Fine and Gray model. The <pkg>CFC</pkg> package permits to
+    interval censored data. The <pkg>CFC</pkg> package permits to
     perform Bayesian, and non-Bayesian, cause-specific competing risks
     analysis for parametric and non-parametric survival
     functions. The <pkg>gcerisk</pkg> package provides some methods
@@ -1180,7 +1178,6 @@ or submit a pull request.</p>
   <pkg>crrp</pkg>
   <pkg>crrSC</pkg>
   <pkg>crrstep</pkg>
-  <pkg>crskdiag</pkg>
   <pkg>currentSurvival</pkg>
   <pkg>dblcens</pkg>
   <pkg>discSurv</pkg>
