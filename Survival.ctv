@@ -56,8 +56,7 @@ or submit a pull request.</p>
     intervals of the survival distribution (e.g., beta product
     confidence procedure). The <pkg>lbiassurv</pkg> package offers
     various length-bias corrections to survival curve
-    estimation. Non-Parametric confidance bands for the Kaplan-Meier
-    estimator can be computed using the <pkg>kmconfband</pkg> package.
+    estimation.
     The <pkg>landest</pkg> package allows landmark
     estimation and testing of survival
     probabilities. The <pkg>jackknifeKME</pkg> package computes the
@@ -1238,7 +1237,6 @@ or submit a pull request.</p>
   <pkg>JointModel</pkg>
   <pkg>kaps</pkg>
   <pkg>km.ci</pkg>
-  <pkg>kmconfband</pkg>
   <pkg>KMsurv</pkg>
   <pkg>landest</pkg>
   <pkg>lbiassurv</pkg>
