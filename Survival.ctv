@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-10-04</version>
+<version>2020-10-29</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -571,9 +571,7 @@ or submit a pull request.</p>
     penalisation.  The <pkg>mexhaz</pkg> enables modelling of the
     excess hazard regression model with time-dependent and/or
     non-linear effect(s) and a random effect defined at the cluster
-    level. The <pkg>dynfrail</pkg> package Fits semiparametric dynamic
-    frailty models according to the methodology of Putter and van
-    Houwelingen (2015). The <pkg>frailtyEM</pkg> package contains
+    level. The <pkg>frailtyEM</pkg> package contains
     functions for fitting shared frailty models with a semi-parametric
     baseline hazard with the Expectation-Maximization
     algorithm. Supported data formats include clustered failures with
@@ -1183,7 +1181,6 @@ or submit a pull request.</p>
   <pkg>DStree</pkg>
   <pkg>DTDA</pkg>
   <pkg>dynamichazard</pkg>
-  <pkg>dynfrail</pkg>
   <pkg>dynpred</pkg>
   <pkg>dynsurv</pkg>
   <pkg priority="core">eha</pkg>
