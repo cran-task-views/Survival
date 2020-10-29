@@ -41,9 +41,7 @@ or submit a pull request.</p>
     estimator for left-censored data.
     <code>svykm</code> in <pkg>survey</pkg> provides a weighted
     Kaplan-Meier estimator.
-    <code>nested.km</code> in <pkg>NestedCohort</pkg> estimates the
-    survival curve for each level of categorical variables with
-    missing data.  The <code>kaplan-meier</code> function
+    The <code>kaplan-meier</code> function
     in <pkg>spatstat</pkg> computes the Kaplan-Meier estimator from
     histogram data.  The <pkg>MAMSE</pkg> package permits to compute a
     weighted Kaplan-Meier estimate.  The <code>KM</code> function in
@@ -196,8 +194,7 @@ or submit a pull request.</p>
     <code>timecox</code> in package <pkg>timereg</pkg> fits Cox models
     with possibly time-varying effects.  The <pkg>mfp</pkg> package
     permits to fit Cox models with multiple fractional
-    polynomial. The <pkg>NestedCohort</pkg> fits Cox models for
-    covariates with missing data.  A Cox model model can be fitted to
+    polynomial. A Cox model model can be fitted to
     data from complex survey design using the <code>svycoxph</code>
     function in <pkg>survey</pkg>. The <pkg>multipleNCC</pkg> package
     fits Cox models using a weighted partial likelihood for nested
@@ -1270,7 +1267,6 @@ or submit a pull request.</p>
   <pkg>multipleNCC</pkg>
   <pkg>mvna</pkg>
   <pkg>NADA</pkg>
-  <pkg>NestedCohort</pkg>
   <pkg>NPHMC</pkg>
   <pkg>NPMLEcmprsk</pkg>
   <pkg>OrdFacReg</pkg>
