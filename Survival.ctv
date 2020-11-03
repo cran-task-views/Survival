@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-10-29</version>
+<version>2020-11-03</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -989,11 +989,6 @@ or submit a pull request.</p>
     hazards and nonlinear covariate effects.
   </li>
   <li>
-    The <pkg>simPH</pkg> package implements tools for simulating and
-    plotting quantities of interest estimated from proportional
-    hazards models.
-  </li>
-  <li>
     The <pkg>survsim</pkg> package permits to simulate simple and
     complex survival data such as recurrent event data and competing
     risks.
@@ -1312,7 +1307,6 @@ or submit a pull request.</p>
   <pkg>simexaft</pkg>
   <pkg>SimHaz</pkg>
   <pkg>simMSM</pkg>
-  <pkg>simPH</pkg>
   <pkg>SimSCRPiecewise</pkg>
   <pkg>simsurv</pkg>
   <pkg>smcure</pkg>
