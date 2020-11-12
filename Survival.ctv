@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol, Aurelien Latouche</maintainer>
-<version>2020-11-03</version>
+<version>2020-11-12</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -868,8 +868,6 @@ or submit a pull request.</p>
     for the construction of prognostic and diagnostic models for right-censored data.
     <pkg>globalboosttest</pkg> implements permutation-based testing procedure to test
     the additional predictive value of high-dimensional data. It is based on <pkg>mboost</pkg>.
-    <pkg>CoxBoost</pkg> provides routines for fitting the Cox proportional hazards model
-    and the Fine and Gray model by likelihood based boosting.
   </li>
   <li>
     <em><b>Other:</b></em>
@@ -1154,7 +1152,6 @@ or submit a pull request.</p>
   <pkg>condGEE</pkg>
   <pkg>condSURV</pkg>
   <pkg>controlTest</pkg>
-  <pkg>CoxBoost</pkg>
   <pkg>coxinterval</pkg>
   <pkg>coxme</pkg>
   <pkg>coxphf</pkg>
