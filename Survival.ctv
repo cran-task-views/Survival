@@ -799,8 +799,6 @@ or submit a pull request.</p>
     package.
     The <pkg>mboost</pkg> package includes a generic gradient boosting algorithm
     for the construction of prognostic and diagnostic models for right-censored data.
-    <pkg>globalboosttest</pkg> implements permutation-based testing procedure to test
-    the additional predictive value of high-dimensional data. It is based on <pkg>mboost</pkg>.
   </li>
   <li>
     <em><b>Other:</b></em> The <pkg>superpc</pkg> package implements
@@ -1155,7 +1153,6 @@ or submit a pull request.</p>
   <pkg>genSurv</pkg>
   <pkg>glmnet</pkg>
   <pkg>glmpath</pkg>
-  <pkg>globalboosttest</pkg>
   <pkg>glrt</pkg>
   <pkg>GORCure</pkg>
   <pkg>gss</pkg>
