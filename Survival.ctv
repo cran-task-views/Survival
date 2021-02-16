@@ -876,10 +876,6 @@ or submit a pull request.</p>
 <h1>Power Analysis</h1>
 <ul>
   <li>
-    The <pkg>CR</pkg> package proposes power calculation for weighted
-    Log-Rank tests in cure rate models.
-  </li>
-  <li>
     The <pkg>NPHMC</pkg> permits to calculate sample size based on
     proportional hazards mixture cure models.
   </li>
@@ -1113,7 +1109,6 @@ or submit a pull request.</p>
   <pkg>coxsei</pkg>
   <pkg>CPE</pkg>
   <pkg>Cprob</pkg>
-  <pkg>CR</pkg>
   <pkg>crrp</pkg>
   <pkg>crrSC</pkg>
   <pkg>crrstep</pkg>
