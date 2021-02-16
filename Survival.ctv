@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2018-02-27</version>
+<version>2021-02-16</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -1025,10 +1025,6 @@ or submit a pull request.</p>
     of gene expression data and to predict patients' survival and risk assessment.
   </li>
   <li>
-    <pkg>ipdmeta</pkg> provides tools for individual patient data meta-analysis, mixed-level meta-analysis with patient
-    level data and mulivariate survival estimates for aggregate studies.
-  </li>
-  <li>
     The <pkg>KMsurv</pkg> package includes the data sets from Klein
     and Moeschberger (1997). The package
     <pkg>SMPracticals</pkg> that accompanies Davidson (2003)
@@ -1178,7 +1174,6 @@ or submit a pull request.</p>
   <pkg>intccr</pkg>
   <pkg>interval</pkg>
   <pkg>invGauss</pkg>
-  <pkg>ipdmeta</pkg>
   <pkg>ipred</pkg>
   <pkg>jackknifeKME</pkg>
   <pkg>JM</pkg>
