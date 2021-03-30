@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2021-02-16</version>
+<version>2021-03-30</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -709,10 +709,6 @@ or submit a pull request.</p>
     group lasso priors.
   </li>
   <li>
-    The <pkg>spatsurv</pkg> package fits a Bayesian parametric
-    proportional hazards model for which events have been geo-located.
-  </li>
-  <li>
     The <pkg>PReMiuM</pkg> package implements Bayesian clustering
     using a Dirichlet process mixture model to censored responses.
   </li>
@@ -1278,7 +1274,6 @@ or submit a pull request.</p>
   <pkg>smoothSurv</pkg>
   <pkg>SMPracticals</pkg>
   <pkg>spatstat</pkg>
-  <pkg>spatsurv</pkg>
   <pkg>spBayesSurv</pkg>
   <pkg>spef</pkg>
   <pkg>SSRMST</pkg>
