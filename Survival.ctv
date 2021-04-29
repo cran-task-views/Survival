@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2021-03-30</version>
+<version>2021-04-29</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -298,10 +298,8 @@ or submit a pull request.</p>
     used when covariates are subject to measurement error.  A robust
     version of the accelerated failure time model can be found in
     <pkg>RobustAFT</pkg>. The <pkg>coarseDataTools</pkg> package fits
-    AFT models for interval censored data. The <pkg>aftgee</pkg>
-    package implements both rank-based estimates and least square
-    estimates (via generalised estimating equations) to the AFT
-    model. An alternative weighting scheme for parameter estimation in
+    AFT models for interval censored data.
+    An alternative weighting scheme for parameter estimation in
     the AFT model is proposed in the <pkg>imputeYn</pkg> package. The
     <pkg>AdapEnetClass</pkg> package implements elastic net
     regularisation for the AFT model.
@@ -1065,7 +1063,6 @@ or submit a pull request.</p>
   <pkg>AdapEnetClass</pkg>
   <pkg>addhazard</pkg>
   <pkg>AER</pkg>
-  <pkg>aftgee</pkg>
   <pkg>ahaz</pkg>
   <pkg>APtools</pkg>
   <pkg>asaur</pkg>
