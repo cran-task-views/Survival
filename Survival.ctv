@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2021-04-29</version>
+<version>2021-05-27</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -371,9 +371,7 @@ or submit a pull request.</p>
     implemented in the <pkg>aster</pkg> and <pkg>aster2</pkg>
     packages.  The <pkg>concreg</pkg> package implements conditional
     logistic regression for survival data as an alternative to the Cox
-    model when hazards are non-proportional. The <pkg>BGPhazard</pkg>
-    package implements Markov beta and gamma processes for modelling
-    the hazard ratio for discrete failure time data. The
+    model when hazards are non-proportional. The
     <pkg>surv2sampleComp</pkg> packages proposes some model-free
     contrast comparison measures such as difference/ratio of
     cumulative hazards, quantiles and restricted mean. The
@@ -1073,7 +1071,6 @@ or submit a pull request.</p>
   <pkg>BayesPiecewiseICAR</pkg>
   <pkg>bayesSurv</pkg>
   <pkg>BayHaz</pkg>
-  <pkg>BGPhazard</pkg>
   <pkg>BMA</pkg>
   <pkg>bnnSurvival</pkg>
   <pkg>boot</pkg>
