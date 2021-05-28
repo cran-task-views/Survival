@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2021-05-27</version>
+<version>2021-05-28</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -40,9 +40,8 @@ or submit a pull request.</p>
   Kaplan-Meier estimator for left-censored data.  <code>svykm</code>
   in <pkg>survey</pkg> provides a weighted Kaplan-Meier estimator.
   The <code>kaplan-meier</code> function in <pkg>spatstat</pkg>
-  computes the Kaplan-Meier estimator from histogram data.  The
-  <pkg>MAMSE</pkg> package permits to compute a weighted Kaplan-Meier
-  estimate.  The <code>KM</code> function in package <pkg>rhosp</pkg>
+  computes the Kaplan-Meier estimator from histogram data.
+  The <code>KM</code> function in package <pkg>rhosp</pkg>
   plots the survival function using a variant of the Kaplan-Meier
   estimator in a hospitalisation risk context.  The
   <pkg>survPresmooth</pkg> package computes presmoothed estimates of
@@ -1182,7 +1181,6 @@ or submit a pull request.</p>
   <pkg>lpc</pkg>
   <pkg>lsmeans</pkg>
   <pkg>LTRCtrees</pkg>
-  <pkg>MAMSE</pkg>
   <pkg>maxstat</pkg>
   <pkg>mboost</pkg>
   <pkg>MCMCglmm</pkg>
