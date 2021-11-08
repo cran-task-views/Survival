@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2021-10-14</version>
+<version>2021-11-08</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -229,9 +229,9 @@ or submit a pull request.</p>
 
     <br/>The proportionality assumption can be checked using
     the <code>cox.zph</code> function in <pkg>survival</pkg>.
-    The <pkg>CPE</pkg> package calculates concordance probability
-    estimate for the Cox model, as does the <code>coxphCPE</code>
-    function in <pkg>clinfun</pkg>.  The <code>coxphQuantile</code> in
+    The <code>coxphCPE</code> function in <pkg>clinfun</pkg>
+    calculates concordance probability
+    estimate for the Cox model.  The <code>coxphQuantile</code> in
     the latter package draws a quantile curve of the survival
     distribution as a function of covariates.  The <pkg>multcomp</pkg>
     package computes simultaneous tests and confidence intervals for
@@ -1092,7 +1092,6 @@ or submit a pull request.</p>
   <pkg>coxphw</pkg>
   <pkg>coxrobust</pkg>
   <pkg>coxsei</pkg>
-  <pkg>CPE</pkg>
   <pkg>Cprob</pkg>
   <pkg>crrp</pkg>
   <pkg>crrSC</pkg>
