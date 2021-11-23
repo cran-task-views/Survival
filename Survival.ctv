@@ -4,7 +4,7 @@
 <name>Survival</name>
 <topic>Survival Analysis</topic>
 <maintainer email="arthur.allignol@gmail.com">Arthur Allignol and Aurelien Latouche</maintainer>
-<version>2021-11-08</version>
+<version>2021-11-23</version>
 
 <info>
 <p>Survival analysis, also called event history analysis in social science,
@@ -1025,9 +1025,6 @@ or submit a pull request.</p>
     The <pkg>TBSSurvival</pkg> package fits parametric
     Transform-both-sides models used in reliability analysis
   </li>
-  <li>The <pkg>OutlierDC</pkg> package implements algorithms to detect outliers
-  based on quantile regression for censored data.
-  </li>
   <li>
     The <pkg>coarseDataTools</pkg> package implements an EM algorithm
     to estimate the relative case fatality ratio between two groups.
@@ -1205,7 +1202,6 @@ or submit a pull request.</p>
   <pkg>NPMLEcmprsk</pkg>
   <pkg>npsurv</pkg>
   <pkg>OrdFacReg</pkg>
-  <pkg>OutlierDC</pkg>
   <pkg>p3state.msm</pkg>
   <pkg>paf</pkg>
   <pkg>pamr</pkg>
