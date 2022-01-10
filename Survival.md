@@ -3,7 +3,7 @@ name: Survival
 topic: Survival Analysis
 maintainer: Arthur Allignol, Aurelien Latouche
 email: arthur.allignol@gmail.com
-version: 2021-12-29
+version: 2022-01-10
 source: https://github.com/cran-task-views/Survival/
 ---
 
@@ -158,9 +158,8 @@ Standard Survival Analysis
     `r pkg("coxrobust")` package proposes a robust
     implementation of the Cox model. `timecox` in package
     `r pkg("timereg", priority = "core")` fits Cox models
-    with possibly time-varying effects. The `r pkg("mfp")`
-    package permits to fit Cox models with multiple fractional
-    polynomial. A Cox model model can be fitted to data from complex
+    with possibly time-varying effects. 
+    A Cox model model can be fitted to data from complex
     survey design using the `svycoxph` function in
     `r pkg("survey")`. The
     `r pkg("multipleNCC")` package fits Cox models using a
