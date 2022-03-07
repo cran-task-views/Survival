@@ -3,7 +3,7 @@ name: Survival
 topic: Survival Analysis
 maintainer: Arthur Allignol, Aurelien Latouche
 email: arthur.allignol@gmail.com
-version: 2022-01-10
+version: 2022-03-07
 source: https://github.com/cran-task-views/Survival/
 ---
 
@@ -626,8 +626,7 @@ Machine learning
     partitioning for survival data. `r pkg("LogicReg")` can
     perform logic regression. `r pkg("kaps")` implements
     K-adaptive partitioning and recursive partitioning algorithms for
-    censored survival data. The `r pkg("DStree")` package
-    implements trees and bagged trees for discrete-times survival data.
+    censored survival data.
     The `r pkg("LTRCtrees")` package provides recursive
     partition algorithms designed for fitting survival tree with
     left-truncated and right censored data. The package also includes an
