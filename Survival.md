@@ -128,8 +128,6 @@ Standard Survival Analysis
 -   `r bioc("survcomp")` compares 2 hazard ratios.
 -   The `r pkg("TSHRC")` implements a two stage procedure
     for comparing hazard functions.
--   The `r pkg("Survgini")` package proposes to test the
-    equality of two survival distributions based on the Gini index.
 -   The `r pkg("FHtest")` package offers several tests based
     on the Fleming-Harrington class for comparing surival curves with
     right- and interval-censored data.
