@@ -851,9 +851,6 @@ Miscellaneous
 
 
 ### Links
--   [Competing Risks and Multistate Models with R](http://www.imbi.uni-freiburg.de/comprisksmultistate)
--   [Dynamic prediction in clinical survival analysis](https://www.lumc.nl/org/msbi/research/medische-statistiek/survival-analysis/MethodologicalResearch/dynamic-prediction/)
--   [Regression modelling strategy](http://biostat.mc.vanderbilt.edu/twiki/bin/view/Main/RmS)
 -   [GAMLSS](http://www.gamlss.com/)
 -   [Tutorial in competing risks and multistate models](https://onlinelibrary.wiley.com/doi/10.1002/sim.2712)
 -   [Proportional-Hazards Regression for Survival Data. Appendix to An R and S-PLUS Companion to Applied Regression.](https://socialsciences.mcmaster.ca/jfox/Books/Companion/appendices/Appendix-Cox-Regression.pdf)
