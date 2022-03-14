@@ -70,19 +70,22 @@ Standard Survival Analysis
     package implements the generalised Turnbull estimator proposed by
     Dehghan and Duchesne for estimating the conditional survival
     function with interval-censored data.
--   ***Non-Parametric maximum likelihood estimation (NPMLE):*** The
-    `r bioc("Icens")` package provides several ways to
-    compute the NPMLE of the survival distribution for various censoring
-    and truncation schemes. `r pkg("MLEcens")` can also be
-    used to compute the MLE for interval-censored data.
-    `r pkg("dblcens")` permits to compute the NPMLE of the
-    cumulative distribution function for left- and right-censored data.
-    The `icfit` function in package `r pkg("interval")`
-    computes the NPMLE for interval-censored data. The
-    `r pkg("DTDA")` package implements several algorithms
-    permitting to analyse possibly doubly truncated survival data.
-    `r pkg("npsurv")` computes the NPMLE of a survival
-    function for general interval-censored data.
+-   ***Non-Parametric maximum likelihood estimation (NPMLE):*** The `r
+    bioc("Icens")` package provides several ways to compute the NPMLE
+    of the survival distribution for various censoring and truncation
+    schemes. `r pkg("MLEcens")` can also be used to compute the MLE
+    for interval-censored data.  `r pkg("dblcens")` permits to compute
+    the NPMLE of the cumulative distribution function for left- and
+    right-censored data.  The `icfit` function in package `r
+    pkg("interval")` computes the NPMLE for interval-censored
+    data. The `r pkg("DTDA")` package implements several algorithms
+    permitting to analyse possibly doubly truncated survival data.  `r
+    pkg("npsurv")` computes the NPMLE of a survival function for
+    general interval-censored data. The `r pkg("csci")` package
+    provides confidence intervals for the cumulative distribution
+    function of the event time for current status data, including a
+    new method that is valid (i.e., exact).
+
 -   ***Parametric:*** The `r pkg("fitdistrplus")` package
     permits to fit an univariate distribution by maximum likelihood.
     Data can be interval censored. The `r pkg("vitality")`
@@ -110,6 +113,11 @@ Standard Survival Analysis
     survival curves using the Fleming-Harrington G-rho family of test.
     `r pkg("NADA")` implements this class of tests for
     left-censored data.
+-   The `r pkg("maxcombo")` package compares survival curves using the
+    max-combo test, which is often based on the Fleming-Harrington
+    G-rho family of tests and is designed to have higher power than
+    the logrank test in the scenario of non-proportional hazards such
+    as those resulting from delayed treatment effects.
 -   `r pkg("clinfun")` implements a permutation version of
     the logrank test and a version of the logrank that adjusts for
     covariates.
@@ -142,6 +150,9 @@ Standard Survival Analysis
     comparison of the restricted mean survival time
 -   The `r pkg("emplik2")` package permits to compare two
     samples with censored data using empirical likelihood ratio tests.
+-   The `r pkg("KONPsurv")` package provides powerful nonparametric
+    K-sample tests for right-censored data. The tests are consistent
+    against any differences between the hazard functions of the groups.
 
 ### Regression Modelling
 
@@ -798,6 +809,7 @@ useful in the context of event history analysis.
     for families that habour genetic mutation under different sampling
     designs and estimates the penetrance functions for family data with
     ascertainment correction.
+-   `r pkg("vsd")` provides graphical shim for visual survival data analysis. 
 
 Miscellaneous
 =============
