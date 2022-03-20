@@ -70,17 +70,17 @@ Standard Survival Analysis
     package implements the generalised Turnbull estimator proposed by
     Dehghan and Duchesne for estimating the conditional survival
     function with interval-censored data.
--   ***Non-Parametric maximum likelihood estimation (NPMLE):*** The `r
-    bioc("Icens")` package provides several ways to compute the NPMLE
+-   ***Non-Parametric maximum likelihood estimation (NPMLE):*** The  
+    `r bioc("Icens")` package provides several ways to compute the NPMLE
     of the survival distribution for various censoring and truncation
     schemes. `r pkg("MLEcens")` can also be used to compute the MLE
-    for interval-censored data.  `r pkg("dblcens")` permits to compute
+    for interval-censored data. `r pkg("dblcens")` permits to compute
     the NPMLE of the cumulative distribution function for left- and
-    right-censored data.  The `icfit` function in package `r
-    pkg("interval")` computes the NPMLE for interval-censored
+    right-censored data.  The `icfit` function in package 
+    `r pkg("interval")` computes the NPMLE for interval-censored
     data. The `r pkg("DTDA")` package implements several algorithms
-    permitting to analyse possibly doubly truncated survival data.  `r
-    pkg("npsurv")` computes the NPMLE of a survival function for
+    permitting to analyse possibly doubly truncated survival data.  
+    `r pkg("npsurv")` computes the NPMLE of a survival function for
     general interval-censored data. The `r pkg("csci")` package
     provides confidence intervals for the cumulative distribution
     function of the event time for current status data, including a
@@ -815,9 +815,9 @@ Miscellaneous
 =============
 
 -   The `r pkg("survminer")` package contains the function
-    `ggsurvplot` for drawing survival curves with the 'number at risk'
+    `ggsurvplot` for drawing survival curves with the "number at risk"
     table. Other functions are also available for visual examinations of
-    cox model assumptions.
+    Cox model assumptions.
 -   The `r pkg("InformativeCensoring")` package multiple
     imputation methods for dealing with informative censoring.
 -   The `r pkg("discSurv")` provides data transformations,
