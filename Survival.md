@@ -264,7 +264,9 @@ Standard Survival Analysis
     parameter estimation in the AFT model is proposed in the
     `r pkg("imputeYn")` package. The
     `r pkg("AdapEnetClass")` package implements elastic net
-    regularisation for the AFT model.
+    regularisation for the AFT model. The `r pkg("aftgee")` package
+    implements recently developed inference procedures for the AFT
+    models with both the rank-based approach and the least squares approach.
 -   ***Additive Models:*** Both `r pkg("survival")` and
     `r pkg("timereg")` fit the additive hazards model of
     Aalen in functions `aareg` and `aalen`, respectively.
@@ -348,6 +350,10 @@ Standard Survival Analysis
     flexible hazard regression models to survival data with single event
     type or multiple competing causes via logistic and multinomial
     regression can be found in package `r pkg("casebase")`.
+    The `r pkg("intsurv")` package fits regular Cox cure rate model via
+    an EM algorithm, regularized Cox cure rate model with elastic net
+     penalty, and weighted concordance index for cure models.
+
 
 Multistate Models
 =================
