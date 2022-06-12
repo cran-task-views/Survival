@@ -684,7 +684,9 @@ Machine learning
     in the `r pkg("gbm")` package. The
     `r pkg("mboost")` package includes a generic gradient
     boosting algorithm for the construction of prognostic and diagnostic
-    models for right-censored data.
+    models for right-censored data. `r pkg("xgboost")` includes methods
+    for Cox regression (right censored survival data) and AFT models
+    (right-, left-, interval-, and uncensored).
 -   ***Other:*** The `r pkg("superpc")` package implements
     the supervised principal components for survival data. The
     `r pkg("compound.Cox")` package fits Cox proportional
