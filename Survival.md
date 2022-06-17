@@ -504,7 +504,7 @@ Relative Survival
     based on French death rates.
 -   The `r pkg("MRsurv")` package permits to fit
     multiplicative regression models for relative survival.
--   The `r pkg("GJRM")` package permits to fit link-based additive modelling framework for the excess hazard that allows for the inclusion of many types of covariate effects, including spatial and time-dependent effects, using any type of smoother, such as thin plate, cubic splines, tensor products and Markov random fields.
+-   The `r pkg("GJRM")` package permits to fit link-based additive models for the excess hazard that allows for the inclusion of many types of covariate effects, including spatial and time-dependent effects, using any type of smoother, such as thin plate, cubic splines, tensor products and Markov random fields.
 
 Random Effect Models
 ====================
