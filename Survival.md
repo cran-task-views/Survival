@@ -54,6 +54,8 @@ Standard Survival Analysis
     `r pkg("bpcp")` package provides several functions for
     computing confidence intervals of the survival distribution (e.g.,
     beta product confidence procedure). The
+    `r pkg("lbiassurv")` package offers various length-bias
+    corrections to survival curve estimation. The
     `r pkg("kmc")` package implements the Kaplan-Meier
     estimator with constraints. The `r pkg("landest")`
     package allows landmark estimation and testing of survival
@@ -100,6 +102,8 @@ Standard Survival Analysis
 -   `r pkg("polspline")`, `r pkg("gss")` and
     `r pkg("logspline")` allow to estimate the hazard
     function using splines.
+-   The `r pkg("ICE")` package aims at estimating the hazard
+    function for interval censored data.
 -   The `r pkg("bshazard")` package provides non-parametric
     smoothing of the hazard through B-splines.
 
@@ -126,12 +130,17 @@ Standard Survival Analysis
     maximally selected rank statistics.
 -   The `r pkg("interval")` package implements logrank and
     Wilcoxon type tests for interval-censored data.
+-   Three generalised logrank tests and a score test for
+    interval-censored data are implemented in the
+    `r pkg("glrt")` package.
 -   `r bioc("survcomp")` compares 2 hazard ratios.
 -   The `r pkg("TSHRC")` implements a two stage procedure
     for comparing hazard functions.
 -   The `r pkg("FHtest")` package offers several tests based
     on the Fleming-Harrington class for comparing surival curves with
     right- and interval-censored data.
+-   The `r pkg("LogrankA")` package provides a logrank test
+    for which aggregated data can be used as input.
 -   The short term and long term hazard ratio model for two samples
     survival data can be found in the `r pkg("YPmodel")`
     package.
@@ -209,7 +218,10 @@ Standard Survival Analysis
     visualisation of the relative importance of covariates in a
     proportional hazards model. The `r pkg("smoothHR")`
     package provides hazard ratio curves that allows for nonlinear
-    relationship between predictor and survival. The `r pkg("PHeval")`
+    relationship between predictor and survival. The
+    `r pkg("paf")` package permits to compute the
+    unadjusted/adjusted attributable fraction function from a Cox
+    proportional hazards model. The `r pkg("PHeval")`
     package proposes tools to check the proportional hazards assumption
     using a standardised score process. The `r pkg("ELYP")`
     package implements empirical likelihood analysis for the Cox Model
@@ -359,6 +371,9 @@ Multistate Models
     estimates and plots transition probabilities for any multistate
     models. It can also estimate the variance of the Aalen-Johansen
     estimator, and handles left-truncated data. The
+    `r pkg("msSurv")` package provides non-parametric
+    estimation for multistate models subject to right-censoring
+    (possibly state-dependent) and left-truncation. The
     `r pkg("mstate", priority = "core")` package permits to
     estimate hazards and probabilities, possibly depending on
     covariates, and to obtain prediction probabilities in the context of
@@ -373,13 +388,18 @@ Multistate Models
     `r pkg("SemiMarkov")` package can be used to fit
     semi-Markov multistate models in continuous time. The distribution
     of the waiting times can be chosen between the exponential, the
-    Weibull and exponentiated Weibull distributions. The
+    Weibull and exponentiated Weibull distributions. Non-parametric
+    estimates in illness-death models and other three state models can
+    be obtained with package `r pkg("p3state.msm")`. The
     `r pkg("TPmsm")` package permits to estimate transition
     probabilities of an illness-death model or three-state progressive
     model. The `r pkg("gamboostMSM")` package extends the
     `r pkg("mboost")` package to estimation in the
     mulstistate model framework, while the `r pkg("penMSM")`
-    package proposes L1 penalised estimation.
+    package proposes L1 penalised estimation. The
+    `r pkg("coxinterval")` package permits to fit Cox models
+    to the progressive illness-death model observed under right-censored
+    survival times and interval- or right-censored progression times.
     The `r pkg("SmoothHazard")` package fits proportional
     hazards models for the illness-death model with possibly
     interval-censored data for transition toward the transient state.
@@ -408,7 +428,9 @@ Multistate Models
     data. The `r pkg("kmi")` package performs a Kaplan-Meier
     multiple imputation to recover missing potential censoring
     information from competing risks events, permitting to use standard
-    right-censored methods to analyse cumulative incidence functions. Package
+    right-censored methods to analyse cumulative incidence functions.
+    The `r pkg("crrstep")` package implements stepwise
+    covariate selection for the Fine and Gray model. Package
     `r pkg("pseudo")` computes pseudo observations for
     modelling competing risks based on the cumulative incidence
     functions. `r pkg("timereg")` does flexible regression
@@ -425,8 +447,10 @@ Multistate Models
     and `r pkg("prodlim")` can also be used to estimate the
     cumulative incidence function. The
     `r pkg("NPMLEcmprsk")` package implements the
-    semi-parametric mixture model for competing risks data.
-	The `r pkg("CFC")` package permits to
+    semi-parametric mixture model for competing risks data. The
+    `r pkg("MIICD")` package implements Pan's (2000)
+    multiple imputation approach to the Fine and Gray model for interval
+    censored data. The `r pkg("CFC")` package permits to
     perform Bayesian, and non-Bayesian, cause-specific competing risks
     analysis for parametric and non-parametric survival functions. The
     `r pkg("gcerisk")` package provides some methods for
@@ -489,17 +513,25 @@ Random Effect Models
     mixed-effects Cox model is implemented in the
     `r pkg("coxme")` package. The `two.stage` function in
     the `r pkg("timereg")` package fits the
-    Clayton-Oakes-Glidden model. The `r pkg("frailtypack")` package
+    Clayton-Oakes-Glidden model. The `r pkg("parfm")`
+    package fits fully parametric frailty models via maximisation of the
+    marginal likelihood. The `r pkg("frailtypack")` package
     fits proportional hazards models with a shared Gamma frailty to
     right-censored and/or left-truncated data using a penalised
     likelihood on the hazard function. The package also fits additive
     and nested frailty models that can be used for, e.g., meta-analysis
     and for hierarchically clustered data (with 2 levels of clustering),
-    respectively. The Cox model using
+    respectively. The `r pkg("lmec")` package fits a linear
+    mixed-effects model for left-censored data. The Cox model using
     h-likelihood estimation for the frailty terms can be fitted using
-    the `r pkg("frailtyHL")` package. The `r pkg("frailtySurv")` package
+    the `r pkg("frailtyHL")` package. The
+    `r pkg("tlmec")` package implements a linear mixed
+    effects model for censored data with Student-t or normal
+    distributions. The `r pkg("frailtySurv")` package
     simulates and fits semiparametric shared frailty models under a wide
-    range of frailty distributions. The `r pkg("PenCoxFrail")` package provides
+    range of frailty distributions. The `r pkg("parfm")`
+    package implements parametric frailty models by maximum marginal
+    likelihood. The `r pkg("PenCoxFrail")` package provides
     a regularisation approach for Cox frailty models through
     penalisation. The `r pkg("mexhaz")` enables modelling of
     the excess hazard regression model with time-dependent and/or
@@ -559,6 +591,8 @@ Bayesian Models
 -   A MCMC for Gaussian linear regression with left-, right- or
     interval-censored data can be fitted using the `MCMCtobit` in
     `r pkg("MCMCpack")`.
+-   The `r pkg("BayHaz")` package estimates the hazard
+    function from censored data in a Bayesian framework.
 -   The `weibullregpost` function in `r pkg("LearnBayes")`
     computes the log posterior density for a Weibull proportional-odds
     regression model.
@@ -605,7 +639,9 @@ Machine learning
     implements CART-like trees that can be used with censored outcomes.
     The `r pkg("party")` package implements recursive
     partitioning for survival data. `r pkg("LogicReg")` can
-    perform logic regression. 
+    perform logic regression. `r pkg("kaps")` implements
+    K-adaptive partitioning and recursive partitioning algorithms for
+    censored survival data.
     The `r pkg("LTRCtrees")` package provides recursive
     partition algorithms designed for fitting survival tree with
     left-truncated and right censored data. The package also includes an
@@ -639,8 +675,9 @@ Machine learning
     models with a combination of lasso and group lasso regularisation.
     The `r pkg("hdnom")` package implements 9 types of
     penalised Cox regression methods and provides methods for model
-    validation, calibration, comparison, and nomogram visualisation.
-	The `r pkg("Cyclops")`
+    validation, calibration, comparison, and nomogram visualisation. A
+    penalised version of the Fine and Gray model can be found in
+    `r pkg("crrp")`. The `r pkg("Cyclops")`
     package implements cyclic coordinate descent for the Cox
     proportional hazards model.
 -   ***Boosting:*** Gradient boosting for the Cox model is implemented
@@ -656,7 +693,10 @@ Machine learning
     hazards model using the compound covariate method.
     `r pkg("plsRcox")` provides partial least squares
     regression and various techniques for fitting Cox models in high
-    dimensionnal settings.
+    dimensionnal settings. The `r pkg("mlr3proba")` package,
+    part of the mlr3 ecosystem implements survival models, including
+    classical models (Cox, AFT) and machine learning models(random
+    forests, SVMs).
 
 Predictions and Prediction Performance
 ======================================
@@ -812,6 +852,8 @@ Miscellaneous
     right-censored survey data.
 -   The `r pkg("logconcens")` package compute the MLE of a
     density (log-concave) possibly for interval censored data.
+-   The `r pkg("TBSSurvival")` package fits parametric
+    Transform-both-sides models used in reliability analysis
 -   The `r pkg("coarseDataTools")` package implements an EM
     algorithm to estimate the relative case fatality ratio between two
     groups.
