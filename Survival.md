@@ -436,7 +436,9 @@ Multistate Models
     The `r pkg("intccr")` package permits to fit the Fine
     and Gray model as well other models that belong to the class of
     semiparametric generalized odds rate transformation models to
-    interval-censored competing risks data.
+    interval-censored competing risks data. The `r pkg{mmcif}` fits 
+	mixed cumulative incidence function models to model within-cluster 
+	dependence of both risk and timing.
 -   ***Recurrent event data:*** `coxph` from the
     `r pkg("survival")` package can be used to analyse
     recurrent event data. The `cph` function of the
