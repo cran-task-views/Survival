@@ -486,8 +486,8 @@ Relative Survival
 Random Effect Models
 ====================
 
--   ***Frailties:*** Frailty terms can be added in `coxph` and `survreg`
-    functions in package `r pkg("survival")`. A
+-   ***Frailties:*** Frailty terms can be added in `coxph`
+    function in package `r pkg("survival")`. A
     mixed-effects Cox model is implemented in the
     `r pkg("coxme")` package. The `two.stage` function in
     the `r pkg("timereg")` package fits the
