@@ -288,8 +288,9 @@ Standard Survival Analysis
     `r pkg("fastpseudo")` package dose the same for the
     restricted mean survival time. `r pkg("flexsurv")` fits
     parametric time-to-event models, in which any parametric
-    distribution can be used to model the survival probability, and
-    where one of the parameters is a linear function of covariates. The
+    distribution can be used to model the survival probability, and 
+	where any of the parameters can be modelled as a function of 
+	covariates. The
     `Icens` function in package `r pkg("Epi")` provides a
     multiplicative relative risk and an additive excess risk model for
     interval-censored data. The `r pkg("VGAM")` package can
@@ -357,7 +358,11 @@ Multistate Models
     `r pkg("mstate", priority = "core")` package permits to
     estimate hazards and probabilities, possibly depending on
     covariates, and to obtain prediction probabilities in the context of
-    competing risks and multistate models. The
+    competing risks and multistate models. 
+	The `r pkg{"flexsurv"}` package can fit and predict from 
+	fully-parametric multistate models, with arbitrarily-flexible 
+	time-to-event distributions, using either a cause-specific hazards or 
+	mixture model framework. The
     `r pkg("msm")` package contains functions for fitting
     general continuous-time Markov and hidden Markov multistate models
     to longitudinal data. Transition rates and output processes can be
