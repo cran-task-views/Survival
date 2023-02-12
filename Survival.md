@@ -163,10 +163,8 @@ Standard Survival Analysis
     survey design using the `svycoxph` function in
     `r pkg("survey")`. The
     `r pkg("multipleNCC")` package fits Cox models using a
-    weighted partial likelihood for nested case-control studies. The
-    `r pkg("MIICD")` package implements Pan's (2000)
-    multiple imputation approach to Cox models for interval censored
-    data. The `r pkg("ICsurv")` package fits Cox models for
+    weighted partial likelihood for nested case-control studies. 
+	The `r pkg("ICsurv")` package fits Cox models for
     interval-censored data through an EM algorithm. The
     `r pkg("dynsurv")` package fits time-varying coefficient
     models for interval censored and right censored survival data using
@@ -259,9 +257,7 @@ Standard Survival Analysis
     `r pkg("timereg")` also proposes an implementation of
     the Cox-Aalen model (that can also be used to perform the Lin, Wei
     and Ying (1994) goodness-of-fit for Cox regression models) and the
-    partly parametric additive risk model of McKeague and Sasieni. A
-    version of the Cox-Aalen model for interval censored data is
-    available in the `r pkg("coxinterval")` package. The
+    partly parametric additive risk model of McKeague and Sasieni. The
     `r pkg("uniah")` package fits shape-restricted additive
     hazards models. The `r pkg("addhazard")` package
     contains tools to fit additive hazards model to random sampling,
@@ -476,9 +472,11 @@ Relative Survival
 -   The `r pkg("survexp.fr")` package computes relative
     survival, absolute excess risk and standardized mortality ratio
     based on French death rates.
--   The `r pkg("MRsurv")` package permits to fit
-    multiplicative regression models for relative survival.
--   The `r pkg("GJRM")` package permits to fit link-based additive models for the excess hazard that allows for the inclusion of many types of covariate effects, including spatial and time-dependent effects, using any type of smoother, such as thin plate, cubic splines, tensor products and Markov random fields.
+-   The `r pkg("GJRM")` package permits to fit link-based additive
+    models for the excess hazard that allows for the inclusion of many
+    types of covariate effects, including spatial and time-dependent
+    effects, using any type of smoother, such as thin plate, cubic
+    splines, tensor products and Markov random fields.
 
 Random Effect Models
 ====================
@@ -589,10 +587,6 @@ Bayesian Models
 -   The `r pkg("IDPSurvival")` package implements
     non-parametric survival analysis techniques using a prior
     near-ignorant Dirichlet Process.
--   The `r pkg("ICBayes")` packages permits to fit Bayesian
-    semiparametric regression survival models (proportional hazards
-    model, proportional odds model, and probit model) to
-    interval-censored time-to-event data
 -   The `r pkg("BayesPiecewiseICAR")` package fits a
     piecewise exponential hazard to survival data using a Hierarchical
     Bayesian model.
