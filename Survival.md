@@ -359,7 +359,7 @@ Multistate Models
     estimate hazards and probabilities, possibly depending on
     covariates, and to obtain prediction probabilities in the context of
     competing risks and multistate models. 
-	The `r pkg{"flexsurv"}` package can fit and predict from 
+	The `r pkg("flexsurv")` package can fit and predict from 
 	fully-parametric multistate models, with arbitrarily-flexible 
 	time-to-event distributions, using either a cause-specific hazards or 
 	mixture model framework. The
@@ -436,7 +436,7 @@ Multistate Models
     The `r pkg("intccr")` package permits to fit the Fine
     and Gray model as well other models that belong to the class of
     semiparametric generalized odds rate transformation models to
-    interval-censored competing risks data. The `r pkg{mmcif}` fits 
+    interval-censored competing risks data. The `r pkg("mmcif")` fits 
 	mixed cumulative incidence function models to model within-cluster 
 	dependence of both risk and timing.
 -   ***Recurrent event data:*** `coxph` from the
