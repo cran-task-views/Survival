@@ -826,8 +826,8 @@ Miscellaneous
 -   Accompanying data sets to the book *Applied Survival Analysis Using
     R* can be found in package `r pkg("asaur")`.
 -   The `r pkg("survex")` provides easy-to-apply explanations 
-    for machine learning survival models that enable their exploration
-    and interpretation.
+    of survival models (both complex machine learning and simpler 
+    statistical ones) that enable their exploration and interpretation.
 
 
 
