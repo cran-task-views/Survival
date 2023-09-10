@@ -3,7 +3,7 @@ name: Survival
 topic: Survival Analysis
 maintainer: Arthur Allignol, Aurelien Latouche
 email: arthur.allignol@gmail.com
-version: 2022-03-07
+version: 2023-09-10
 source: https://github.com/cran-task-views/Survival/
 ---
 
@@ -235,10 +235,8 @@ Standard Survival Analysis
     in the `r pkg("rms")` package ( `psm` function). It
     permits to use some of the `r pkg("rms")`
     functionalities. The `r pkg("eha")` package also
-    proposes an implementation of the AFT model (function `aftreg`). An
-    AFT model with an error distribution assumed to be a mixture of
-    G-splines is implemented in the `r pkg("smoothSurv")`
-    package. The `r pkg("NADA")` package proposes the front
+    proposes an implementation of the AFT model (function `aftreg`).
+	The `r pkg("NADA")` package proposes the front
     end of the `survreg` function for left-censored data. The
     `r pkg("simexaft")` package implements the
     Simulation-Extrapolation algorithm for the AFT model, that can be
@@ -347,7 +345,7 @@ Multistate Models
     hazards, using correspondence between multistate models and
     time-dependent covariates. Besides, all the regression methods
     presented above can be used for multistate models as long as they
-    allow for left-truncation.\
+    allow for left-truncation.
     The `r pkg("mvna")` package provides convenient
     functions for estimating and plotting the cumulative transition
     hazards in any multistate model, possibly subject to right-censoring
@@ -369,7 +367,12 @@ Multistate Models
     modelled in terms of covariates. The `r pkg("msmtools")`
     package provides utilities to facilitate the modelling of
     longitudinal data under a multistate framework using the
-    `r pkg("msm")` package.The
+    `r pkg("msm")` package. The `r pkg("flexmsm")` package provides a general 
+	estimation framework for multi-state Markov processes with flexible specification 
+	of the transition intensities. It supports any type of 
+	process structure (forward and backward transitions, any number of states) 
+	and transition intensities can be specified via 
+	Generalised Additive Models, with syntax similar to that used for GAMs in R. The
     `r pkg("SemiMarkov")` package can be used to fit
     semi-Markov multistate models in continuous time. The distribution
     of the waiting times can be chosen between the exponential, the
@@ -417,11 +420,7 @@ Multistate Models
     approach. `r pkg("riskRegression")` implements risk
     regression for competing risks data, along with other extensions of
     existing packages useful for survival analysis and competing risks
-    data. The `r pkg("Cprob")` package estimates the
-    conditional probability of a competing event, aka., the conditional
-    cumulative incidence. It also implements a proportional-odds model
-    using either the temporal process regression or the pseudo-value
-    approaches. Packages `r pkg("survival")` (via `survfit`)
+    data. Packages `r pkg("survival")` (via `survfit`)
     and `r pkg("prodlim")` can also be used to estimate the
     cumulative incidence function. The
     `r pkg("NPMLEcmprsk")` package implements the
@@ -554,8 +553,6 @@ distribution of the survival times
 Bayesian Models
 ===============
 
--   The `r pkg("bayesSurv")` package proposes an
-    implementation of a bivariate AFT model.
 -   The package `r pkg("BMA")` computes a Bayesian model
     averaging for Cox proportional hazards models.
 -   `NMixMCMC` in `r pkg("mixAK")` performs an MCMC
@@ -568,10 +565,6 @@ Bayesian Models
     regression model.
 -   The `r pkg("MCMCglmm")` fits generalised linear mixed
     models using MCMC to right-, left- and interval censored data.
--   The `r pkg("BaSTA")` package aims at drawing inference
-    on age-specific mortality from capture-recapture/recovery data when
-    some or all records have missing information on times of birth and
-    death. Covariates can also be included in the model.
 -   The `r pkg("JMbayes")` package performs joint modelling
     of longitudinal and time-to-event data under a bayesian approach.
 -   The `r pkg("rstanarm")` package fits a joint model for
@@ -799,9 +792,6 @@ Miscellaneous
 -   The `r pkg("currentSurvival")` package estimates the
     current cumulative incidence and the current leukaemia free survival
     function.
--   The `r pkg("survJamda")` package provides functions for
-    performing meta-analyses of gene expression data and to predict
-    patients' survival and risk assessment.
 -   The `r pkg("KMsurv")` package includes the data sets
     from Klein and Moeschberger (1997). The package
     `r pkg("SMPracticals")` that accompanies Davidson (2003)
