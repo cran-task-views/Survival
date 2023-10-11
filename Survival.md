@@ -186,7 +186,10 @@ Standard Survival Analysis
     longitudinal covariates. The `r pkg("plac")` package
     provides routines to fit the Cox model with left-truncated data
     using augmented information from the marginal of the truncation
-    times.\
+    times.
+    The `r pkg("boot.pval")` package contains the convenience function 
+    `censboot_summary` for computing bootstrap p-values and confidence 
+    intervals for Cox models.\
     The proportionality assumption can be checked using the `cox.zph`
     function in `r pkg("survival")`. The `coxphCPE` function
     in `r pkg("clinfun")` calculates concordance probability
@@ -249,6 +252,9 @@ Standard Survival Analysis
     `r pkg("imputeYn")` package. The `r pkg("aftgee")` package
     implements recently developed inference procedures for the AFT
     models with both the rank-based approach and the least squares approach.
+    The `r pkg("boot.pval")` package contains the convenience function 
+    `censboot_summary` for computing bootstrap p-values and confidence 
+    intervals for AFT models.
 -   ***Additive Models:*** Both `r pkg("survival")` and
     `r pkg("timereg")` fit the additive hazards model of
     Aalen in functions `aareg` and `aalen`, respectively.
@@ -549,6 +555,8 @@ distribution of the survival times
 -   The `r pkg("SurvCorr")` package permits to estimate
     correlation coefficients with associated confidence limits for
     bivariate, partially censored survival times.
+-   The `r pkg("MultSurvTests")` package contains multivariate versions
+    of the two-sample Gehan and logrank tests.
 
 Bayesian Models
 ===============
@@ -788,7 +796,10 @@ Miscellaneous
     Prediction in Clinical Survival Analysis".
 -   Package `r pkg("boot")` proposes the `censboot` function
     that implements several types of bootstrap techniques for
-    right-censored data.
+    right-censored data. The `r pkg("boot.pval")` package contains the
+    convenience function `censboot_summary` for computing bootstrap
+    p-values and confidence intervals for Cox models and accelerated
+    failure time models.
 -   The `r pkg("currentSurvival")` package estimates the
     current cumulative incidence and the current leukaemia free survival
     function.
