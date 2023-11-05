@@ -338,7 +338,15 @@ Standard Survival Analysis
     regression can be found in package `r pkg("casebase")`.
     The `r pkg("intsurv")` package fits regular Cox cure rate model via
     an EM algorithm, regularized Cox cure rate model with elastic net
-     penalty, and weighted concordance index for cure models.
+     penalty, and weighted concordance index for cure models. 
+	 The `r pkg("GJRM")` package supports univariate proportional hazard,
+     proportional odds and probit link models where the baseline and
+     many types of covariate effects (including spatial and
+     time-dependent effects) are modelled flexibly by means of
+     penalised smoothers (e.g., penalised thin plate, monotonic B- and
+     cubic splines, tensor products and Markov random fields). Right,
+     left and interval censoring and left truncation can also be
+     accounted for. This is done through the function `gamlss`.
 
 
 Multistate Models
@@ -487,7 +495,8 @@ Relative Survival
     models for the excess hazard that allows for the inclusion of many
     types of covariate effects, including spatial and time-dependent
     effects, using any type of smoother, such as thin plate, cubic
-    splines, tensor products and Markov random fields.
+    splines, tensor products and Markov random fields. Informative censoring 
+	can be accounted for as well as in the above.
 
 Random Effect Models
 ====================
@@ -554,6 +563,9 @@ distribution of the survival times
     bivariate, partially censored survival times.
 -   The `r pkg("MultSurvTests")` package contains multivariate versions
     of the two-sample Gehan and logrank tests.
+-   The `r pkg("GJRM")` package supports flexible joint modelling of bivariate
+    survival outcomes by means of copulae. Several types of covariate
+    effects, copulae and marginal distributions are allowed. 
 
 Bayesian Models
 ===============
