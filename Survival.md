@@ -288,9 +288,8 @@ Standard Survival Analysis
     process, where drift towards the barrier has been randomized with a
     Gaussian distribution. The `r pkg("pseudo")` package
     computes the pseudo-observation for modelling the survival function
-    based on the Kaplan-Meier estimator and the restricted mean. The
-    `r pkg("fastpseudo")` package dose the same for the
-    restricted mean survival time. `r pkg("flexsurv")` fits
+    based on the Kaplan-Meier estimator and the restricted mean.
+	`r pkg("flexsurv")` fits
     parametric time-to-event models, in which any parametric
     distribution can be used to model the survival probability, and 
 	where any of the parameters can be modelled as a function of 
@@ -524,9 +523,7 @@ Random Effect Models
     effects models. The `r pkg("joint.Cox")` package
     performs Cox regression and dynamic prediction under the joint
     frailty-copula model between tumour progression and death for
-    meta-analysis. `r pkg("JointModel")` fits semiparametric
-    regression model for longitudinal responses and a semiparametric
-    transformation model for time-to-event data. The
+    meta-analysis. The
     `r pkg("joineRML")` package fits the joint model
     proposed by Henderson and colleagues (2000)
     [doi:10.1093/biostatistics/1.4.465](http://dx.doi.org/10.1093/biostatistics/1.4.465)
@@ -595,9 +592,6 @@ Bayesian Models
 -   The `r pkg("IDPSurvival")` package implements
     non-parametric survival analysis techniques using a prior
     near-ignorant Dirichlet Process.
--   The `r pkg("BayesPiecewiseICAR")` package fits a
-    piecewise exponential hazard to survival data using a Hierarchical
-    Bayesian model.
 
 Machine learning
 ================
@@ -750,9 +744,6 @@ Simulation
     are specified, as well as an initial cohort.
 -   The `r pkg("SimHaz")` package permits to simulate data
     with a dichotomous time-dependent exposure.
--   The `r pkg("SimSCRPiecewise")` package can be used to
-    simulate univariate and semi-competing risks data given covariates
-    and piecewise exponential baseline hazards.
 -   The `r pkg("SimSurvNMarker")` package provides functions
     to simulate from joint survival and potentially multivariate marker
     models. User-defined basis expansions in time can be passed which
