@@ -396,12 +396,7 @@ Multistate Models
     `r pkg("mboost")` package to estimation in the
     mulstistate model framework, while the `r pkg("penMSM")`
     package proposes L1 penalised estimation.
-    The `r pkg("SmoothHazard")` package fits proportional
-    hazards models for the illness-death model with possibly
-    interval-censored data for transition toward the transient state.
-    Left-truncated and right-censored data are also allowed. The model
-    is either parametric (Weibull) or semi-parametric with M-splines
-    approximation of the baseline intensities. The
+    The
     `r pkg("TP.idm")` package implement the estimator of
     Una-Alvarez and Meira-Machado (2015) for non-Markov illness-death
     models.\
