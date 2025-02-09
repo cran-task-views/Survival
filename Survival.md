@@ -57,9 +57,7 @@ Standard Survival Analysis
     `r pkg("kmc")` package implements the Kaplan-Meier
     estimator with constraints. The `r pkg("landest")`
     package allows landmark estimation and testing of survival
-    probabilities. The `r pkg("jackknifeKME")` package
-    computes the original and modified jackknife estimates of
-    Kaplan-Meier estimators. The
+    probabilities. The
     `r pkg("condSURV")` package provides methods for
     estimating the conditional survival function for ordered
     multivariate failure time data. The `r pkg("gte")`
@@ -245,9 +243,7 @@ Standard Survival Analysis
     version of the accelerated failure time model can be found in
     `r pkg("RobustAFT")`. The
     `r pkg("coarseDataTools")` package fits AFT models for
-    interval censored data. An alternative weighting scheme for
-    parameter estimation in the AFT model is proposed in the
-    `r pkg("imputeYn")` package. The `r pkg("aftgee")` package
+    interval censored data. The `r pkg("aftgee")` package
     implements recently developed inference procedures for the AFT
     models with both the rank-based approach and the least squares approach.
     The `r pkg("boot.pval")` package contains the convenience function 
@@ -309,9 +305,6 @@ Standard Survival Analysis
     which combine aspects of generalized linear models and Cox models,
     are implemented in the `r pkg("aster")` and
     `r pkg("aster2")` packages. The
-    `r pkg("concreg")` package implements conditional
-    logistic regression for survival data as an alternative to the Cox
-    model when hazards are non-proportional. The
     `r pkg("surv2sampleComp")` packages proposes some
     model-free contrast comparison measures such as difference/ratio of
     cumulative hazards, quantiles and restricted mean. The
@@ -375,10 +368,7 @@ Multistate Models
     `r pkg("msm")` package contains functions for fitting
     general continuous-time Markov and hidden Markov multistate models
     to longitudinal data. Transition rates and output processes can be
-    modelled in terms of covariates. The `r pkg("msmtools")`
-    package provides utilities to facilitate the modelling of
-    longitudinal data under a multistate framework using the
-    `r pkg("msm")` package. The `r pkg("flexmsm")` package provides a general 
+    modelled in terms of covariates. The `r pkg("flexmsm")` package provides a general 
 	estimation framework for multi-state Markov processes with flexible specification 
 	of the transition intensities. It supports any type of 
 	process structure (forward and backward transitions, any number of states) 
