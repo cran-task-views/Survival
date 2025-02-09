@@ -3,7 +3,7 @@ name: Survival
 topic: Survival Analysis
 maintainer: Arthur Allignol, Aurelien Latouche
 email: arthur.allignol@gmail.com
-version: 2023-09-10
+version: 2025-02-09
 source: https://github.com/cran-task-views/Survival/
 ---
 
@@ -59,9 +59,7 @@ Standard Survival Analysis
     package allows landmark estimation and testing of survival
     probabilities. The `r pkg("jackknifeKME")` package
     computes the original and modified jackknife estimates of
-    Kaplan-Meier estimators. The `r pkg("tranSurv")` package
-    permits to estimate a survival distribution in the presence of
-    dependent left-truncation and right-censoring. The
+    Kaplan-Meier estimators. The
     `r pkg("condSURV")` package provides methods for
     estimating the conditional survival function for ordered
     multivariate failure time data. The `r pkg("gte")`
