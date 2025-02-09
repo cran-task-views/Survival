@@ -575,7 +575,8 @@ Bayesian Models
     `r pkg("SemiCompRisks")` package.
 -   The `r pkg("psbcGroup")` package implements penalized
     semi-parametric Bayesian Cox models with elastic net, fused lasso
-    and group lasso priors.
+    and group lasso priors. The `r pkg("psbcSpeedUp")` package
+    proposes faster implementation of the latter. 
 -   The `r pkg("PReMiuM")` package implements Bayesian
     clustering using a Dirichlet process mixture model to censored
     responses.
@@ -587,6 +588,13 @@ Bayesian Models
 -   The `r pkg("IDPSurvival")` package implements
     non-parametric survival analysis techniques using a prior
     near-ignorant Dirichlet Process.
+-   The `r pkg("BayesSurvive")` package implements Bayesian survival
+    models with graph-structured selection priors for sparse
+    identification of omics features predictive of survival
+-   The package `r pkg("survival.svb")` uses a spike-and-slab prior
+    with Laplace slab and Dirac spike to allow variable selection,
+    effect estimation, and uncertainty quantification, for
+    high-dimensional survival data.
 
 Machine learning
 ================
