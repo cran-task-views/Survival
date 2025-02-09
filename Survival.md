@@ -268,76 +268,80 @@ Standard Survival Analysis
     `r pkg("bujar")` package fits the Buckley-James model
     with high-dimensional covariates (L2 boosting, regression trees and
     boosted MARS, elastic net).
--   ***Other models:*** Functions like `survreg` can fit other types of
-    models depending on the chosen distribution, *e.g.* , a tobit model.
-    The `r pkg("AER")` package provides the `tobit`
-    function, which is a wrapper of `survreg` to fit the tobit model. An
-    implementation of the tobit model for cross-sectional data and panel
-    data can be found in the `r pkg("censReg")` package. The
-    `r pkg("timereg")` package provides implementation of
-    the proportional odds model and of the proportional excess hazards
-    model. The `r pkg("invGauss")` package fits the inverse
-    Gaussian distribution to survival data. The model is based on
-    describing time to event as the barrier hitting time of a Wiener
-    process, where drift towards the barrier has been randomized with a
-    Gaussian distribution. The `r pkg("pseudo")` package
-    computes the pseudo-observation for modelling the survival function
-    based on the Kaplan-Meier estimator and the restricted mean.
-	`r pkg("flexsurv")` fits
-    parametric time-to-event models, in which any parametric
-    distribution can be used to model the survival probability, and 
-	where any of the parameters can be modelled as a function of 
-	covariates. The
-    `Icens` function in package `r pkg("Epi")` provides a
-    multiplicative relative risk and an additive excess risk model for
-    interval-censored data. The `r pkg("VGAM")` package can
-    fit vector generalised linear and additive models for censored data.
-    The `r pkg("gamlss.cens")` package implements the
-    generalised additive model for location, scale and shape that can be
-    fitted to censored data. The `locfit.censor` function in
-    `r pkg("locfit")` produces local regression estimates.
-    The `crq` function included in the `r pkg("quantreg")`
-    package implements a conditional quantile regression model for
-    censored data. The `r pkg("JM")` package fits shared
-    parameter models for the joint modelling of a longitudinal response
-    and event times. The temporal process regression model is
-    implemented in the `r pkg("tpr")` package. Aster models,
-    which combine aspects of generalized linear models and Cox models,
-    are implemented in the `r pkg("aster")` and
-    `r pkg("aster2")` packages. The
-    `r pkg("surv2sampleComp")` packages proposes some
-    model-free contrast comparison measures such as difference/ratio of
-    cumulative hazards, quantiles and restricted mean. The
-    `r pkg("rstpm2")` package provides link-based survival
-    models that extend the Royston-Parmar models, a family of flexible
-    parametric models. The `r pkg("TransModel")` package
-    implements a unified estimation procedure for the analysis of
-    censored data using linear transformation models. The
-    `r pkg("ICGOR")` fits the generalized odds rate hazards
-    model to interval-censored data while `r pkg("GORCure")`
-    generalized odds rate mixture cure model to interval-censored data.
-    The `r pkg("thregI")` package permits to fit a threshold
-    regression model for interval-censored data based on the
-    first-hitting-time of a boundary by the sample path of a Wiener
-    diffusion process. The `r pkg("miCoPTCM")` package fits
-    semiparametric promotion time cure models with possibly mis-measured
-    covariates. The `r pkg("smcure")` package permits to fit
-    semiparametric proportional hazards and accelerated failure time
-    mixture cure models. The case-base sampling approach for fitting
-    flexible hazard regression models to survival data with single event
-    type or multiple competing causes via logistic and multinomial
-    regression can be found in package `r pkg("casebase")`.
-    The `r pkg("intsurv")` package fits regular Cox cure rate model via
-    an EM algorithm, regularized Cox cure rate model with elastic net
-     penalty, and weighted concordance index for cure models. 
-	 The `r pkg("GJRM")` package supports univariate proportional hazard,
-     proportional odds and probit link models where the baseline and
-     many types of covariate effects (including spatial and
-     time-dependent effects) are modelled flexibly by means of
-     penalised smoothers (e.g., penalised thin plate, monotonic B- and
-     cubic splines, tensor products and Markov random fields). Right,
-     left and interval censoring and left truncation can also be
-     accounted for. This is done through the function `gamlss`.
+-   ***Other models:*** Functions like `survreg` can fit other types
+    of models depending on the chosen distribution, *e.g.* , a tobit
+    model.  The `r pkg("AER")` package provides the `tobit` function,
+    which is a wrapper of `survreg` to fit the tobit model. An
+    implementation of the tobit model for cross-sectional data and
+    panel data can be found in the `r pkg("censReg")` package. The `r
+    pkg("timereg")` package provides implementation of the
+    proportional odds model and of the proportional excess hazards
+    model. The `r pkg("invGauss")` package fits the inverse Gaussian
+    distribution to survival data. The model is based on describing
+    time to event as the barrier hitting time of a Wiener process,
+    where drift towards the barrier has been randomized with a
+    Gaussian distribution. The `r pkg("pseudo")` package computes the
+    pseudo-observation for modelling the survival function based on
+    the Kaplan-Meier estimator and the restricted mean.  `r
+    pkg("flexsurv")` fits parametric time-to-event models, in which
+    any parametric distribution can be used to model the survival
+    probability, and where any of the parameters can be modelled as a
+    function of covariates. The `Icens` function in package `r
+    pkg("Epi")` provides a multiplicative relative risk and an
+    additive excess risk model for interval-censored data. The `r
+    pkg("VGAM")` package can fit vector generalised linear and
+    additive models for censored data.  The `r pkg("gamlss.cens")`
+    package implements the generalised additive model for location,
+    scale and shape that can be fitted to censored data. The
+    `locfit.censor` function in `r pkg("locfit")` produces local
+    regression estimates.  The `crq` function included in the `r
+    pkg("quantreg")` package implements a conditional quantile
+    regression model for censored data. The `r pkg("JM")` package fits
+    shared parameter models for the joint modelling of a longitudinal
+    response and event times. The temporal process regression model is
+    implemented in the `r pkg("tpr")` package. Aster models, which
+    combine aspects of generalized linear models and Cox models, are
+    implemented in the `r pkg("aster")` and `r pkg("aster2")`
+    packages. The `r pkg("surv2sampleComp")` packages proposes some
+    model-free contrast comparison measures such as difference/ratio
+    of cumulative hazards, quantiles and restricted mean. The `r
+    pkg("rstpm2")` package provides link-based survival models that
+    extend the Royston-Parmar models, a family of flexible parametric
+    models. The `r pkg("TransModel")` package implements a unified
+    estimation procedure for the analysis of censored data using
+    linear transformation models. The `r pkg("ICGOR")` fits the
+    generalized odds rate hazards model to interval-censored data
+    while `r pkg("GORCure")` generalized odds rate mixture cure model
+    to interval-censored data.  The `r pkg("thregI")` package permits
+    to fit a threshold regression model for interval-censored data
+    based on the first-hitting-time of a boundary by the sample path
+    of a Wiener diffusion process. The `r pkg("miCoPTCM")` package
+    fits semiparametric promotion time cure models with possibly
+    mis-measured covariates. The `r pkg("smcure")` package permits to
+    fit semiparametric proportional hazards and accelerated failure
+    time mixture cure models. The case-base sampling approach for
+    fitting flexible hazard regression models to survival data with
+    single event type or multiple competing causes via logistic and
+    multinomial regression can be found in package `r
+    pkg("casebase")`.  The `r pkg("intsurv")` package fits regular Cox
+    cure rate model via an EM algorithm, regularized Cox cure rate
+    model with elastic net penalty, and weighted concordance index for
+    cure models.  The `r pkg("GJRM")` package supports univariate
+    proportional hazard, proportional odds and probit link models
+    where the baseline and many types of covariate effects (including
+    spatial and time-dependent effects) are modelled flexibly by means
+    of penalised smoothers (e.g., penalised thin plate, monotonic B-
+    and cubic splines, tensor products and Markov random
+    fields). Right, left and interval censoring and left truncation
+    can also be accounted for. This is done through the function
+    `gamlss`. The package `r pkg("tram")` allows a range of stratified
+    linear transformation models to be fitted, among them Cox models
+    and other parametric models. It allows to also estimate flexible
+    survival models for interval-censored data in a straightforward
+    manner, and has many useful extensions. Modeling periodic
+    mortality (or other time-to event) processes from right-censored
+    data can be done using the `r pkg("cyclomort")` package. 
+	 
 
 
 Multistate Models
@@ -480,6 +484,10 @@ Relative Survival
     effects, using any type of smoother, such as thin plate, cubic
     splines, tensor products and Markov random fields. Informative censoring 
 	can be accounted for as well as in the above.
+-   The `r pkg("xhaz")` fits relative survival regression models with
+    or without proportional excess hazards and with the additional
+    possibility to correct for background mortality by one or more
+    parameters. 
 
 Random Effect Models
 ====================
@@ -595,6 +603,8 @@ Bayesian Models
     with Laplace slab and Dirac spike to allow variable selection,
     effect estimation, and uncertainty quantification, for
     high-dimensional survival data.
+-   Parametric survival regression models (proportional hazards, AFTs)
+    using stan can be fitted with package `r pkg("survstan")`.
 
 Machine learning
 ================
@@ -751,7 +761,11 @@ Simulation
     to simulate from joint survival and potentially multivariate marker
     models. User-defined basis expansions in time can be passed which
     effect the log hazard, the markers, and the association between the
-    two.
+    two. 
+-   The R package `r pkg("rsurv")` permits to generate survival data
+    from a wide range of regression models, including accelerated
+    failure time, proportional hazards, proportional odds, accelerated
+    hazard, Yang and Prentice, and extended hazard models. 
 
 Graphics
 ========
