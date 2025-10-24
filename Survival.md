@@ -665,6 +665,8 @@ Machine learning
     `r pkg("plsRcox")` provides partial least squares
     regression and various techniques for fitting Cox models in high
     dimensionnal settings.
+-   ***survdnn:*** The `r pkg("survdnn")` implements deep neural networks for right-censored survival data using the `r pkg("torch")` backend. Supports Cox, penalized Cox, time-dependent Cox, and AFT losses, with built-in cross-validation and C-index/Brier score evaluation.
+
 
 Predictions and Prediction Performance
 ======================================
