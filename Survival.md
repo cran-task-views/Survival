@@ -70,10 +70,10 @@ Standard Survival Analysis
     schemes. `r pkg("MLEcens")` can also be used to compute the MLE
     for interval-censored data. `r pkg("dblcens")` permits to compute
     the NPMLE of the cumulative distribution function for left- and
-    right-censored data.  The `icfit` function in package 
+    right-censored data. The `icfit` function in package 
     `r pkg("interval")` computes the NPMLE for interval-censored
     data. The `r pkg("DTDA")` package implements several algorithms
-    permitting to analyse possibly doubly truncated survival data.  
+    permitting to analyse possibly doubly truncated survival data.
     `r pkg("npsurv")` computes the NPMLE of a survival function for
     general interval-censored data. The `r pkg("csci")` package
     provides confidence intervals for the cumulative distribution
@@ -185,7 +185,7 @@ Standard Survival Analysis
     times.
     The `r pkg("boot.pval")` package contains the convenience function 
     `censboot_summary` for computing bootstrap p-values and confidence 
-    intervals for Cox models.\
+    intervals for Cox models.
     The proportionality assumption can be checked using the `cox.zph`
     function in `r pkg("survival")`. The `coxphCPE` function
     in `r pkg("clinfun")` calculates concordance probability
@@ -270,7 +270,7 @@ Standard Survival Analysis
     boosted MARS, elastic net).
 -   ***Other models:*** Functions like `survreg` can fit other types
     of models depending on the chosen distribution, *e.g.* , a tobit
-    model.  The `r pkg("AER")` package provides the `tobit` function,
+    model. The `r pkg("AER")` package provides the `tobit` function,
     which is a wrapper of `survreg` to fit the tobit model. An
     implementation of the tobit model for cross-sectional data and
     panel data can be found in the `r pkg("censReg")` package. The `r
@@ -282,7 +282,7 @@ Standard Survival Analysis
     where drift towards the barrier has been randomized with a
     Gaussian distribution. The `r pkg("pseudo")` package computes the
     pseudo-observation for modelling the survival function based on
-    the Kaplan-Meier estimator and the restricted mean.  `r
+    the Kaplan-Meier estimator and the restricted mean. `r
     pkg("flexsurv")` fits parametric time-to-event models, in which
     any parametric distribution can be used to model the survival
     probability, and where any of the parameters can be modelled as a
@@ -290,11 +290,11 @@ Standard Survival Analysis
     pkg("Epi")` provides a multiplicative relative risk and an
     additive excess risk model for interval-censored data. The `r
     pkg("VGAM")` package can fit vector generalised linear and
-    additive models for censored data.  The `r pkg("gamlss.cens")`
+    additive models for censored data. The `r pkg("gamlss.cens")`
     package implements the generalised additive model for location,
     scale and shape that can be fitted to censored data. The
     `locfit.censor` function in `r pkg("locfit")` produces local
-    regression estimates.  The `crq` function included in the `r
+    regression estimates. The `crq` function included in the `r
     pkg("quantreg")` package implements a conditional quantile
     regression model for censored data. The `r pkg("JM")` package fits
     shared parameter models for the joint modelling of a longitudinal
@@ -312,7 +312,7 @@ Standard Survival Analysis
     linear transformation models. The `r pkg("ICGOR")` fits the
     generalized odds rate hazards model to interval-censored data
     while `r pkg("GORCure")` generalized odds rate mixture cure model
-    to interval-censored data.  The `r pkg("thregI")` package permits
+    to interval-censored data. The `r pkg("thregI")` package permits
     to fit a threshold regression model for interval-censored data
     based on the first-hitting-time of a boundary by the sample path
     of a Wiener diffusion process. The `r pkg("miCoPTCM")` package
@@ -323,10 +323,10 @@ Standard Survival Analysis
     fitting flexible hazard regression models to survival data with
     single event type or multiple competing causes via logistic and
     multinomial regression can be found in package `r
-    pkg("casebase")`.  The `r pkg("intsurv")` package fits regular Cox
+    pkg("casebase")`. The `r pkg("intsurv")` package fits regular Cox
     cure rate model via an EM algorithm, regularized Cox cure rate
     model with elastic net penalty, and weighted concordance index for
-    cure models.  The `r pkg("GJRM")` package supports univariate
+    cure models. The `r pkg("GJRM")` package supports univariate
     proportional hazard, proportional odds and probit link models
     where the baseline and many types of covariate effects (including
     spatial and time-dependent effects) are modelled flexibly by means
@@ -391,7 +391,7 @@ Multistate Models
     The
     `r pkg("TP.idm")` package implement the estimator of
     Una-Alvarez and Meira-Machado (2015) for non-Markov illness-death
-    models.\
+    models.
     The `r pkg("Epi")` package implements Lexis objects as a
     way to represent, manipulate and summarise data from multistate
     models. The `r pkg("LexisPlotR")` package, based on
