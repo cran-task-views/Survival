@@ -64,7 +64,7 @@ Standard Survival Analysis
     package implements the generalised Turnbull estimator proposed by
     Dehghan and Duchesne for estimating the conditional survival
     function with interval-censored data.
--   ***Non-Parametric maximum likelihood estimation (NPMLE):*** The  
+-   ***Non-Parametric maximum likelihood estimation (NPMLE):*** The
     `r bioc("Icens")` package provides several ways to compute the NPMLE
     of the survival distribution for various censoring and truncation
     schemes. `r pkg("MLEcens")` can also be used to compute the MLE
